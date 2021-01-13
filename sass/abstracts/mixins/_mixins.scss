@@ -1,0 +1,57 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - (($columns__margin * ($numberColumns - 1)) / $numberColumns);
+}
+
+
+
+@mixin Flex($justify: false, $align: false, $direction: false) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+
+	@if $direction {
+		flex-direction: $direction;
+	}
+}
+
+@mixin Container {
+	width: $containerWidth;
+
+	@media screen and (max-width: $containerWidth) {
+		width: calc(100% - 2rem);
+	}
+}
+
+@mixin Link($hover: false) {
+
+	@if ($hover) {
+		a:hover {
+			@content;
+		}
+	}
+
+	@else {
+		a,
+		a:active,
+		a:visited,
+		a:link {
+			@content;
+		}
+	}
+}
+
+@mixin H2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 39px;
+	color: black;
+	text-transform: uppercase;
+	margin: 0;
+}

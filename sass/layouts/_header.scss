@@ -1,0 +1,57 @@
+.header{
+    background-color: $gb__color-1;
+    padding: 0.8rem 0;
+    &__container{
+        @include Container;
+        margin: 0 auto;
+        @include Flex(space-between, center);
+        h2{
+            margin: 0;
+        }
+    }
+    &__logo{
+        width: 20%;
+        img{
+            min-width: 230px;
+        }
+    }
+
+    &__nav{
+        @include Flex(flex-start, center);
+
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #fff;
+
+        ul{
+            margin: 0;
+            padding: 0;
+
+            @include Flex(flex-start, center);
+
+            li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                &:not(:nth-child(n+6)){
+                margin-right: 20px;
+                // background-color: red;
+                }
+
+
+                @include Link{
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 14.5px;
+                    letter-spacing: 1px;
+                }
+
+                @include Link(hover){
+                    color: $gb__groen;
+                }
+            }
+        }
+    }
+}
