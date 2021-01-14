@@ -625,6 +625,11 @@ textarea {
 .header {
 	background-color: #3f4141;
 	padding: 0.8rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
 }
 
 .header__container {
@@ -658,7 +663,7 @@ textarea {
 	justify-content: flex-start;
 	align-items: center;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	color: #fff;
 }
 
@@ -686,6 +691,45 @@ textarea {
 	margin-right: 20px;
 }
 
+.header__nav ul li:nth-child(5) {
+	margin: 0 1px 0 0;
+}
+
+.header__nav ul li:nth-child(5) > a,
+.header__nav ul li:nth-child(5) > a:active,
+.header__nav ul li:nth-child(5) > a:visited,
+.header__nav ul li:nth-child(5) > a:link {
+	background-color: #e4170e;
+	padding: 5px 10px 5px 10px;
+	transition: all .25s ease;
+}
+
+.header__nav ul li:nth-child(5) > a:hover {
+	background-color: #fff;
+	color: #e4170e;
+}
+
+.header__nav ul li:nth-child(6) > a,
+.header__nav ul li:nth-child(6) > a:active,
+.header__nav ul li:nth-child(6) > a:visited,
+.header__nav ul li:nth-child(6) > a:link {
+	padding: 5px 10px 5px 10px;
+	width: fit-content;
+	background-color: #43816b;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	transition: background-color .25s ease;
+}
+
+.header__nav ul li:nth-child(6) > a:hover {
+	background-color: #fff;
+	color: #43816b;
+}
+
 .header__nav ul li > a,
 .header__nav ul li > a:active,
 .header__nav ul li > a:visited,
@@ -705,6 +749,7 @@ textarea {
 	width: 100%;
 	background-color: #b5b2b1;
 	padding: 2rem 0;
+	padding-bottom: 3rem;
 }
 
 .footer__container {
@@ -876,6 +921,37 @@ textarea {
 	font-size: 12px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
+}
+
+.footer__disclaimer {
+	background-color: #3e4141;
+	width: 100%;
+	display: grid;
+	align-items: center;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.footer__disclaimer p {
+	margin: 0;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+
+.footer__disclaimer p > a,
+.footer__disclaimer p > a:active,
+.footer__disclaimer p > a:visited,
+.footer__disclaimer p > a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer__disclaimer p > a:hover,
+.footer__disclaimer p > a:active:hover,
+.footer__disclaimer p > a:visited:hover,
+.footer__disclaimer p > a:link:hover {
+	text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -1863,6 +1939,10 @@ textarea {
 
 .page {
 	margin: 0;
+}
+
+html {
+	margin-top: 104px;
 }
 
 /*# sourceMappingURL=style.css.map */
