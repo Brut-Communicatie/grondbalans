@@ -33,16 +33,16 @@
 @mixin Link($hover: false) {
 
 	@if ($hover) {
-		a:hover {
+		> a:hover {
 			@content;
 		}
 	}
 
 	@else {
-		a,
-		a:active,
-		a:visited,
-		a:link {
+		> a,
+		> a:active,
+		> a:visited,
+		> a:link {
 			@content;
 		}
 	}
@@ -54,4 +54,30 @@
 	color: black;
 	text-transform: uppercase;
 	margin: 0;
+}
+
+@mixin Button($color: false){
+	padding: 15px 35px 15px 30px;
+	width:fit-content;
+	box-sizing: border-box;
+	font-size: 18px;
+	background-color: $gb__groen-2;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	transition: background-color .25s ease;
+
+	&:hover{
+		background-color: lighten($gb__groen-2, 5%);
+	}
+}
+
+@mixin Responsive($breakpoint){
+	$calculateBreakpoint : calc(#{$breakpoint} + 5px);
+	@media screen and (max-width: $calculateBreakpoint){
+		@content;
+	}
 }

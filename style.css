@@ -680,10 +680,10 @@ textarea {
 	margin-right: 20px;
 }
 
-.header__nav ul li a,
-.header__nav ul li a:active,
-.header__nav ul li a:visited,
-.header__nav ul li a:link {
+.header__nav ul li > a,
+.header__nav ul li > a:active,
+.header__nav ul li > a:visited,
+.header__nav ul li > a:link {
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -691,7 +691,7 @@ textarea {
 	letter-spacing: 1px;
 }
 
-.header__nav ul li a:hover {
+.header__nav ul li > a:hover {
 	color: #5a8b7a;
 }
 
@@ -1076,11 +1076,12 @@ textarea {
 	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.intro__block a,
-.intro__block a:active,
-.intro__block a:visited,
-.intro__block a:link {
+.intro__block > a,
+.intro__block > a:active,
+.intro__block > a:visited,
+.intro__block > a:link {
 	padding: 20px 35px 20px 30px;
+	width: fit-content;
 	box-sizing: border-box;
 	font-size: 18px;
 	background-color: #43816b;
@@ -1090,9 +1091,10 @@ textarea {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
+	transition: background-color .25s ease;
 }
 
-.intro__block a:hover {
+.intro__block > a:hover {
 	background-color: #4c9279;
 }
 
@@ -1128,6 +1130,7 @@ textarea {
 	flex-direction: column;
 	text-align: center;
 	margin-top: 5rem;
+	margin-bottom: 10rem;
 }
 
 .content__intro h1 {
@@ -1159,7 +1162,7 @@ textarea {
 	display: block;
 	width: 100px;
 	height: 4px;
-	background-color: red;
+	background-color: #e4170e;
 	margin: 0 auto;
 	margin-top: 2rem;
 }
@@ -1170,7 +1173,7 @@ textarea {
 	align-items: center;
 	flex-direction: column;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	padding-bottom: 1rem;
+	padding-bottom: 2rem;
 	margin: 3rem 0;
 }
 
@@ -1180,6 +1183,122 @@ textarea {
 	color: black;
 	text-transform: uppercase;
 	margin: 0;
+}
+
+.content__section > a,
+.content__section > a:active,
+.content__section > a:visited,
+.content__section > a:link {
+	padding: 15px 35px 15px 30px;
+	width: fit-content;
+	box-sizing: border-box;
+	font-size: 18px;
+	background-color: #43816b;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	transition: background-color .25s ease;
+}
+
+.content__section > a:hover,
+.content__section > a:active:hover,
+.content__section > a:visited:hover,
+.content__section > a:link:hover {
+	background-color: #4c9279;
+}
+
+.content__expertises {
+	width: 100%;
+	margin: 1rem 0;
+}
+
+.content__expertises--container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__expertises--container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+
+.content__expertises--item {
+	width: calc(100% / 5 - 8px);
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #000 !important;
+	background-color: #ececec;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	text-decoration: none;
+	transition: all .25s ease;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__expertises--item {
+		width: calc(100% / 3 - 8px);
+		margin-right: 8px;
+		margin-bottom: 8px;
+	}
+}
+
+@media screen and (max-width: calc(740px + 5px)) {
+	.content__expertises--item {
+		width: calc(100% / 2 - 8px);
+	}
+}
+
+@media screen and (max-width: calc(500px + 5px)) {
+	.content__expertises--item {
+		width: 100%;
+	}
+}
+
+.content__expertises--item:last-child .st0 {
+	fill: #006699;
+}
+
+.content__expertises--item:last-child:hover {
+	background-color: #006699;
+}
+
+.content__expertises--item:last-child:hover .st0 {
+	fill: #fff;
+}
+
+.content__expertises--item .st0 {
+	transition: all .25s ease;
+	fill: #e4170e;
+}
+
+.content__expertises--item:hover {
+	color: #fff !important;
+	background-color: #e4170e;
+}
+
+.content__expertises--item:hover svg .st0 {
+	fill: #fff;
+}
+
+.content__expertises--item p {
+	margin: 0;
+	margin-top: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
