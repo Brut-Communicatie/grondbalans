@@ -64,7 +64,7 @@ get_header();?>
         <div class="content__block">
             <div class="content__block--container">
                 <div class="content__block--left">
-                <img src="https://images.unsplash.com/photo-1610473068893-7a63129207d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="hoi" />
+                <iframe id="video-6-2_youtube_iframe" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/1_AJ9QLsm10?controls=0&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=0&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;end=0&amp;loop=0&amp;playsinline=0&amp;start=0&amp;nocookie=false&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fgrondbalans.nl&amp;widgetid=1" width="575" height="323.4375"></iframe>
                 </div>
 
                 <div class="content__block--right">
@@ -89,16 +89,30 @@ get_header();?>
 
         </section>
 
-        <section class="content__section">
+        <section class="content__section--last">
             <h3>GRONDSTROMEN
                 VOOR DE GEHELE KETEN</h3>
                 <h4>Circulair toegepast</h4>
                 <p>
                 Wij focussen ons op verschillende toepassingsgebieden: van de agrarische sector tot kelderbouw. Dit doen we onder andere voor overheden, loonbedrijven, aannemers, agrariërs en projectontwikkelaars. Elk project is anders. Door onze uitgebreide, lokale marktkennis bieden wij oplossingen voor elk project. En heel veel lokaal, maakt nationaal.
                 </p>
-            <a href="#">Neem contact met ons op</a>
-            <div class="content__line"></div>
+                <a href="#" class="content__inline-link">Lees meer over circulariteit</a>
+          
+
+
         </section>
+    </div>
+    <div class="content__banner">
+        <div class="content__banner--container">
+            <div class="content__banner--img"></div>
+        </div>
+    </div>
+
+    <div class="content__container">
+            <section class="content__section--last">
+                <a href="#">Neem contact met ons op</a>
+                <div class="content__line"></div>
+            </section>
     </div>
 </div>
 

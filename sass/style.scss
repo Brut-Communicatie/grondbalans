@@ -341,6 +341,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			@include BodyFont;
 			margin: 0;
 		}
+
+		&--last {
+			@extend .content__section;
+			border-bottom: 0;
+			margin-bottom: 0;
+			padding-bottom: 1rem;
+		}
 	}
 
 
@@ -460,78 +467,85 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	}
 
 
-	&__block{
+	&__block {
 		width: 100%;
 
-		&--container{
+		&--container {
 			width: 100%;
 			@include Flex(space-between, center);
 
-			@include Responsive(870px){
+			@include Responsive(870px) {
 				flex-direction: column;
 				padding: 1rem;
 				background-color: #ececec;
 			}
 		}
 
-		&--left{
+		&--left {
 			width: calc(100% / 2 - 8px);
 
-			@include Responsive(870px){
+			@include Responsive(870px) {
 				width: 100%;
 			}
+
 			display: flex;
 			// height: 400px;
 			// background-color: red;
 		}
 
-		&--right{
+		&--right {
 			@extend .content__block--left;
 			position: relative;
 			background: #ececec;
 			width: 45%;
 			@include Flex(center, center);
-			padding: 2rem 2rem 2rem 0;
+			padding: 4rem 2rem 4rem 0;
 
-			@include Responsive(870px){
+			@include Responsive(870px) {
 				padding: 0;
 				width: 100%;
 				margin-top: 1rem;
 			}
-			&-content{
+
+			&-content {
 				text-align: left;
 
 
-				h3{
+				h3 {
 					font-size: 28px;
-					@include Responsive($containerWidth){
+
+					@include Responsive($containerWidth) {
 						font-size: clamp(2vw, 20px, 28px);
 						line-height: clamp(2vw, 20px, 28px);
 					}
-			
+
 				}
 
-				h4{
+				h4 {
 					margin: 0.5rem 0 1rem 0;
 					font-size: 23px;
-					@include Responsive($containerWidth){
+
+					@include Responsive($containerWidth) {
 						font-size: clamp(2vw, 20px, 23px);
 						line-height: clamp(2vw, 20px, 23px);
 					}
 				}
 
-				p{
+				p {
 					@include BodyFont;
+
+					font-size: 15px;
 				}
 
-				@include Link{
-					margin-top: 1rem;
+				@include Link {
+					margin-top: 2rem;
 					@include Button;
+					font-size: 16px;
 				}
 
 			}
 
-			&:before{
+			&:before {
 				content: " ";
 				position: absolute;
 				display: block;
@@ -542,14 +556,64 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 				z-index: -1;
 				background: #ececec;
 				transform-origin: bottom left;
-				-ms-transform: skew(13deg,0deg);
-				-webkit-transform: skew(13deg,0deg);
-				transform: skew(13deg,0deg);
+				-ms-transform: skew(13deg, 0deg);
+				-webkit-transform: skew(13deg, 0deg);
+				transform: skew(13deg, 0deg);
 
-				@include Responsive(870px){
+				@include Responsive(870px) {
 					display: none;
 				}
 			}
 		}
+	}
+
+	&__inline {
+		&-link {
+			@include BodyFont;
+			position: relative;
+			color: $gb__groen-2 !important;
+			background-color: transparent !important;
+			clip-path: unset !important;
+			padding: 0 !important;
+			text-transform: unset !important;
+			font-weight: 400 !important;
+
+			margin: 1rem 0;
+
+			&:after {
+				display: none;
+
+			}
+		}
+	}
+
+
+	&__banner {
+		width: 100%;
+
+		// position: absolute;
+		// top: 0;
+		&--container {
+			width: 100%;
+			overflow: hidden;
+		}
+
+		&--img {
+			width: 100%;
+			height: 261px;
+			animation: scrollBackground 25s infinite linear;
+			background: url('./content/images/grondbanner.jpg');
+			background-size: 2700px auto;
+		}
+	}
+}
+
+@keyframes scrollBackground {
+	0% {
+		background-position: 0% 0%;
+	}
+
+	100% {
+		background-position: -2700px 0%;
 	}
 }
