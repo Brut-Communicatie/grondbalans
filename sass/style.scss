@@ -634,61 +634,83 @@ html {
 .contact {
 	&__map {
 		width: 600px;
-		@include Responsive(1200px){
+
+		@include Responsive(1200px) {
 			width: 100%;
 		}
+
 		svg {
 			width: 100%;
-			path{
+
+			path {
 				transition: fill .4s ease;
 			}
-			a:hover{
-				path{
+
+			a:hover {
+				path {
 					fill: #999;
 				}
 			}
 		}
 	}
-	&__intro{
+
+	&__intro {
 		@include Flex(space-between, flex-start);
 		width: 100%;
 		margin: 2rem 0;
-		@include Responsive(750px){
+
+		@include Responsive(750px) {
 			@include Flex(flex-start, flex-start, column);
 		}
-		&--left{
+
+		&--left {
 			width: calc(100% / 2 - 5px);
-			@include Responsive(750px){
+
+			@include Responsive(750px) {
 				width: 100%;
 			}
-			h2{
+
+			h2 {
 				font-family: 'Montserrat', sans-serif;
 				font-weight: 700;
 				font-size: 40px;
 				color: #3f4141;
 				line-height: 40px;
 				margin: 0 0 3rem 0;
-				@include Responsive($containerWidth){
+
+				@include Responsive($containerWidth) {
 					font-size: clamp(3.2vw, 30px, 40px);
 					line-height: clamp(3.2vw, 30px, 40px);
 				}
 			}
 
-			h3{
+			h3 {
 				font-weight: 700;
-				font-family: 'Montserrat',sans-serif;
+				font-family: 'Montserrat', sans-serif;
 				font-size: 1.77em;
 			}
-			p{
+
+			p {
 				@include BodyFont;
 			}
 
 		}
-		&--right{
+
+		&--right {
 			width: calc(100% / 2 - 5px);
-			@include Responsive(750px){
+
+			@include Responsive(750px) {
 				width: 100%;
 			}
 		}
+	}
+}
+
+.banner{
+	&__container{
+
+	}
+	&__block{
+		
 	}
 }

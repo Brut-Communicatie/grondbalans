@@ -3,6 +3,16 @@
 
 get_header();?>
 
+
+<div class="banner" style="background-image: url('');">
+    <div class="banner__container">
+        <div class="banner__block">
+
+        </div>
+    </div>
+</div>
+
+
 <div class="content">
     <div class="content__container">
         <div class="contact__intro">
@@ -22,9 +32,7 @@ get_header();?>
                 </div>
             </div>
         </div>
-   
     </div>
 </div>
-
 
 <?php get_footer();?>
