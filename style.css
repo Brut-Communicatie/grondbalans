@@ -2137,4 +2137,103 @@ html {
 	}
 }
 
+.banner {
+	width: 100%;
+	height: 450px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner__container {
+	width: 1180px;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+@media screen and (max-width: 1180px) {
+	.banner__container {
+		width: calc(100% - 2rem);
+	}
+}
+
+.banner__block {
+	width: 800px;
+	height: 220px;
+	display: flex;
+	background-color: rgba(229, 18, 17, 0.7);
+	clip-path: polygon(0px 0px, 80% 0%, 70% 100%, 0% 100%);
+	padding: 1rem 2rem;
+}
+
+@media screen and (max-width: calc(700px + 5px)) {
+	.banner__block {
+		clip-path: unset;
+		width: 100%;
+	}
+}
+
+.banner__block--content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.banner__block--content h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 54px;
+	margin: 0;
+}
+
+.banner__block--content p {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0;
+	font-size: 18px;
+}
+
+.banner__block--content > a,
+.banner__block--content > a:active,
+.banner__block--content > a:visited,
+.banner__block--content > a:link {
+	margin-top: auto;
+	display: flex;
+	padding: 15px 35px 15px 30px;
+	width: fit-content;
+	box-sizing: border-box;
+	font-size: 18px;
+	background-color: #43816b;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	transition: background-color .25s ease;
+}
+
+.banner__block--content > a:hover,
+.banner__block--content > a:active:hover,
+.banner__block--content > a:visited:hover,
+.banner__block--content > a:link:hover {
+	background-color: #4c9279;
+}
+
+@media screen and (max-width: calc(600px + 5px)) {
+	.banner__block--content > a,
+	.banner__block--content > a:active,
+	.banner__block--content > a:visited,
+	.banner__block--content > a:link {
+		width: 100%;
+		font-size: 15px;
+	}
+}
+
 /*# sourceMappingURL=style.css.map */

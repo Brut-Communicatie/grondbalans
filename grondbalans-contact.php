@@ -3,11 +3,22 @@
 
 get_header();?>
 
+<?php 
+    $background =  "https://grondbalans.nl/wp-content/uploads/2020/04/IMG_3091-scaled.jpg";
+    $heading = "Contact";
+    $content = "Kennismaken?";
+    $button = "Neem contact met ons op";
+    $link = "https://www.google.com";
+;?>
 
-<div class="banner" style="background-image: url('');">
+<div class="banner" style="background-image: url('<?php echo $background;?>');">
     <div class="banner__container">
         <div class="banner__block">
-
+            <div class="banner__block--content">
+                <h1><?php echo $heading;?></h1>
+                <p><?php echo $content;?></p>
+                <a href="<?php echo $link;?>"><?php echo $button;?></a>
+            </div>
         </div>
     </div>
 </div>
