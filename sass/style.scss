@@ -625,4 +625,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 html{
 	margin-top: 104px;
+
+	@include Responsive(550px){
+		margin-top: 87px;
+	}
 }

@@ -658,6 +658,12 @@ textarea {
 	min-width: 230px;
 }
 
+@media screen and (max-width: calc(550px + 5px)) {
+	.header__logo img {
+		min-width: 175px;
+	}
+}
+
 .header__nav {
 	display: flex;
 	justify-content: flex-start;
@@ -667,18 +673,18 @@ textarea {
 	color: #fff;
 }
 
-@media screen and (max-width: calc(1100px + 5px)) {
-	.header__nav {
-		display: none;
-	}
-}
-
 .header__nav ul {
 	margin: 0;
 	padding: 0;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+@media screen and (max-width: calc(1100px + 5px)) {
+	.header__nav ul {
+		display: none;
+	}
 }
 
 .header__nav ul li {
@@ -743,6 +749,36 @@ textarea {
 
 .header__nav ul li > a:hover {
 	color: #5a8b7a;
+}
+
+.header__nav--hamburger {
+	display: none;
+}
+
+@media screen and (max-width: calc(1100px + 5px)) {
+	.header__nav--hamburger {
+		width: 40px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.header__nav--hamburger:hover {
+		cursor: pointer;
+	}
+	.header__nav--hamburger:hover svg path {
+		fill: red;
+	}
+}
+
+.header__nav--hamburger svg {
+	width: 30px;
+	height: 30px;
+}
+
+.header__nav--hamburger svg path {
+	fill: #fff;
+	transition: all .25s ease;
 }
 
 .footer {
@@ -1943,6 +1979,12 @@ textarea {
 
 html {
 	margin-top: 104px;
+}
+
+@media screen and (max-width: calc(550px + 5px)) {
+	html {
+		margin-top: 87px;
+	}
 }
 
 /*# sourceMappingURL=style.css.map */
