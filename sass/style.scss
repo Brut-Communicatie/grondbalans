@@ -347,6 +347,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			border-bottom: 0;
 			margin-bottom: 0;
 			padding-bottom: 1rem;
+
 		}
 	}
 
@@ -577,7 +578,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			padding: 0 !important;
 			text-transform: unset !important;
 			font-weight: 400 !important;
-
+			align-items: center;
+			justify-content: center;
 			margin: 1rem 0;
 
 			&:after {

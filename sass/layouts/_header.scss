@@ -1,33 +1,37 @@
-.header{
+.header {
     background-color: $gb__color-1;
     padding: 0.8rem 0;
-    &__container{
+
+    &__container {
         @include Container;
         margin: 0 auto;
         @include Flex(space-between, center);
-        h2{
+
+        h2 {
             margin: 0;
         }
     }
-    &__logo{
+
+    &__logo {
         width: 20%;
-        img{
+
+        img {
             min-width: 230px;
         }
     }
 
-    &__nav{
+    &__nav {
         @include Flex(flex-start, center);
 
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         color: #fff;
 
-        @include Responsive(1100px){
+        @include Responsive(1100px) {
             display: none;
         }
 
-        ul{
+        ul {
             margin: 0;
             padding: 0;
 
@@ -38,13 +42,13 @@
                 padding: 0;
                 list-style: none;
 
-                &:not(:nth-child(n+6)){
-                margin-right: 20px;
-                // background-color: red;
+                &:not(:nth-child(n+6)) {
+                    margin-right: 20px;
+                    // background-color: red;
                 }
 
 
-                @include Link{
+                @include Link {
                     color: #fff;
                     text-decoration: none;
                     text-transform: uppercase;
@@ -52,10 +56,103 @@
                     letter-spacing: 1px;
                 }
 
-                @include Link(hover){
+                @include Link(hover) {
                     color: $gb__groen;
                 }
             }
         }
+    }
+}
+
+
+
+.footer {
+    width: 100%;
+    background-color: $gb__grijs;
+    padding: 2rem 0;
+    &__container {
+        @include Container;
+        @include Flex(space-between, flex-start);
+        margin: 0 auto;
+
+        @include Responsive(750px){
+            flex-wrap: wrap;
+        }
+    }
+    &__left{
+        width: 80%;
+        @include Flex(space-between, flex-start);
+
+        @include Responsive(1080px){
+            flex-wrap: wrap;
+            width: 50%;
+        }
+
+        @include Responsive(750px){
+            width: 100%;
+        }
+
+        &--item{
+            width: calc(100% / 4 - 8px);
+            @include Flex(flex-start, flex-start, column);
+
+            @include Responsive(1080px){
+                width: calc(100% / 2 - 8px);
+            }
+
+            @include Responsive(370px){
+                width: 100%;
+            }
+            // height: 200px;
+            // background-color: red;
+            h5{
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                color: #1a1a18;
+                font-size: 16px;
+                margin-bottom: 0.5rem;
+            }
+
+            ul{
+                padding: 0;
+                margin: 0;
+                li{
+                    list-style: none;
+                    margin-bottom: 2.5px;
+      
+                    @include BodyFont;
+                    font-size: 16px;
+                    color: #1a1a18;
+
+                    span{
+                        color: red;
+                        font-weight: 600;
+                    }
+
+                    @include Link{
+                        margin-left: 5px;
+                        text-decoration: none;
+                        color: #1a1a18;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__right{
+        width: 18%;
+        @include Responsive(1080px){
+            width: 50%;
+        }
+        @include Responsive(750px){
+            width: 100%;
+        }
+        @include Flex(center, center);
+        // height: 200px;
+        background-color: blue;
     }
 }

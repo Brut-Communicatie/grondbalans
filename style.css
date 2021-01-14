@@ -701,6 +701,142 @@ textarea {
 	color: #5a8b7a;
 }
 
+.footer {
+	width: 100%;
+	background-color: #b5b2b1;
+	padding: 2rem 0;
+}
+
+.footer__container {
+	width: 1180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1180px) {
+	.footer__container {
+		width: calc(100% - 2rem);
+	}
+}
+
+@media screen and (max-width: calc(750px + 5px)) {
+	.footer__container {
+		flex-wrap: wrap;
+	}
+}
+
+.footer__left {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+@media screen and (max-width: calc(1080px + 5px)) {
+	.footer__left {
+		flex-wrap: wrap;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: calc(750px + 5px)) {
+	.footer__left {
+		width: 100%;
+	}
+}
+
+.footer__left--item {
+	width: calc(100% / 4 - 8px);
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+@media screen and (max-width: calc(1080px + 5px)) {
+	.footer__left--item {
+		width: calc(100% / 2 - 8px);
+	}
+}
+
+@media screen and (max-width: calc(370px + 5px)) {
+	.footer__left--item {
+		width: 100%;
+	}
+}
+
+.footer__left--item h5 {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #1a1a18;
+	font-size: 16px;
+	margin-bottom: 0.5rem;
+}
+
+.footer__left--item ul {
+	padding: 0;
+	margin: 0;
+}
+
+.footer__left--item ul li {
+	list-style: none;
+	margin-bottom: 2.5px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-size: 16px;
+	color: #1a1a18;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.footer__left--item ul li {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.footer__left--item ul li span {
+	color: red;
+	font-weight: 600;
+}
+
+.footer__left--item ul li > a,
+.footer__left--item ul li > a:active,
+.footer__left--item ul li > a:visited,
+.footer__left--item ul li > a:link {
+	margin-left: 5px;
+	text-decoration: none;
+	color: #1a1a18;
+}
+
+.footer__left--item ul li > a:hover,
+.footer__left--item ul li > a:active:hover,
+.footer__left--item ul li > a:visited:hover,
+.footer__left--item ul li > a:link:hover {
+	text-decoration: underline;
+}
+
+.footer__right {
+	width: 18%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: blue;
+}
+
+@media screen and (max-width: calc(1080px + 5px)) {
+	.footer__right {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: calc(750px + 5px)) {
+	.footer__right {
+		width: 100%;
+	}
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1644,6 +1780,8 @@ textarea {
 	padding: 0 !important;
 	text-transform: unset !important;
 	font-weight: 400 !important;
+	align-items: center;
+	justify-content: center;
 	margin: 1rem 0;
 }
 
