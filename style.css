@@ -817,12 +817,44 @@ textarea {
 	text-decoration: underline;
 }
 
-.footer__right {
-	width: 18%;
+.footer__left--socials {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.footer__left--socials-item {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: blue;
+	width: 35px;
+	height: 35px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.footer__left--socials-item svg {
+	width: 18px;
+	height: 18px;
+	fill: #b5b2b1;
+}
+
+.footer__left--socials-item svg path {
+	fill: #b5b2b1;
+}
+
+.footer__left--socials-item:not(:last-child) {
+	margin-right: 8px;
+}
+
+.footer__right {
+	width: 20%;
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 @media screen and (max-width: calc(1080px + 5px)) {
@@ -833,8 +865,17 @@ textarea {
 
 @media screen and (max-width: calc(750px + 5px)) {
 	.footer__right {
+		margin-top: 4rem;
 		width: 100%;
 	}
+}
+
+.footer__right p {
+	text-transform: uppercase;
+	color: black;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 /*--------------------------------------------------------------
@@ -1398,8 +1439,8 @@ textarea {
 	align-items: center;
 	flex-direction: column;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	padding-bottom: 2rem;
-	margin: 3rem 0;
+	padding-bottom: 4rem;
+	margin: 4rem 0;
 	text-align: center;
 }
 
@@ -1495,7 +1536,6 @@ textarea {
 .content__section--last {
 	border-bottom: 0;
 	margin-bottom: 0;
-	padding-bottom: 1rem;
 }
 
 .content__expertises {
@@ -1819,6 +1859,10 @@ textarea {
 	100% {
 		background-position: -2700px 0%;
 	}
+}
+
+.page {
+	margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
