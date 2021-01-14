@@ -731,6 +731,8 @@ textarea {
 	background-color: transparent !important;
 	padding: 0 !important;
 	margin: 0 !important;
+	word-wrap: none;
+	white-space: nowrap;
 }
 
 .header__nav ul li:hover ul li > a:hover,

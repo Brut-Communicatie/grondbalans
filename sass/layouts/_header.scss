@@ -85,6 +85,10 @@
                                 padding: 0 !important;
                                 margin: 0 !important;
 
+                                word-wrap: none;
+                                white-space: nowrap;
+
+
                                 &:hover {
                                     color: rgb(205, 205, 205);
                                 }
@@ -95,7 +99,6 @@
 
                 &:not(:nth-child(n+6)) {
                     margin-right: 20px;
-                    // background-color: red;
                 }
 
                 &:nth-child(5) {

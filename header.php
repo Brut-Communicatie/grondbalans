@@ -45,7 +45,12 @@
 					</ul>
 				</li>
 					<li><a href="#">Projecten</a></li>
-					<li><a href="#">Dit zijn wij</a></li>
+					<li><a href="#">Dit zijn wij</a>
+					<ul>
+						<li><a href="#">Dit is Grondbalans</a></li>
+						<li><a href="#">Samen circulair</a></li>
+					</ul>
+					</li>
 					<li><a href="#">Werken bij</a></li>
 					<li><a href="#">Vraag en aanbod</a></li>
 					<li><a href="#">Contact</a></li>
