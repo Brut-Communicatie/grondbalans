@@ -112,12 +112,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	height: 650px;
 	overflow: hidden;
 
+	@include Responsive(870px) {
+		height: auto;
+		padding: 4rem 0;
+	}
+
 	video {
 		width: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
 		z-index: 0;
+
+		@include Responsive(690px) {
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 
 
@@ -143,6 +153,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		padding-bottom: 2rem;
 		box-sizing: border-box;
 
+		@include Responsive(550px) {
+			border-right: 2px solid #fff;
+			padding: 2rem 1rem;
+		}
+
 		h4 {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 700;
@@ -151,6 +166,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			margin: 0;
 			margin-bottom: 2rem;
 			text-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+
+			@include Responsive($containerWidth) {
+				font-size: clamp(2vw, 20px, 1.5rem);
+				line-height: clamp(2vw, 20px, 1.5rem);
+			}
 		}
 
 		h3 {
@@ -163,6 +183,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			font-size: 2rem;
 			line-height: 35px;
 			text-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+
+			@include Responsive($containerWidth) {
+				font-size: clamp(3vw, 25px, 2rem);
+				line-height: clamp(3vw, 25px, 2rem);
+			}
 		}
 
 		@include Link {
@@ -178,6 +203,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 			text-transform: uppercase;
 			transition: background-color .25s ease;
+
+			@include Responsive(600px) {
+				width: 100%;
+				font-size: 15px;
+			}
 		}
 
 		@include Link(hover) {
@@ -197,7 +227,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			border-right: 3px solid #fff;
 			border-left: 0;
 			transform: skewX(-30deg);
-			// background-color: pink;
+
+			@include Responsive(550px) {
+				display: none;
+			}
 		}
 	}
 }
@@ -215,6 +248,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		margin-top: 5rem;
 		margin-bottom: 10rem;
 
+		@include Responsive(700px) {
+			margin-bottom: 4rem;
+		}
+
 		h1 {
 			font-family: 'Montserrat', sans-serif;
 			font-size: 54px;
@@ -223,6 +260,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			margin: 0;
 			font-weight: 700;
 			margin-bottom: 2rem;
+
+			@include Responsive($containerWidth) {
+				font-size: clamp(4.5vw, 30px, 54px);
+				line-height: clamp(4.5vw, 30px, 54px);
+			}
 		}
 
 		h2 {
@@ -232,12 +274,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			margin: 0;
 			font-weight: 700;
 			margin-bottom: 2rem;
+
+			@include Responsive($containerWidth) {
+				font-size: clamp(2vw, 20px, 30px);
+				line-height: clamp(2vw, 20px, 30px);
+			}
 		}
 
 		p {
-			font-family: 'Montserrat', sans-serif;
+
 			margin: 0 200px;
-			font-size: 18px;
+			@include BodyFont;
+
+			@include Responsive(980px) {
+				margin: 0;
+			}
 		}
 	}
 
@@ -256,27 +307,53 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 		padding-bottom: 2rem;
 		margin: 3rem 0;
+		text-align: center;
 
 		h3 {
 			@include H2;
+
+			@include Responsive($containerWidth) {
+				font-size: clamp(3vw, 25px, 39px);
+				line-height: clamp(3vw, 25px, 39px);
+				margin-bottom: 1rem;
+			}
 		}
 
 		@include Link {
 			@include Button;
+		}
+
+		h4 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 30px;
+			color: $gb__rood;
+			margin: 0;
+			font-weight: 700;
+			margin-bottom: 2rem;
+
+			@include Responsive($containerWidth) {
+				font-size: clamp(2vw, 20px, 30px);
+				line-height: clamp(2vw, 20px, 30px);
+			}
+		}
+
+		p {
+			@include BodyFont;
+			margin: 0;
 		}
 	}
 
 
 	&__expertises {
 		width: 100%;
-		margin: 1rem 0;
+		margin: 3rem 0;
 
 		&--container {
 			@include Flex(space-between, flex-start);
 			flex-wrap: wrap;
 			width: 100%;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				@include Flex(flex-start, flex-start);
 			}
 		}
@@ -284,17 +361,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		&--item {
 			width: calc(100% / 5 - 8px);
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				width: calc(100% / 3 - 8px);
 				margin-right: 8px;
 				margin-bottom: 8px;
 			}
 
-			@include Responsive(740px){
+			@include Responsive(740px) {
 				width: calc(100% / 2 - 8px);
 			}
 
-			@include Responsive(500px){
+			@include Responsive(500px) {
 				width: 100%;
 			}
 
@@ -302,11 +379,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			@include Flex(center, center, column);
 			color: #000 !important;
 			background-color: #ececec;
-			box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .12),
+			0 1px 2px rgba(0, 0, 0, .24);
 			text-decoration: none;
 			transition: all .25s ease;
 			text-transform: uppercase;
-			font-family: 'Montserrat', sans-serif;
+			font-family: 'Montserrat',
+			sans-serif;
 			font-weight: 700;
 			font-size: 18px;
 			letter-spacing: 1px;
@@ -346,6 +425,130 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			p {
 				margin: 0;
 				margin-top: 2rem;
+			}
+		}
+	}
+
+	&__projecten {
+		width: 100%;
+		margin: 2rem 0;
+
+		&--container {
+			@include Flex(space-between, flex-start);
+			flex-wrap: wrap;
+			width: 100%;
+		}
+
+		&--item {
+			width: calc(100% / 2 - 8px);
+			height: 350px;
+			margin-bottom: 16px;
+			display: flex;
+			background-color: black;
+			object-fit: cover;
+
+			@include Responsive(650px) {
+				width: 100%;
+				margin-bottom: 8px;
+				height: 250px;
+			}
+
+			img {
+				object-fit: cover;
+			}
+		}
+	}
+
+
+	&__block{
+		width: 100%;
+
+		&--container{
+			width: 100%;
+			@include Flex(space-between, center);
+
+			@include Responsive(870px){
+				flex-direction: column;
+				padding: 1rem;
+				background-color: #ececec;
+			}
+		}
+
+		&--left{
+			width: calc(100% / 2 - 8px);
+
+			@include Responsive(870px){
+				width: 100%;
+			}
+			display: flex;
+			// height: 400px;
+			// background-color: red;
+		}
+
+		&--right{
+			@extend .content__block--left;
+			position: relative;
+			background: #ececec;
+			width: 45%;
+			@include Flex(center, center);
+			padding: 2rem 2rem 2rem 0;
+
+			@include Responsive(870px){
+				padding: 0;
+				width: 100%;
+				margin-top: 1rem;
+			}
+			&-content{
+				text-align: left;
+
+
+				h3{
+					font-size: 28px;
+					@include Responsive($containerWidth){
+						font-size: clamp(2vw, 20px, 28px);
+						line-height: clamp(2vw, 20px, 28px);
+					}
+			
+				}
+
+				h4{
+					margin: 0.5rem 0 1rem 0;
+					font-size: 23px;
+					@include Responsive($containerWidth){
+						font-size: clamp(2vw, 20px, 23px);
+						line-height: clamp(2vw, 20px, 23px);
+					}
+				}
+
+				p{
+					@include BodyFont;
+				}
+
+				@include Link{
+					margin-top: 1rem;
+					@include Button;
+				}
+
+			}
+
+			&:before{
+				content: " ";
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				right: 100px;
+				z-index: -1;
+				background: #ececec;
+				transform-origin: bottom left;
+				-ms-transform: skew(13deg,0deg);
+				-webkit-transform: skew(13deg,0deg);
+				transform: skew(13deg,0deg);
+
+				@include Responsive(870px){
+					display: none;
+				}
 			}
 		}
 	}

@@ -57,6 +57,7 @@
 }
 
 @mixin Button($color: false){
+	display: flex;
 	padding: 15px 35px 15px 30px;
 	width:fit-content;
 	box-sizing: border-box;
@@ -73,11 +74,25 @@
 	&:hover{
 		background-color: lighten($gb__groen-2, 5%);
 	}
+
+	@include Responsive(600px){
+		width: 100%;
+		font-size: 15px;
+	}
 }
 
 @mixin Responsive($breakpoint){
 	$calculateBreakpoint : calc(#{$breakpoint} + 5px);
 	@media screen and (max-width: $calculateBreakpoint){
 		@content;
+	}
+}
+
+@mixin BodyFont{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+
+	@include Responsive($containerWidth){
+		font-size: clamp(1vw, 15px, 18px);
 	}
 }
