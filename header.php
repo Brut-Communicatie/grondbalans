@@ -35,7 +35,15 @@
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
 				</div>
 				<ul>
-					<li><a href="#">Expertises</a></li>
+					<li><a href="#">Expertises</a>
+					<ul>
+						<li><a href="#">Grondstormen</a></li>
+						<li><a href="#">Projectrealisatie</a></li>
+						<li><a href="#">Vraag en aanbod</a></li>
+						<li><a href="#">Grondbanken</a></li>
+						<li><a href="#">Baggerbalans</a></li>
+					</ul>
+				</li>
 					<li><a href="#">Projecten</a></li>
 					<li><a href="#">Dit zijn wij</a></li>
 					<li><a href="#">Werken bij</a></li>

@@ -2,7 +2,7 @@
     background-color: $gb__color-1;
     padding: 0.8rem 0;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
@@ -23,7 +23,7 @@
         img {
             min-width: 230px;
 
-            @include Responsive(550px){
+            @include Responsive(550px) {
                 min-width: 175px;
             }
         }
@@ -41,46 +41,90 @@
         ul {
             margin: 0;
             padding: 0;
+
             @include Responsive(1100px) {
                 display: none;
             }
+
             @include Flex(flex-start, center);
 
             li {
                 margin: 0;
                 padding: 0;
                 list-style: none;
+                position: relative;
+
+                ul {
+                    display: none;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    ul {
+                        @include Flex(flex-start, flex-start, column);
+                        padding: 0;
+                        margin: 0;
+                        position: absolute;
+                        animation: fadeIn .2s forwards;
+                        top: 25px;
+                        width: fit-content;
+                        background-color: $gb__groen-2;
+                        color: #fff;
+                        padding: 1.25rem 1.75rem;
+                        opacity: 1;
+
+                        li {
+                            margin: 5px 0;
+
+                            @include Link {
+                                text-transform: uppercase;
+                                color: #fff;
+                                text-decoration: none;
+                                transition: color .25s ease;
+                                background-color: transparent !important;
+                                padding: 0 !important;
+                                margin: 0 !important;
+
+                                &:hover {
+                                    color: rgb(205, 205, 205);
+                                }
+                            }
+                        }
+                    }
+                }
 
                 &:not(:nth-child(n+6)) {
                     margin-right: 20px;
                     // background-color: red;
                 }
 
-                &:nth-child(5){
-            
-                
+                &:nth-child(5) {
+
+
                     margin: 0 1px 0 0;
-                    
-                    @include Link{
+
+                    @include Link {
                         background-color: #e4170e;
                         padding: 5px 10px 5px 10px;
                         // margin: 0 1px 0 0;
-    
+
                         transition: all .25s ease;
                     }
 
-                    @include Link(hover){
+                    @include Link(hover) {
                         background-color: #fff;
                         color: #e4170e;
+
                     }
 
                 }
-                &:nth-child(6){
+
+                &:nth-child(6) {
                     // display: flex;
 
-                    @include Link{
+                    @include Link {
                         padding: 5px 10px 5px 10px;
-                        width:fit-content;
+                        width: fit-content;
                         // box-sizing: border-box;
                         // font-size: 18px;
                         background-color: $gb__groen-2;
@@ -92,11 +136,12 @@
                         text-transform: uppercase;
                         transition: background-color .25s ease;
                     }
-             
-          
-                    @include Link(hover){
+
+
+                    @include Link(hover) {
                         background-color: #fff;
-                        color: $gb__groen-2;;
+                        color: $gb__groen-2;
+                        ;
                     }
 
                 }
@@ -115,29 +160,32 @@
                 }
             }
         }
-        &--hamburger{
+
+        &--hamburger {
             display: none;
 
-            @include Responsive(1100px){
+            @include Responsive(1100px) {
                 width: 40px;
                 height: 50px;
 
-                &:hover{
+                &:hover {
                     cursor: pointer;
 
-                    svg{
-                        path{
+                    svg {
+                        path {
                             fill: red;
                         }
                     }
                 }
+
                 @include Flex(center, center);
             }
 
-            svg{
+            svg {
                 width: 30px;
                 height: 30px;
-                path{
+
+                path {
                     fill: #fff;
                     transition: all .25s ease;
                 }
@@ -304,5 +352,15 @@
                 }
             }
         }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

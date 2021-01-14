@@ -691,6 +691,53 @@ textarea {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	position: relative;
+}
+
+.header__nav ul li ul {
+	display: none;
+	opacity: 0;
+}
+
+.header__nav ul li:hover ul {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	animation: fadeIn .2s forwards;
+	top: 25px;
+	width: fit-content;
+	background-color: #43816b;
+	color: #fff;
+	padding: 1.25rem 1.75rem;
+	opacity: 1;
+}
+
+.header__nav ul li:hover ul li {
+	margin: 5px 0;
+}
+
+.header__nav ul li:hover ul li > a,
+.header__nav ul li:hover ul li > a:active,
+.header__nav ul li:hover ul li > a:visited,
+.header__nav ul li:hover ul li > a:link {
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	transition: color .25s ease;
+	background-color: transparent !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.header__nav ul li:hover ul li > a:hover,
+.header__nav ul li:hover ul li > a:active:hover,
+.header__nav ul li:hover ul li > a:visited:hover,
+.header__nav ul li:hover ul li > a:link:hover {
+	color: #cdcdcd;
 }
 
 .header__nav ul li:not(:nth-child(n+6)) {
@@ -988,6 +1035,15 @@ textarea {
 .footer__disclaimer p > a:visited:hover,
 .footer__disclaimer p > a:link:hover {
 	text-decoration: underline;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /*--------------------------------------------------------------
