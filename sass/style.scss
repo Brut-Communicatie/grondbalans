@@ -103,7 +103,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 
-
+//Home pagina
 //Intro
 
 .intro {
@@ -591,7 +591,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 	&__banner {
 		width: 100%;
-		
+
 		&--container {
 			width: 100%;
 			overflow: hidden;
@@ -617,14 +617,78 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	}
 }
 
-.page{
+.page {
 	margin: 0;
 }
 
-html{
+html {
 	margin-top: 104px;
 
-	@include Responsive(550px){
+	@include Responsive(550px) {
 		margin-top: 87px;
+	}
+}
+
+//Contact pagina
+
+.contact {
+	&__map {
+		width: 600px;
+		@include Responsive(1200px){
+			width: 100%;
+		}
+		svg {
+			width: 100%;
+			path{
+				transition: fill .4s ease;
+			}
+			a:hover{
+				path{
+					fill: #999;
+				}
+			}
+		}
+	}
+	&__intro{
+		@include Flex(space-between, flex-start);
+		width: 100%;
+		margin: 2rem 0;
+		@include Responsive(750px){
+			@include Flex(flex-start, flex-start, column);
+		}
+		&--left{
+			width: calc(100% / 2 - 5px);
+			@include Responsive(750px){
+				width: 100%;
+			}
+			h2{
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				font-size: 40px;
+				color: #3f4141;
+				line-height: 40px;
+				margin: 0 0 3rem 0;
+				@include Responsive($containerWidth){
+					font-size: clamp(3.2vw, 30px, 40px);
+					line-height: clamp(3.2vw, 30px, 40px);
+				}
+			}
+
+			h3{
+				font-weight: 700;
+				font-family: 'Montserrat',sans-serif;
+				font-size: 1.77em;
+			}
+			p{
+				@include BodyFont;
+			}
+
+		}
+		&--right{
+			width: calc(100% / 2 - 5px);
+			@include Responsive(750px){
+				width: 100%;
+			}
+		}
 	}
 }
