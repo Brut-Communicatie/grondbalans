@@ -704,35 +704,126 @@ html {
 			}
 		}
 	}
+
+
+	&__cards {
+		@include Flex(center, center);
+		width: 100%;
+
+		&--container {
+			@include Container;
+			@include Flex(flex-start, flex-start, column);
+			margin: 0 auto;
+		}
+
+		&--row {
+			@include Flex(space-between, stretch);
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+
+		&--item {
+			background: #ececec;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+			border-bottom: 3px solid #e4170e;
+			padding: 25px 12px;
+			width: calc(100% / 3 - 20px);
+
+			@include Flex(flex-start, flex-start, column);
+
+			h3 {
+				font-weight: 700;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 31px;
+				margin: 0;
+			}
+		}
+
+		&--info {
+			@include Flex(flex-start, flex-start);
+			border-bottom: 2px solid #e5e4e4;
+			width: 100%;
+			padding: 1rem 0;
+			&:last-child{
+				border-bottom: 0;
+			}
+		}
+
+		&--details {
+			@include Flex(flex-start, flex-start, column);
+
+			h4 {
+				font-weight: 700;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 18px;
+				margin: 0;
+			}
+
+			p {
+				color: red;
+				font-size: 14px;
+				font-family: 'Montserrat', sans-serif;
+				margin: 0;
+
+				&:last-of-type{
+					margin-top: 15px;
+					color: black;
+				}
+			}
+
+			@include Link{
+				font-size: 14px;
+				font-family: 'Montserrat', sans-serif;
+				color: $gb__groen-2;
+				text-decoration: none;
+
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+
+		}
+
+		&--image {
+			img {
+				border-radius: 50%;
+			}
+			margin-right: 10px;
+		}
+	}
 }
 
-.banner{
+.banner {
 	width: 100%;
 	height: 450px;
 
 	background-size: cover;
 	background-position: center center;
-	&__container{
+
+	&__container {
 		@include Container;
 		margin: 0 auto;
 		height: 100%;
 		@include Flex(flex-start, center);
 	}
-	&__block{
+
+	&__block {
 		width: 800px;
 		height: 220px;
 		display: flex;
-		background-color: rgba(229,18,17,0.7);
+		background-color: rgba(229, 18, 17, 0.7);
 		clip-path: polygon(0px 0px, 80% 0%, 70% 100%, 0% 100%);
 		padding: 1rem 2rem;
 
-		@include Responsive(700px){
+		@include Responsive(700px) {
 			clip-path: unset;
 			width: 100%;
 		}
-		&--content{
+
+		&--content {
 			@include Flex(flex-start, flex-start, column);
-			h1{
+
+			h1 {
 				color: #fff;
 				text-transform: uppercase;
 				font-weight: 700;
@@ -740,7 +831,8 @@ html {
 				font-size: 54px;
 				margin: 0;
 			}
-			p{
+
+			p {
 				font-family: 'Montserrat', sans-serif;
 				text-transform: uppercase;
 				color: #fff;

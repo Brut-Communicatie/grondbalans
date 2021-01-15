@@ -16,7 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -27,9 +28,11 @@
 
 	<header id="masthead" class="header">
 		<div class="header__container">
-			<div class="header__logo">
-				<img src="<?php echo get_template_directory_uri();?>/content/images/logo.svg" alt="Logo" />
-			</div>
+			<a href="<?php echo get_home_url();?>">
+				<div class="header__logo">
+					<img src="<?php echo get_template_directory_uri();?>/content/images/logo.svg" alt="Logo" />
+				</div>
+			</a>
 			<div class="header__nav">
 				<div class="header__nav--hamburger">
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
@@ -53,7 +56,7 @@
 					</li>
 					<li><a href="#">Werken bij</a></li>
 					<li><a href="#">Vraag en aanbod</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="/contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
