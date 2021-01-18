@@ -32,7 +32,6 @@ get_header();?>
     <div class="content__container">
 
         <?php 
-
         $args = array(
             'post_type'=> 'projecten',
             'order'    => 'ASC'
@@ -49,7 +48,11 @@ get_header();?>
             $tags = get_the_tags();
             $fields = get_fields();
             
-            var_dump($fields);
+            if ($fields['video'] !== []) {
+                $attachment = $fields['videoLink'];
+            } else {
+                $attachment = $fields['imageLink'];
+            }
 
             get_template_part('template-parts/portfolio', 'block', $args = array(
                 'heading' => $title,
@@ -57,6 +60,8 @@ get_header();?>
                 'content' =>  $content,
                 'tags' => $tags,
                 'button' => "Informatie aanvragen",
+                'video' => ($fields['video'] !== [] ? true : false),
+                'right' => $attachment,
             ));
 
             endwhile; 

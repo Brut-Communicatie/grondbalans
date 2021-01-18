@@ -251,14 +251,9 @@ function grondbalans_projecten_customfields() {
 					'yes'	=> 'Ja'
 				),
 				'layout' => 'vertical',
-				/* (bool) Whether to allow custom options to be added by the user. Default false. */
 				'allow_custom' => false,
-				/* (bool) Whether to allow custom options to be saved to the field choices. Default false. */
 				'save_custom' => false,
-				/* (bool) Adds a "Toggle all" checkbox to the list. Default false. */
 				'toggle' => false,
-				/* (string) Specify how the value is formatted when loaded. Default 'value'.
-				Choices of 'value', 'label' or 'array' */
 				'return_format' => 'value',
 			),
 			array (
@@ -266,6 +261,12 @@ function grondbalans_projecten_customfields() {
 				'label' => 'Video',
 				'name' => 'videoLink',
 				'type' => 'url',
+			),
+			array (
+				'key' => 'imageLink',
+				'label' => 'Afbeelding',
+				'name' => 'imageLink',
+				'type' => 'image',
 			),
 		),
 		'location' => array (
