@@ -27,4 +27,34 @@ get_header();?>
         </div>
     </div>
 </div>
+
+<div class="content">
+    <div class="content__container">
+
+        <?php get_template_part('template-parts/portfolio', 'block', $args = array(
+            'heading' => "5M VEENLAAG VERVANGEN; DRAAGKRACHTIGE BODEM",
+            'subheading' => "Nieuwbouwproject, Zegveld",
+            'content' => "Als specialist in grondstromen werken wij aan een goede bodem voor toekomstige generaties. Een goede bodem is belangrijk voor onze voedselproductie, ons drinkwater én om veilig & duurzaam te kunnen wonen, werken en recreëren. Ontdek hoe wij circulariteit en duurzaamheid verweven in onze werkprocessen!",
+            'tags' => array("zettingsarm maken", "afgraven", "veengrond"),
+            'button' => "Informatie aanvragen",
+        ));?>
+
+        <?php get_template_part('template-parts/portfolio', 'block', $args = array(
+            'heading' => "5M VEENLAAG VERVANGEN; DRAAGKRACHTIGE BODEM",
+            'subheading' => "Nieuwbouwproject, Zegveld",
+            'content' => "Als specialist in grondstromen werken wij aan een goede bodem voor toekomstige generaties. Een goede bodem is belangrijk voor onze voedselproductie, ons drinkwater én om veilig & duurzaam te kunnen wonen, werken en recreëren. Ontdek hoe wij circulariteit en duurzaamheid verweven in onze werkprocessen!",
+            'tags' => array("zettingsarm maken", "afgraven", "veengrond"),
+            'button' => "Informatie aanvragen",
+        ));?>
+
+        <?php get_template_part('template-parts/portfolio', 'block', $args = array(
+            'heading' => "5M VEENLAAG VERVANGEN; DRAAGKRACHTIGE BODEM",
+            'subheading' => "Nieuwbouwproject, Zegveld",
+            'content' => "Als specialist in grondstromen werken wij aan een goede bodem voor toekomstige generaties. Een goede bodem is belangrijk voor onze voedselproductie, ons drinkwater én om veilig & duurzaam te kunnen wonen, werken en recreëren. Ontdek hoe wij circulariteit en duurzaamheid verweven in onze werkprocessen!",
+            'tags' => array("zettingsarm maken", "afgraven", "veengrond"),
+            'button' => "Informatie aanvragen",
+        ));?>
+
+    </div>
+</div>
 <?php get_footer();?>
