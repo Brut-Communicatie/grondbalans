@@ -2,7 +2,7 @@
     &__block {
         width: 100%;
         margin-bottom: 3rem;
-        
+
         &--container {
             width: 100%;
             @include Flex(space-between, center);
@@ -42,7 +42,7 @@
 
             &-content {
                 text-align: left;
-
+                width: 100%;
 
                 h3 {
                     font-family: 'Montserrat', sans-serif;

@@ -2402,6 +2402,7 @@ html {
 
 .portfolio__block--left-content {
 	text-align: left;
+	width: 100%;
 }
 
 .portfolio__block--left-content h3 {

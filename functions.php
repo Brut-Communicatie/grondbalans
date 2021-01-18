@@ -178,3 +178,106 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Register a custom post type called "book".
+ *
+ * @see get_post_type_labels() for label keys.
+ */
+function grondbalans_projecten() {
+    $labels = array(
+        'name'                  => _x( 'Projecten', 'Post type general name', 'textdomain' ),
+        'singular_name'         => _x( 'Project', 'Post type singular name', 'textdomain' ),
+        'menu_name'             => _x( 'Projecten', 'Admin Menu text', 'textdomain' ),
+        'name_admin_bar'        => _x( 'Project', 'Add New on Toolbar', 'textdomain' ),
+        'add_new'               => __( 'Nieuw project toevoegen', 'textdomain' ),
+        'add_new_item'          => __( 'Nieuw project toevoegen', 'textdomain' ),
+        'new_item'              => __( 'Nieuw project toevoegen', 'textdomain' ),
+        'edit_item'             => __( 'Project bewerken', 'textdomain' ),
+        'view_item'             => __( 'Bekijk project', 'textdomain' ),
+        'all_items'             => __( 'Alle projecten', 'textdomain' ),
+        'search_items'          => __( 'Zoek projecten', 'textdomain' ),
+        'parent_item_colon'     => __( 'Parent projecten:', 'textdomain' ),
+        'not_found'             => __( 'Geen projecten gevonden', 'textdomain' ),
+		'not_found_in_trash'    => __( 'Geen projecten gevonden', 'textdomain' ),
+    );
+ 
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'project' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+		'menu_position'      => null,
+		'taxonomies' => array('post_tag'),
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+    );
+ 
+    register_post_type( 'projecten', $args );
+}
+ 
+add_action( 'init', 'grondbalans_projecten' );
+
+function grondbalans_projecten_customfields() {
+	$true_false_field = array(
+	
+		/* ... Insert generic settings here ... */
+		
+		/* (string) Text shown along side the checkbox */
+		'message' => "hoi",
+		
+	);
+
+	acf_add_local_field_group(array(
+		'key' => 'projectField',
+		'title' => 'Content',
+		'fields' => array (
+			array (
+				'key' => 'subtitle',
+				'label' => 'Subkop',
+				'name' => 'sub_title',
+				'type' => 'text',
+			),
+			array (
+				'key' => 'hasvideo',
+				'label' => 'Video toevoegen?',
+				'name' => 'video',
+				'type' => 'checkbox',	
+				'choices' => array(
+					'yes'	=> 'Ja'
+				),
+				'layout' => 'vertical',
+				/* (bool) Whether to allow custom options to be added by the user. Default false. */
+				'allow_custom' => false,
+				/* (bool) Whether to allow custom options to be saved to the field choices. Default false. */
+				'save_custom' => false,
+				/* (bool) Adds a "Toggle all" checkbox to the list. Default false. */
+				'toggle' => false,
+				/* (string) Specify how the value is formatted when loaded. Default 'value'.
+				Choices of 'value', 'label' or 'array' */
+				'return_format' => 'value',
+			),
+			array (
+				'key' => 'videoLink',
+				'label' => 'Video',
+				'name' => 'videoLink',
+				'type' => 'url',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'projecten',
+				),
+			),
+		),
+	));
+}
+
+add_action('acf/init', 'grondbalans_projecten_customfields');
