@@ -32,6 +32,7 @@ get_header();?>
     <div class="content__container">
 
         <?php 
+        
         $args = array(
             'post_type'=> 'projecten',
             'order'    => 'ASC'
