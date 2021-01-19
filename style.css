@@ -2766,6 +2766,7 @@ html {
 .content__werken--vacatures p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
+	font-size: 15px;
 }
 
 @media screen and (max-width: calc(1180px + 5px)) {
@@ -2790,6 +2791,7 @@ html {
 	font-size: 18px;
 	text-align: center;
 	margin-top: 0;
+	font-size: 15px;
 }
 
 @media screen and (max-width: calc(1180px + 5px)) {
@@ -2811,6 +2813,7 @@ html {
 	font-size: 18px;
 	line-height: 1;
 	margin: 0;
+	font-size: 15px;
 }
 
 @media screen and (max-width: calc(1180px + 5px)) {
@@ -2826,6 +2829,7 @@ html {
 	color: black;
 	margin: 0;
 	line-height: 0;
+	font-size: 15px;
 }
 
 @media screen and (max-width: calc(1180px + 5px)) {
@@ -2835,8 +2839,45 @@ html {
 }
 
 .content__werken--block {
+	margin-top: 2rem;
 	background-color: #fff;
 	padding: 45px 30px 55px;
+	border: 2px solid #5a8b7a;
+	width: 100%;
+}
+
+.content__werken--block h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+.content__werken--block p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-size: 15px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__werken--block p {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.content__werken--block p > a,
+.content__werken--block p > a:active,
+.content__werken--block p > a:visited,
+.content__werken--block p > a:link {
+	text-decoration: none;
+	color: #43816b;
+}
+
+.content__werken--block p > a:hover,
+.content__werken--block p > a:active:hover,
+.content__werken--block p > a:visited:hover,
+.content__werken--block p > a:link:hover {
+	text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

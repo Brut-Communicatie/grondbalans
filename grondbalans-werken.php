@@ -56,6 +56,19 @@ get_header();?>
                         <p>Directeur Grondbalans</p>
                     </div>
                 </div>
+                <div class="content__werken--block">
+                    <h4>Vragen over een vacature?</h4>
+                    <p>Mail naar: <br/>
+                    <a href="#">vacature@grondbalans.nl</a>
+                    <br/>
+                    of bel Wendy Stoldijk op <br/>
+                    030-2372300 of 06-45222774</p>
+                    <div class="content__werken--socials">
+                    <a href="#">F</a>
+                    <a href="#">F</a>
+                    <a href="#">F</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

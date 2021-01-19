@@ -13,7 +13,7 @@ get_header();?>
                 ONZE SCHOUDERS<br/>
                 ERONDER
             </h3>
-            <a href="#">Bekijk onze producten</a>
+            <a href="/projecten">Bekijk onze projecten</a>
         </div>
     </div>
 </div>
