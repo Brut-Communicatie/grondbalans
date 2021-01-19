@@ -2614,7 +2614,7 @@ html {
 }
 
 .content__werken--left {
-	width: 75%;
+	width: 65%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -2675,8 +2675,59 @@ html {
 	}
 }
 
+.content__werken--left h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	line-height: 60px;
+	margin: 0;
+	font-weight: 700;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__werken--left h3 {
+		font-size: clamp(4.5vw, 25px, 30px);
+		line-height: clamp(4.5vw, 25px, 30px);
+	}
+}
+
+.content__werken--left--cta {
+	background: #ececec;
+	border-left: 5px solid #5a8b7a;
+	box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.05);
+	font-size: .8em;
+	padding: 45px;
+	margin: 2rem 0;
+}
+
+.content__werken--left--cta h3 {
+	margin: 0;
+}
+
+.content__werken--left--cta p {
+	font-size: 14px;
+	margin: 0;
+	font-style: italic;
+}
+
+.content__werken--left--cta p > a,
+.content__werken--left--cta p > a:active,
+.content__werken--left--cta p > a:visited,
+.content__werken--left--cta p > a:link {
+	color: #43816b;
+	text-decoration: none;
+}
+
+.content__werken--left--cta p > a:hover,
+.content__werken--left--cta p > a:active:hover,
+.content__werken--left--cta p > a:visited:hover,
+.content__werken--left--cta p > a:link:hover {
+	text-decoration: underline;
+}
+
 .content__werken--right {
-	width: 25%;
+	width: 30%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -2687,6 +2738,105 @@ html {
 	.content__werken--right {
 		width: 100%;
 	}
+}
+
+.content__werken--vacatures {
+	background-color: #ececec;
+	padding: 45px 30px 55px;
+	width: 100%;
+}
+
+.content__werken--vacatures h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	line-height: 20px;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 700;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__werken--vacatures h3 {
+		font-size: clamp(4.5vw, 25px, 30px);
+		line-height: clamp(4.5vw, 25px, 30px);
+	}
+}
+
+.content__werken--vacatures p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__werken--vacatures p {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.content__werken--quote {
+	margin-top: 2rem;
+	background-color: #fff;
+	padding: 45px 30px 55px;
+	border: 2px solid #ececec;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.content__werken--quote p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 0;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__werken--quote p {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.content__werken--quote p:first-child {
+	font-size: 64px;
+	font-weight: 700;
+	color: #b5b2b1;
+	padding: 0;
+	margin: 0;
+}
+
+.content__werken--quote-bio p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1;
+	margin: 0;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__werken--quote-bio p {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.content__werken--quote-bio strong {
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: black;
+	margin: 0;
+	line-height: 0;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__werken--quote-bio strong {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.content__werken--block {
+	background-color: #fff;
+	padding: 45px 30px 55px;
 }
 
 /*# sourceMappingURL=style.css.map */
