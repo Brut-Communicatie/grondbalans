@@ -867,11 +867,11 @@ html {
 
 	&__block {
 		width: 800px;
-		height: 220px;
+		// height: 220px;
 		display: flex;
 		background-color: rgba(229, 18, 17, 0.7);
 		clip-path: polygon(0px 0px, 80% 0%, 70% 100%, 0% 100%);
-		padding: 1rem 2rem;
+		padding: 1rem 2rem 2rem 2rem;
 
 		@include Responsive(700px) {
 			clip-path: unset;
@@ -899,7 +899,7 @@ html {
 			}
 
 			@include Link {
-				margin-top: auto;
+				margin-top: 4rem;
 				@include Button;
 			}
 		}

@@ -47,7 +47,7 @@
 						<li><a href="#">Baggerbalans</a></li>
 					</ul>
 				</li>
-					<li><a href="#">Projecten</a></li>
+					<li><a href="/projecten">Projecten</a></li>
 					<li><a href="/dit-zijn-wij">Dit zijn wij</a>
 					<ul>
 						<li><a href="/dit-zijn-wij">Dit is Grondbalans</a></li>

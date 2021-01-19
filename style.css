@@ -1742,7 +1742,7 @@ textarea {
 	text-decoration: none;
 	transition: all .25s ease;
 	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 1px;
@@ -2346,11 +2346,10 @@ html {
 
 .banner__block {
 	width: 800px;
-	height: 220px;
 	display: flex;
 	background-color: rgba(229, 18, 17, 0.7);
 	clip-path: polygon(0px 0px, 80% 0%, 70% 100%, 0% 100%);
-	padding: 1rem 2rem;
+	padding: 1rem 2rem 2rem 2rem;
 }
 
 @media screen and (max-width: calc(700px + 5px)) {
@@ -2388,7 +2387,7 @@ html {
 .banner__block--content > a:active,
 .banner__block--content > a:visited,
 .banner__block--content > a:link {
-	margin-top: auto;
+	margin-top: 4rem;
 	display: flex;
 	padding: 15px 35px 15px 30px;
 	width: fit-content;
