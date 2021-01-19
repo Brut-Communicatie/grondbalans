@@ -2045,6 +2045,27 @@ html {
 	}
 }
 
+.contact__form {
+	margin-top: 5rem;
+	height: 60rem;
+	width: 100%;
+	padding: 4rem 0;
+	background-size: cover;
+}
+
+.contact__form--container {
+	width: 1180px;
+	margin: 0 auto;
+	height: 100%;
+	background: rgba(229, 18, 17, 0.8);
+}
+
+@media screen and (max-width: 1180px) {
+	.contact__form--container {
+		width: calc(100% - 2rem);
+	}
+}
+
 .contact__map {
 	width: 600px;
 }
@@ -2167,16 +2188,42 @@ html {
 	margin-bottom: 2rem;
 }
 
+@media screen and (max-width: calc(1180px + 5px)) {
+	.contact__cards--row {
+		flex-wrap: wrap;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: calc(720px + 5px)) {
+	.contact__cards--row {
+		margin-bottom: 0;
+	}
+}
+
 .contact__cards--item {
 	background: #ececec;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 	border-bottom: 3px solid #e4170e;
 	padding: 25px 12px;
-	width: calc(100% / 3 - 20px);
+	width: calc(100% / 3 - 15px);
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: column;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.contact__cards--item {
+		width: calc(100% / 2 - 15px);
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: calc(720px + 5px)) {
+	.contact__cards--item {
+		width: 100%;
+	}
 }
 
 .contact__cards--item h3 {
@@ -2184,6 +2231,13 @@ html {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 31px;
 	margin: 0;
+}
+
+.contact__cards--grondbank {
+	background: rgba(52, 148, 114, 0.14);
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom: 2px solid #3c7460 !important;
 }
 
 .contact__cards--info {
@@ -2225,6 +2279,14 @@ html {
 	color: black;
 }
 
+.contact__cards--details h5 {
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	margin-top: 15px;
+	margin-bottom: -15px;
+}
+
 .contact__cards--details > a,
 .contact__cards--details > a:active,
 .contact__cards--details > a:visited,
@@ -2242,12 +2304,22 @@ html {
 	text-decoration: underline;
 }
 
+.contact__cards--details > a:nth-of-type(2),
+.contact__cards--details > a:active:nth-of-type(2),
+.contact__cards--details > a:visited:nth-of-type(2),
+.contact__cards--details > a:link:nth-of-type(2) {
+	margin-top: 20px;
+}
+
 .contact__cards--image {
+	min-width: 25px;
 	margin-right: 10px;
+	margin-left: 5px;
 }
 
 .contact__cards--image img {
 	border-radius: 50%;
+	min-width: 25px;
 }
 
 .banner {
