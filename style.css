@@ -1742,7 +1742,7 @@ textarea {
 	text-decoration: none;
 	transition: all .25s ease;
 	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 1px;
@@ -1852,13 +1852,13 @@ textarea {
 	}
 }
 
-.content__block--left, .content__block--right {
+.content__block--left, .content__block--right, .portfolio__block--left {
 	width: calc(100% / 2 - 8px);
 	display: flex;
 }
 
 @media screen and (max-width: calc(870px + 5px)) {
-	.content__block--left, .content__block--right {
+	.content__block--left, .content__block--right, .portfolio__block--left {
 		width: 100%;
 	}
 }
@@ -2418,6 +2418,183 @@ html {
 	.banner__block--content > a:link {
 		width: 100%;
 		font-size: 15px;
+	}
+}
+
+.portfolio__block {
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+.portfolio__block--container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width: calc(870px + 5px)) {
+	.portfolio__block--container {
+		flex-direction: column;
+		padding: 1rem;
+		background-color: #ececec;
+	}
+}
+
+.portfolio__block--right {
+	width: calc(100% / 2 - 8px);
+	display: flex;
+}
+
+@media screen and (max-width: calc(870px + 5px)) {
+	.portfolio__block--right {
+		width: 100%;
+		order: 1;
+	}
+}
+
+.portfolio__block--left {
+	position: relative;
+	background: #ececec;
+	width: 45%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 2rem 4rem 2rem;
+}
+
+@media screen and (max-width: calc(870px + 5px)) {
+	.portfolio__block--left {
+		padding: 0;
+		width: 100%;
+		margin-top: 1rem;
+		order: 2;
+	}
+}
+
+.portfolio__block--left-content {
+	text-align: left;
+	width: 100%;
+}
+
+.portfolio__block--left-content h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 28px;
+	color: black;
+	margin: 0;
+	line-height: 28px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.portfolio__block--left-content h3 {
+		font-size: clamp(2vw, 20px, 28px);
+		line-height: clamp(2vw, 20px, 28px);
+	}
+}
+
+.portfolio__block--left-content h4 {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0.5rem 0 0rem 0;
+	font-size: 23px;
+	font-weight: 800;
+	color: #e4170e;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.portfolio__block--left-content h4 {
+		font-size: clamp(2vw, 20px, 23px);
+		line-height: clamp(2vw, 20px, 23px);
+	}
+}
+
+.portfolio__block--left-content ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.portfolio__block--left-content ul li {
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	font-size: 16px;
+	color: #757575;
+}
+
+.portfolio__block--left-content ul li:not(:first-child):before {
+	content: "\00a0 | ";
+}
+
+.portfolio__block--left-content p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-size: 15px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.portfolio__block--left-content p {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.portfolio__block--left-content > a,
+.portfolio__block--left-content > a:active,
+.portfolio__block--left-content > a:visited,
+.portfolio__block--left-content > a:link {
+	margin-top: 2rem;
+	display: flex;
+	padding: 15px 35px 15px 30px;
+	width: fit-content;
+	box-sizing: border-box;
+	font-size: 18px;
+	background-color: #43816b;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	transition: background-color .25s ease;
+	font-size: 16px;
+}
+
+.portfolio__block--left-content > a:hover,
+.portfolio__block--left-content > a:active:hover,
+.portfolio__block--left-content > a:visited:hover,
+.portfolio__block--left-content > a:link:hover {
+	background-color: #4c9279;
+}
+
+@media screen and (max-width: calc(600px + 5px)) {
+	.portfolio__block--left-content > a,
+	.portfolio__block--left-content > a:active,
+	.portfolio__block--left-content > a:visited,
+	.portfolio__block--left-content > a:link {
+		width: 100%;
+		font-size: 15px;
+	}
+}
+
+.portfolio__block--left:before {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: -100px;
+	z-index: -1;
+	background: #ececec;
+	transform-origin: bottom left;
+	-ms-transform: skew(-13deg, 0deg);
+	-webkit-transform: skew(-13deg, 0deg);
+	transform: skew(-13deg, 0deg);
+}
+
+@media screen and (max-width: calc(870px + 5px)) {
+	.portfolio__block--left:before {
+		display: none;
 	}
 }
 
