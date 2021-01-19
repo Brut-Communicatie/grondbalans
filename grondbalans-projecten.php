@@ -7,7 +7,7 @@ get_header();?>
         'heading' => "Onze projecten",
         'content' => "Alles tot in de puntjes geregeld",
         'button' => "Neem contact met ons op",
-        'link' => "/contact",
+        'link' => "/contact#contact",
     );
     get_template_part( 'template-parts/banner', 'general', $args );
 ?>

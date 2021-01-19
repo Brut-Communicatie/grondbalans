@@ -887,6 +887,7 @@ html {
 				font-family: 'Montserrat', sans-serif;
 				font-size: 54px;
 				margin: 0;
+				line-height: normal;
 			}
 
 			p {
@@ -898,7 +899,7 @@ html {
 			}
 
 			@include Link {
-				margin-top: 4rem;
+				margin-top: 2rem;
 				@include Button;
 			}
 		}
@@ -906,209 +907,13 @@ html {
 }
 
 @import 'portfolio';
+@import 'werken';
 
-.content {
-	&__werken {
-		&--container {
-			@include Flex(space-between, flex-start);
-			margin-top: 4rem;
+.expertise{
+	&__container{
+		@include Container;
+		margin: 0 auto;
+		@include Flex(flex-start, flex-start, column);
 
-			@include Responsive($containerWidth) {
-				@include Flex(flex-start, flex-start, column);
-			}
-		}
-
-		&--left {
-			width: 65%;
-
-			@include Flex(flex-start, flex-start, column);
-
-			@include Responsive($containerWidth) {
-				width: 100%;
-			}
-
-			h1 {
-				font-family: 'Montserrat', sans-serif;
-				font-size: 40px;
-				text-transform: uppercase;
-				line-height: 60px;
-				margin: 0;
-				font-weight: 700;
-
-				@include Responsive($containerWidth) {
-					font-size: clamp(4.5vw, 30px, 40px);
-					line-height: clamp(4.5vw, 30px, 40px);
-				}
-			}
-
-			h2 {
-				font-family: 'Montserrat', sans-serif;
-				font-size: 30px;
-				color: $gb__rood;
-				margin: 0;
-				font-weight: 700;
-
-				@include Responsive($containerWidth) {
-					font-size: clamp(2vw, 20px, 30px);
-					line-height: clamp(2vw, 20px, 30px);
-				}
-			}
-
-			p {
-				@include BodyFont;
-
-				@include Responsive(980px) {
-					margin: 0;
-				}
-			}
-
-			h3 {
-				font-family: 'Montserrat', sans-serif;
-				font-size: 30px;
-				text-transform: uppercase;
-				line-height: 60px;
-				margin: 0;
-				font-weight: 700;
-				margin-top: 2rem;
-
-				@include Responsive($containerWidth) {
-					font-size: clamp(4.5vw, 25px, 30px);
-					line-height: clamp(4.5vw, 25px, 30px);
-				}
-			}
-
-			&--cta {
-				background: #ececec;
-				border-left: 5px solid #5a8b7a;
-				box-shadow: 0 3px 2px 0 rgba(0, 0, 0, .05);
-				font-size: .8em;
-				padding: 45px;
-
-				margin: 2rem 0;
-
-				h3 {
-					margin: 0;
-				}
-
-				p {
-					font-size: 14px;
-					margin: 0;
-					font-style: italic;
-
-					@include Link {
-						color: $gb__groen-2;
-						text-decoration: none;
-
-						&:hover {
-							text-decoration: underline;
-						}
-					}
-				}
-			}
-		}
-
-		&--right {
-			width: 30%;
-
-			@include Flex(flex-start, flex-start, column);
-
-			@include Responsive($containerWidth) {
-				width: 100%;
-			}
-
-
-		}
-
-		&--vacatures {
-			background-color: #ececec;
-			padding: 45px 30px 55px;
-			width: 100%;
-
-			h3 {
-				font-family: 'Montserrat', sans-serif;
-				font-size: 30px;
-				line-height: 20px;
-				text-transform: uppercase;
-				margin: 0;
-				font-weight: 700;
-				margin-top: 2rem;
-
-				@include Responsive($containerWidth) {
-					font-size: clamp(4.5vw, 25px, 30px);
-					line-height: clamp(4.5vw, 25px, 30px);
-				}
-			}
-
-			p {
-				@include BodyFont;
-				font-size: 15px;
-			}
-		}
-
-		&--quote {
-			margin-top: 2rem;
-			background-color: #fff;
-			padding: 45px 30px 55px;
-			border: 2px solid #ececec;
-			@include Flex(flex-start, center, column);
-			p {
-				@include BodyFont;
-				text-align: center;
-				margin-top: 0;
-				font-size: 15px;
-
-				&:first-child() {
-					font-size: 64px;
-					font-weight: 700;
-					color: #b5b2b1;
-					padding: 0;
-					margin: 0;
-				}
-			}
-			&-bio{
-				p{
-					@include BodyFont;
-					line-height: 1;
-					margin: 0;
-					font-size: 15px;
-				}
-				strong{
-					font-weight: 600;
-					@include BodyFont;
-					color: black;
-					margin: 0;
-					line-height: 0;
-					font-size: 15px;
-				}
-			}
-		}
-		&--block{
-			margin-top: 2rem;
-			background-color: #fff;
-			padding: 45px 30px 55px;
-			border: 2px solid #5a8b7a;
-			width: 100%;
-
-			h4{
-				font-family: 'Montserrat', sans-serif;
-				font-size: 15px;
-				font-weight: 200;
-				text-transform: uppercase;
-			}
-
-			p{
-				@include BodyFont;
-				font-size: 15px;
-
-				@include Link{
-					text-decoration: none;
-					color: $gb__groen-2;
-
-					&:hover{
-						text-decoration: underline;
-					}
-				}
-			}
-		}
 	}
 }

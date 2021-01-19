@@ -8,7 +8,7 @@ get_header();?>
         'heading' => "Dit zijn wij",
         'content' => "Wij staan met beide benen op de grond",
         'button' => "Neem contact met ons op",
-        'link' => "/contact",
+        'link' => "/contact#contact",
     );
     get_template_part( 'template-parts/banner', 'general', $args );
 ?>

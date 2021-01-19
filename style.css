@@ -2373,6 +2373,7 @@ html {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 54px;
 	margin: 0;
+	line-height: normal;
 }
 
 .banner__block--content p {
@@ -2387,7 +2388,7 @@ html {
 .banner__block--content > a:active,
 .banner__block--content > a:visited,
 .banner__block--content > a:link {
-	margin-top: 4rem;
+	margin-top: 2rem;
 	display: flex;
 	padding: 15px 35px 15px 30px;
 	width: fit-content;
@@ -2878,6 +2879,21 @@ html {
 .content__werken--block p > a:visited:hover,
 .content__werken--block p > a:link:hover {
 	text-decoration: underline;
+}
+
+.expertise__container {
+	width: 1180px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 1180px) {
+	.expertise__container {
+		width: calc(100% - 2rem);
+	}
 }
 
 /*# sourceMappingURL=style.css.map */
