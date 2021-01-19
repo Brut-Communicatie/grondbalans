@@ -907,3 +907,77 @@ html {
 }
 
 @import 'portfolio';
+
+
+
+.content{
+	&__werken{
+		&--container{
+			@include Flex(space-between, flex-start);
+			margin-top: 4rem;
+			
+			@include Responsive($containerWidth){
+				@include Flex(flex-start, flex-start, column);
+			}
+		}
+		&--left{
+			width: 75%;
+
+			@include Flex(flex-start, flex-start, column);
+
+			@include Responsive($containerWidth){
+				width: 100%;
+			}
+
+			h1 {
+				font-family: 'Montserrat', sans-serif;
+				font-size: 40px;
+				text-transform: uppercase;
+				line-height: 60px;
+				margin: 0;
+				font-weight: 700;
+				// margin-bottom: 2rem;
+	
+				@include Responsive($containerWidth) {
+					font-size: clamp(4.5vw, 30px, 40px);
+					line-height: clamp(4.5vw, 30px, 40px);
+				}
+			}
+	
+			h2 {
+				font-family: 'Montserrat', sans-serif;
+				font-size: 30px;
+				color: $gb__rood;
+				margin: 0;
+				font-weight: 700;
+				// margin-bottom: 2rem;
+	
+				@include Responsive($containerWidth) {
+					font-size: clamp(2vw, 20px, 30px);
+					line-height: clamp(2vw, 20px, 30px);
+				}
+			}
+	
+			p {
+	
+				@include BodyFont;
+	
+				@include Responsive(980px) {
+					margin: 0;
+				}
+			}
+		}
+
+		&--right{
+			width: 25%;
+
+			@include Flex(flex-start, flex-start, column);
+
+			@include Responsive($containerWidth){
+				width: 100%;
+			}
+
+		
+		}
+	}
+}
