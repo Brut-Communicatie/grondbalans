@@ -1852,13 +1852,13 @@ textarea {
 	}
 }
 
-.content__block--left, .content__block--right, .portfolio__block--left {
+.content__block--left, .content__block--right, .portfolio__block--left, .portfolio__block--left-two {
 	width: calc(100% / 2 - 8px);
 	display: flex;
 }
 
 @media screen and (max-width: calc(870px + 5px)) {
-	.content__block--left, .content__block--right, .portfolio__block--left {
+	.content__block--left, .content__block--right, .portfolio__block--left, .portfolio__block--left-two {
 		width: 100%;
 	}
 }
@@ -2051,6 +2051,7 @@ html {
 	width: 100%;
 	padding: 4rem 0;
 	background-size: cover;
+	scroll-margin-top: 7rem;
 }
 
 .contact__form--container {
@@ -2207,6 +2208,7 @@ html {
 	border-bottom: 3px solid #e4170e;
 	padding: 25px 12px;
 	width: calc(100% / 3 - 15px);
+	scroll-margin-top: 7rem;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -2424,6 +2426,7 @@ html {
 .portfolio__block {
 	width: 100%;
 	margin-bottom: 3rem;
+	scroll-margin-top: 7rem;
 }
 
 .portfolio__block--container {
@@ -2441,6 +2444,59 @@ html {
 	}
 }
 
+.portfolio__block--buttons {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 2rem;
+}
+
+.portfolio__block--buttons > a,
+.portfolio__block--buttons > a:active,
+.portfolio__block--buttons > a:visited,
+.portfolio__block--buttons > a:link {
+	display: flex;
+	padding: 15px 35px 15px 30px;
+	width: fit-content;
+	box-sizing: border-box;
+	font-size: 18px;
+	background-color: #43816b;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	transition: background-color .25s ease;
+	font-size: 16px;
+}
+
+.portfolio__block--buttons > a:hover,
+.portfolio__block--buttons > a:active:hover,
+.portfolio__block--buttons > a:visited:hover,
+.portfolio__block--buttons > a:link:hover {
+	background-color: #4c9279;
+}
+
+@media screen and (max-width: calc(600px + 5px)) {
+	.portfolio__block--buttons > a,
+	.portfolio__block--buttons > a:active,
+	.portfolio__block--buttons > a:visited,
+	.portfolio__block--buttons > a:link {
+		width: 100%;
+		font-size: 15px;
+	}
+}
+
+.portfolio__block--buttons > a:first-child,
+.portfolio__block--buttons > a:active:first-child,
+.portfolio__block--buttons > a:visited:first-child,
+.portfolio__block--buttons > a:link:first-child {
+	clip-path: unset;
+	background-color: #e4170e;
+	margin-right: 10px;
+}
+
 .portfolio__block--right {
 	width: calc(100% / 2 - 8px);
 	display: flex;
@@ -2453,7 +2509,7 @@ html {
 	}
 }
 
-.portfolio__block--left {
+.portfolio__block--left, .portfolio__block--left-two {
 	position: relative;
 	background: #ececec;
 	width: 45%;
@@ -2464,7 +2520,7 @@ html {
 }
 
 @media screen and (max-width: calc(870px + 5px)) {
-	.portfolio__block--left {
+	.portfolio__block--left, .portfolio__block--left-two {
 		padding: 0;
 		width: 100%;
 		margin-top: 1rem;
@@ -2475,6 +2531,14 @@ html {
 .portfolio__block--left-content {
 	text-align: left;
 	width: 100%;
+}
+
+.portfolio__block--left-content svg {
+	width: 70px;
+}
+
+.portfolio__block--left-content svg path {
+	fill: #e4170e;
 }
 
 .portfolio__block--left-content h3 {
@@ -2576,7 +2640,7 @@ html {
 	}
 }
 
-.portfolio__block--left:before {
+.portfolio__block--left:before, .portfolio__block--left-two:before {
 	content: " ";
 	position: absolute;
 	display: block;
@@ -2593,7 +2657,29 @@ html {
 }
 
 @media screen and (max-width: calc(870px + 5px)) {
-	.portfolio__block--left:before {
+	.portfolio__block--left:before, .portfolio__block--left-two:before {
+		display: none;
+	}
+}
+
+.portfolio__block--left-two:before {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100px;
+	z-index: -1;
+	background: #ececec;
+	transform-origin: bottom left;
+	-ms-transform: skew(13deg, 0deg);
+	-webkit-transform: skew(13deg, 0deg);
+	transform: skew(13deg, 0deg);
+}
+
+@media screen and (max-width: calc(870px + 5px)) {
+	.portfolio__block--left-two:before {
 		display: none;
 	}
 }
@@ -2893,6 +2979,19 @@ html {
 @media screen and (max-width: 1180px) {
 	.expertise__container {
 		width: calc(100% - 2rem);
+	}
+}
+
+body {
+	background-image: url("content/images/bg.png");
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@media screen and (max-width: calc(1200px + 5px)) {
+	body {
+		background-image: unset;
 	}
 }
 

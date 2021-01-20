@@ -2,7 +2,7 @@
     &__block {
         width: 100%;
         margin-bottom: 3rem;
-
+        scroll-margin-top: 7rem;
         &--container {
             width: 100%;
             @include Flex(space-between, center);
@@ -13,7 +13,20 @@
                 background-color: #ececec;
             }
         }
+        &--buttons{
+            @include Flex(flex-start, flex-start);
+            margin-top: 2rem;
+            @include Link{
+                @include Button;
+                font-size: 16px;
 
+                &:first-child{
+                  clip-path: unset;
+                  background-color: $gb__rood;
+                  margin-right: 10px;
+                }
+            }
+        }
         &--right {
             width: calc(100% / 2 - 8px);
 
@@ -43,6 +56,13 @@
             &-content {
                 text-align: left;
                 width: 100%;
+
+                svg{
+                    width: 70px;
+                    path {
+                    fill: $gb__rood;
+                    }
+                }
 
                 h3 {
                     font-family: 'Montserrat', sans-serif;
@@ -122,6 +142,29 @@
                     display: none;
                 }
             }
+        }
+        &--left-two{
+            @extend .portfolio__block--left;
+            &:before {
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: -100px;
+                z-index: -1;
+                background: #ececec;
+                transform-origin: bottom left;
+                -ms-transform: skew(13deg, 0deg);
+                -webkit-transform: skew(13deg, 0deg);
+                transform: skew(13deg, 0deg);
+
+                @include Responsive(870px) {
+                    display: none;
+                }
+            }
+
         }
     }
 }

@@ -638,7 +638,7 @@ html {
 		width: 100%;
 		padding: 4rem 0;
 		background-size: cover;
-
+		scroll-margin-top: 7rem;
 		&--container {
 			@include Container;
 			margin: 0 auto;
@@ -752,7 +752,7 @@ html {
 			border-bottom: 3px solid #e4170e;
 			padding: 25px 12px;
 			width: calc(100% / 3 - 15px);
-
+			scroll-margin-top: 7rem;
 			@include Flex(flex-start, flex-start, column);
 
 			@include Responsive($containerWidth) {
@@ -915,5 +915,16 @@ html {
 		margin: 0 auto;
 		@include Flex(flex-start, flex-start, column);
 
+	}
+}
+
+body{
+	background-image: url("content/images/bg.png");
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	@include Responsive(1200px){
+		background-image: unset;
 	}
 }
