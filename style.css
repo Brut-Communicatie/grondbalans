@@ -756,7 +756,7 @@ textarea {
 .header__nav ul li:nth-child(5) > a:link {
 	background-color: #e4170e;
 	padding: 5px 10px 5px 10px;
-	transition: all .25s ease;
+	transition: background-color .25s ease;
 }
 
 .header__nav ul li:nth-child(5) > a:hover {

@@ -23,7 +23,7 @@ $link = substr(strstr($ref, '='), strlen('='));
                 <p>
                     <?php echo $args['content'];?>
                 </p>
-                <a href="/contact/#contact">
+                <a href="<?php echo get_site_url();?>/contact/#contact">
                     <?php echo $args['button'];?>
                 </a>
             </div>

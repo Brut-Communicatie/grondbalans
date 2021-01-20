@@ -3,12 +3,13 @@
 get_header();?>
 
 <?php
+    $siteUrl = get_site_url();
     $args = array(
         'background' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-4eGHX1Ws/w:auto/h:auto/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/20191029_082019-scaled.jpg",
         'heading' => "ONZE EXPERTISES",
         'content' => "WIJ DOORGRONDEN ELKE VRAAG",
         'button' => "Neem contact met ons op",
-        'link' => "/contact#contact",
+        'link' => $siteUrl . "/contact#contact",
     );
     get_template_part( 'template-parts/banner', 'general', $args );
 ?>

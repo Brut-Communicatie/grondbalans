@@ -2,12 +2,13 @@
 // Template name: Projecten
 get_header();?>
 <?php
+    $siteUrl = get_site_url();
     $args = array(
         'background' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-iR_U6iTU/w:auto/h:auto/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/IMG_0354-004-scaled.jpg",
         'heading' => "Onze projecten",
         'content' => "Alles tot in de puntjes geregeld",
         'button' => "Neem contact met ons op",
-        'link' => "/contact#contact",
+        'link' => $siteUrl . "/contact#contact",
     );
     get_template_part( 'template-parts/banner', 'general', $args );
 ?>

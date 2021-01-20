@@ -13,7 +13,7 @@ get_header();?>
                 ONZE SCHOUDERS<br/>
                 ERONDER
             </h3>
-            <a href="/projecten">Bekijk onze projecten</a>
+            <a href="<?php echo get_site_url();?>/projecten">Bekijk onze projecten</a>
         </div>
     </div>
 </div>
@@ -39,24 +39,24 @@ get_header();?>
 
             <div class="content__projecten">
                 <div class="content__projecten--container">
-                    <a href="#" class="content__projecten--item">
-                        <img src="https://images.unsplash.com/photo-1610589510519-abd01ebed463?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1391&q=80" alt="hoi" />
+                    <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
+                        <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-Iv16d7Yd/w:1280/h:720/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/Amstelveenlijn-6.jpg" alt="Project afbeelding" />
                     </a>
 
-                    <a href="#" class="content__projecten--item">
-                    <img src="https://images.unsplash.com/photo-1610492273249-6406a1154eae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"  alt="hoi" />
+                    <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
+                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-kL-icow9/w:2000/h:1334/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/DJI_0474-scaled.jpg"  alt="Project afbeelding" />
                     </a>
 
-                    <a href="#" class="content__projecten--item">
-                    <img src="https://images.unsplash.com/photo-1610550780559-8818acbded68?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=657&q=80" alt="hoi" />
+                    <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
+                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-ui3BS7bP/w:2000/h:1500/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/IMG_4355-005-1-scaled.jpg" alt="Project afbeelding" />
                     </a>
 
-                    <a href="#" class="content__projecten--item">
-                    <img src="https://images.unsplash.com/photo-1610473068893-7a63129207d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="hoi" />
+                    <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
+                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-CzLrXqQO/w:1768/h:1126/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/Landverbetering-Haarlemmermeer.jpg" alt="Project afbeelding" />
                     </a>
                 </div>
             </div>
-            <a href="#">Bekijk onze projecten</a>
+            <a href="<?php echo get_site_url();?>/projecten">Bekijk onze projecten</a>
         </section>
 
         <section class="content__section">

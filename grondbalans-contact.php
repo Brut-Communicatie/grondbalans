@@ -9,7 +9,7 @@ get_header();?>
         'heading' => "Contact",
         'content' => "Kennismaken?",
         'button' => "Neem contact met ons op",
-        'link' => get_permalink('contact'),
+        'link' => "#contact",
     );
     get_template_part( 'template-parts/banner', 'general', $args );
 ?>
@@ -76,7 +76,7 @@ get_header();?>
                 </div>
             </div>
 
-            <div class="contact__cards--item">
+            <div class="contact__cards--item" id="zuid">
                 <h3>Regio zuid</h3>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
@@ -111,7 +111,7 @@ get_header();?>
                 </div>
             </div>
 
-            <div class="contact__cards--item">
+            <div class="contact__cards--item" id="zuidwest">
                 <h3>Regio Zuidwest</h3>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
@@ -148,7 +148,7 @@ get_header();?>
         </div>
 
         <div class="contact__cards--row">
-            <div class="contact__cards--item">
+            <div class="contact__cards--item" id="west">
                 <h3>Regio West</h3>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
@@ -212,7 +212,7 @@ get_header();?>
                     );?>
                 </div>
             </div>
-            <div class="contact__cards--item">
+            <div class="contact__cards--item" id="noordwest">
                 <h3>Regio Noordwest</h3>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
@@ -256,7 +256,7 @@ get_header();?>
                     );?>
                 </div>
             </div>
-            <div class="contact__cards--item">
+            <div class="contact__cards--item" id="middenoost">
                 <h3>Regio Middenoost</h3>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
@@ -312,7 +312,7 @@ get_header();?>
             </div>
         </div>
         <div class="contact__cards--row">
-            <div class="contact__cards--item">
+            <div class="contact__cards--item" id="noordoost">
                 <h3>Regio Noordoost</h3>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
@@ -356,7 +356,7 @@ get_header();?>
                     );?>
                 </div>
             </div>
-            <div class="contact__cards--item">
+            <div class="contact__cards--item" id="noord">
                 <h3>Regio Noord</h3>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
