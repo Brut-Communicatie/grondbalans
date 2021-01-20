@@ -2984,7 +2984,7 @@ html {
 
 body {
 	background-image: url("content/images/bg.png");
-	background-position: bottom right;
+	background-position: right -350px bottom;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }

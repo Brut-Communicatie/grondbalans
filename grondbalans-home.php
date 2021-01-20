@@ -110,7 +110,7 @@ get_header();?>
 
     <div class="content__container">
             <section class="content__section--last">
-                <a href="#">Neem contact met ons op</a>
+                <a href="<?php echo get_site_url();?>/contact">Neem contact met ons op</a>
                 <div class="content__line"></div>
             </section>
     </div>

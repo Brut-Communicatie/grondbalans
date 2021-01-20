@@ -2,7 +2,7 @@
 
 <div class="content__expertises">
     <div class="content__expertises--container">
-        <a href="#" class="content__expertises--item">
+        <a href="<?php echo get_site_url();?>/expertises#grondstromen" class="content__expertises--item">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
             <style type="text/css">
@@ -44,7 +44,7 @@
             <p>Grondstromen</p>
         </a>
 
-        <a href="#" class="content__expertises--item">
+        <a href="<?php echo get_site_url();?>/expertises#projectrealisatie" class="content__expertises--item">
 
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
@@ -65,7 +65,7 @@
             <p>Projectrealisatie</p>
         </a>
 
-        <a href="#" class="content__expertises--item">
+        <a href="<?php echo get_site_url();?>/expertises#vraagenaanbod" class="content__expertises--item">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
             <style type="text/css">
@@ -91,7 +91,7 @@
             <p>Vraag en aanbod</p>
         </a>
 
-        <a href="#" class="content__expertises--item">
+        <a href="<?php echo get_site_url();?>/expertises#grondbanken" class="content__expertises--item">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
         <style type="text/css">

@@ -14,7 +14,7 @@
                     <?php echo $args['content'];?>
                 </p>
                 <div class="portfolio__block--buttons">
-                <a href="/contact/#contact">
+                <a href="<?php echo $args['link'];?>">
                     <?php echo $args['button'];?>
                 </a>
                 <a href="/contact/#contact">

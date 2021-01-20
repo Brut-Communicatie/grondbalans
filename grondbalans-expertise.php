@@ -102,6 +102,7 @@ Wij beschikken over alle expertises die hiervoor nodig zijn:</p>
         'heading' => "VRAAG EN AANBOD",
         'content' => "Sinds onze oprichting in 1997 bemiddelen wij tussen vraag en aanbod van grond en baggerspecie. Onze kennisintensieve netwerkorganisatie met vele partners maakt ons uniek. Hierdoor komen we met slimme oplossingen en kunnen we grond tegen een gunstig tarief leveren en afvoeren. Altijd op het gewenste moment en volgens afspraak.",
         'button' => "Plaats aanvraag",
+        'link' => $siteUrl . "/vraagenaanbod",
         'right' => array('url' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-i7qq9JuJ/w:575/h:350/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/04/Grondbalans-vraag-aanbod-grond-en-baggerspecie.jpg"),
         'image' => '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
@@ -131,6 +132,7 @@ Wij beschikken over alle expertises die hiervoor nodig zijn:</p>
         'heading' => "GRONDBANKEN",
         'content' => "Vrijgekomen partijen grond proberen wij direct te hergebruiken. Helaas kan dit niet altijd. Doordat we beschikken over een landelijk netwerk van grondbanken kunnen we altijd alle grond innemen (ook met spoed). Indien nodig wordt de grond hier bewerkt en vervolgens hoogwaardig hergebruikt.",
         'button' => "Bekijk grondbanken",
+        'link' => $siteUrl . "/grondbanken",
         'right' => array('url' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-u16B96Ow/w:575/h:350/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/04/Grondbank-e1586268864948.png"),
         'image' => '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
