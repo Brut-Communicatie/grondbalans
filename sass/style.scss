@@ -649,6 +649,18 @@ html {
 //Contact pagina
 
 .contact {
+	&__image {
+		img {
+			width: 200px;
+			animation: spin 3s linear infinite;
+			animation-play-state: paused;
+
+			&:hover {
+				animation-play-state: running;
+			}
+		}
+	}
+
 	&__form {
 		margin-top: 5rem;
 		height: 60rem;
@@ -700,7 +712,7 @@ html {
 			width: calc(100% / 2 - 5px);
 
 			@include Responsive(750px) {
-				width: 100%;
+				width: 100% !important;
 			}
 
 			h2 {
@@ -750,7 +762,7 @@ html {
 			width: calc(100% / 2 - 5px);
 
 			@include Responsive(750px) {
-				width: 100%;
+				width: 100% !important;
 			}
 		}
 	}
@@ -1256,7 +1268,7 @@ body {
 
 		@include Flex(flex-start, flex-start, column);
 
-		@include Link{
+		@include Link {
 			background-color: grey !important;
 			clip-path: unset !important;
 			width: 100% !important;
@@ -1277,15 +1289,27 @@ body {
 			max-height: 0;
 			overflow: hidden;
 			transition: max-height 0.7s ease, padding 0.25s ease;
-			p{
+
+			p {
 				margin: 1rem;
 			}
 		}
-		&--show{
+
+		&--show {
 			display: block;
 			max-height: 800px;
-			transition: max-height 0.7s ease, padding 1s cubic-bezier(1,0,0,1);
+			transition: max-height 0.7s ease, padding 1s cubic-bezier(1, 0, 0, 1);
 		}
 	}
 
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0turn);
+	}
+
+	100% {
+		transform: rotateZ(2turn);
+	}
 }

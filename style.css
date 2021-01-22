@@ -2058,6 +2058,16 @@ html {
 	}
 }
 
+.contact__image img {
+	width: 200px;
+	animation: spin 3s linear infinite;
+	animation-play-state: paused;
+}
+
+.contact__image img:hover {
+	animation-play-state: running;
+}
+
 .contact__form {
 	margin-top: 5rem;
 	height: 60rem;
@@ -2125,7 +2135,7 @@ html {
 
 @media screen and (max-width: calc(750px + 5px)) {
 	.contact__intro--left {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
@@ -2192,7 +2202,7 @@ html {
 
 @media screen and (max-width: calc(750px + 5px)) {
 	.contact__intro--right {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
@@ -3532,6 +3542,15 @@ body {
 	display: block;
 	max-height: 800px;
 	transition: max-height 0.7s ease, padding 1s cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0turn);
+	}
+	100% {
+		transform: rotateZ(2turn);
+	}
 }
 
 /*# sourceMappingURL=style.css.map */
