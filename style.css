@@ -2484,6 +2484,10 @@ html {
 	background-color: rgba(0, 102, 153, 0.7);
 }
 
+.portfolio--noshadow img {
+	box-shadow: unset !important;
+}
+
 .portfolio__block {
 	width: 100%;
 	margin-bottom: 3rem;
@@ -2568,6 +2572,10 @@ html {
 		width: 100%;
 		order: 1;
 	}
+}
+
+.portfolio__block--right img {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .portfolio__block--left, .portfolio__block--left-two {
@@ -3234,6 +3242,40 @@ body {
 
 .grondbank__details--onder img {
 	max-width: 50%;
+}
+
+.content__summary p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin: 0 0 10px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__summary p {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.content__summary p strong {
+	font-size: 16px;
+}
+
+.content__summary ul {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.content__summary ul li {
+	list-style: inside !important;
+	padding-left: 1rem;
+	margin-bottom: 5px;
+	color: black;
+}
+
+.content__summary ul li:before {
+	display: none !important;
 }
 
 .content__bagger {

@@ -1077,12 +1077,38 @@ body {
 
 
 .content {
+	&__summary {
+		p {
+			@include BodyFont;
+			margin: 0 0 10px;
+
+			strong {
+				font-size: 16px;
+			}
+		}
+
+		ul {
+			@include Flex(flex-start, flex-start, column);
+
+			li {
+				list-style: inside !important;
+				padding-left: 1rem;
+				margin-bottom: 5px;
+				color: black;
+
+				&:before {
+					display: none !important;
+				}
+			}
+		}
+	}
+
 	&__bagger {
 		margin-top: 10rem;
 		background-color: $gb__blauw-2;
 		padding: 6rem 0 4rem;
 
-		@include Responsive($containerWidth){
+		@include Responsive($containerWidth) {
 			margin-top: 5rem;
 		}
 
@@ -1092,7 +1118,7 @@ body {
 			position: relative;
 			@include Flex(space-between, flex-start);
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				@include Flex(flex-start, flex-start, column);
 			}
 
@@ -1106,7 +1132,7 @@ body {
 				position: absolute;
 				top: -160px;
 
-				@include Responsive($containerWidth){
+				@include Responsive($containerWidth) {
 					display: none;
 				}
 			}
@@ -1116,7 +1142,7 @@ body {
 
 			width: 65%;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				width: 100%;
 				margin-bottom: 3rem;
 			}
@@ -1147,21 +1173,25 @@ body {
 		&--right {
 
 			width: 27%;
-			@include Responsive($containerWidth){
+
+			@include Responsive($containerWidth) {
 				width: 100%;
 			}
 
 			padding: 2rem;
 			background-color: #ececec;
-			box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .12),
+			0 1px 2px rgba(0, 0, 0, .24);
 			border-bottom: 3px solid #e4170e;
-			h3{
+
+			h3 {
 				font-weight: 700;
 				font-family: 'Montserrat', sans-serif;
 				font-size: 22px;
 				text-transform: uppercase;
 				margin: 0;
 			}
+
 			@include Link {
 				@include Button;
 

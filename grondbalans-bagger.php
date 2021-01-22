@@ -93,7 +93,7 @@ get_header();?>
             </div>
         </div>
 
-        <div class="content__bagger--right">
+        <div class="content__bagger--right" id="contact">
            <h3>CONTACTFORMULIER</h3>
            <p>Hulp of advies nodig? Stel hier jouw vraag!</p>
 
