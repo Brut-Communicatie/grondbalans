@@ -26,6 +26,7 @@ get_header();?>
 
 <div class="expertise">
     <div class="expertise__container">
+
         <?php get_template_part('template-parts/block', 'rechts', $args = array(
             'id' => "grondstromen",
             'heading' => "BODEM VOOR TOEKOMSTIGE GENERATIES",
@@ -51,9 +52,16 @@ get_header();?>
             'heading' => "RON PEERDEMAN (1971 - 2019)",
             'subheading' => "In herinnering, onze grondlegger",
 
-            'content' => '<p>De persoonlijke missie van Ron was de wereld een stukje mooier maken, voor de mens en haar omgeving. Dit heeft hij gedaan met creatief ondernemerschap en door zichzelf en de mensen in zijn netwerk met elkaar te verbinden. Zijn oprechte interesse in de medemens, zijn behulpzaamheid en zijn no-nonsens karakter, maakte hem tot een graag gezien mens. Bij alle collega’s van Grondbalans, bij al zijn relaties en zijn vriendenkring.</p>',
-
-            'button' => "Meer weten over onze aanpak",
+            'content' => '<p>De persoonlijke missie van Ron was de wereld een stukje mooier maken, voor de mens en haar omgeving. Dit heeft hij gedaan met creatief ondernemerschap en door zichzelf en de mensen in zijn netwerk met elkaar te verbinden. Zijn oprechte interesse in de medemens, zijn behulpzaamheid en zijn no-nonsens karakter, maakte hem tot een graag gezien mens. Bij alle collega’s van Grondbalans, bij al zijn relaties en zijn vriendenkring.</p>
+            <div class="content__opener">
+            <a href="#" id="ronButton">Lees meer over Ron</a>
+            <div class="content__opener--about">
+            <p>
+            Van jongs af aan is Ron al een verbinder geweest; tijdens zijn jaren aan de LTS in de leerlingenraad, en gedurende zijn studie aan de HTS toen hij schoolfeesten organiseerde. Na de HTS ging Ron nog een jaar studeren aan de Universiteit van Twente om vervolgens ‘echt’ te gaan werken bij Dura Vermeer. Een prachtig bedrijf dat veel inzichten heeft gegeven.Ron zag dat grond nooit op de goede plek lag en altijd verplaatst moest worden. Volgens hem kon dit anders. De ondernemersgeest kwam uit de fles en Ron startte zijn eigen bedrijf; Grondbalans! Een grote stap en niet zonder risico’s. Hij was immers een nieuweling in de aannemerswereld die zijn plek moest veroveren.Grondbalans groeide uit naar meerdere vestigingen in het land en het aantal medewerkers groeide mee. Ook in mindere periodes wist Ron met Grondbalans mooie resultaten te behalen, met name door de betrokken en vakkundige collega’s. Met lef bleef hij creatief ondernemen, was hij het gezicht van het bedrijf en bouwde hij veel goede relaties op in het hele land. De verbinder was zichtbaar in volle glorie.Grondbalans ontwikkelt zich verder, helaas zonder Ron, maar met alle idealen en de spirit die hij het bedrijf heeft meegegeven. Wij zijn Ron hier dankbaar voor. En ook voor het meegeven van meer dan genoeg bagage. Zodat we met elkaar en voor anderen Grondbalans kunnen voortzetten! Precies zoals Ron het in zijn hoofd had: zorgdragen voor de bodem voor toekomstige generaties.
+            </p>
+            </div>
+            </div>',
+            'button' => "",
             'right' => array('url' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-e_7ilyQX/w:575/h:349/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/Ron-grondlegger-grondbalans-1997-4.jpg"),
         ));?>
         
@@ -79,7 +87,7 @@ get_header();?>
             'video' => '<iframe id="video" width="560" height="315"  src="https://www.youtube.com/embed/6wYppiFuR7w" frameborder="0" allowfullscreen></iframe>',
         ));?>
 
-<?php get_template_part('template-parts/block', 'video-links', $args = array(
+        <?php get_template_part('template-parts/block', 'video-links', $args = array(
             'id' => "grondstromen",
             'heading' => "CIRCULARITEIT",
             'subheading' => " Het restproduct van vandaag de grondstof voor morgen",
