@@ -3236,4 +3236,119 @@ body {
 	max-width: 50%;
 }
 
+.content__bagger {
+	margin-top: 10rem;
+	background-color: #069;
+	padding: 6rem 0 4rem;
+}
+
+.content__bagger--container {
+	width: 1180px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+@media screen and (max-width: 1180px) {
+	.content__bagger--container {
+		width: calc(100% - 2rem);
+	}
+}
+
+.content__bagger--container:before {
+	content: "";
+	background-image: url("https://grondbalans.nl/wp-content/uploads/2020/07/Baggerbalans-swoop-03.svg");
+	width: 1180px;
+	background-repeat: no-repeat;
+	height: 300px;
+	display: block;
+	position: absolute;
+	top: -160px;
+}
+
+.content__bagger--left {
+	width: 65%;
+}
+
+.content__bagger--left h3 {
+	color: rgba(255, 255, 255, 0.65);
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__bagger--left h3 {
+		font-size: clamp(2vw, 20px, 28px);
+		line-height: clamp(2vw, 20px, 28px);
+	}
+}
+
+.content__bagger--left p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	margin: 0;
+	font-size: 15px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__bagger--left p {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.content__bagger--right {
+	width: 25%;
+}
+
+.content__bagger--quote {
+	padding: 1rem;
+	margin-top: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	border: 2px solid #fff;
+}
+
+.content__bagger--quote-left {
+	width: 20%;
+}
+
+.content__bagger--quote-right {
+	width: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.content__bagger--quote-right p strong {
+	color: rgba(255, 255, 255, 0.65);
+}
+
+.content__bagger--quote-right p:last-child {
+	color: rgba(255, 255, 255, 0.65);
+}
+
+.content__bagger--quote-right p:first-child {
+	margin-bottom: 10px;
+}
+
+.content__bagger--quote-right p:first-child:before {
+	content: '“';
+	font-size: 64px;
+	position: relative;
+	top: -10px;
+	line-height: 1;
+	float: left;
+	margin-right: 9px;
+	color: rgba(255, 255, 255, 0.65);
+	margin-bottom: -.8em;
+}
+
 /*# sourceMappingURL=style.css.map */

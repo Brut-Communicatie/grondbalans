@@ -30,7 +30,12 @@
 		<div class="header__container">
 			<a href="<?php echo get_home_url();?>">
 				<div class="header__logo">
-					<img src="<?php echo get_template_directory_uri();?>/content/images/logo.svg" alt="Logo" />
+					<?php if(is_page('baggerbalans')) :?>
+						<img src="<?php echo get_template_directory_uri();?>/content/images/logo.png" width="200px" alt="Logo" />
+					<?php else :?>
+						<img src="<?php echo get_template_directory_uri();?>/content/images/logo.svg" width="200px" alt="Logo" />
+					<?php endif;?>
+			
 				</div>
 			</a>
 			<div class="header__nav">

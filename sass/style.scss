@@ -607,15 +607,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			background-size: 2700px auto;
 		}
 	}
-	&-blue{
 
-		h1{
+	&-blue {
+
+		h1 {
 			text-transform: unset;
 		}
-		h2{
+
+		h2 {
 			color: $gb__blauw-2
 		}
-		.content__line{
+
+		.content__line {
 			background-color: $gb__blauw-2
 		}
 	}
@@ -724,15 +727,16 @@ html {
 				@include BodyFont;
 			}
 
-			ul{
+			ul {
 				margin: 0;
-				padding:0;
+				padding: 0;
 				padding-left: 3rem;
-				li{
+
+				li {
 					list-style: none;
 					@include BodyFont;
 
-					&:before{
+					&:before {
 						content: "✓";
 						color: rgb(90, 139, 122);
 						padding-right: 5px;
@@ -933,23 +937,26 @@ html {
 				margin-top: 2rem;
 				@include Button;
 			}
-			&-blue{
-				p{
+
+			&-blue {
+				p {
 					text-transform: unset;
 				}
-				@include Link{
+
+				@include Link {
 					background-color: #fff;
 					color: #069;
 
-					&:hover{
+					&:hover {
 						background-color: #fff;
 						color: #069;
 					}
 				}
 			}
 		}
-		&-blue{
-			background-color: rgba(0,102,153,.7);
+
+		&-blue {
+			background-color: rgba(0, 102, 153, .7);
 		}
 	}
 }
@@ -978,13 +985,15 @@ body {
 }
 
 .grondbank {
-	&__image{
+	&__image {
 		margin-bottom: 1rem;
 		width: 100%;
-		img{
+
+		img {
 			width: 100%;
 		}
 	}
+
 	&__item {
 		background: #ececec;
 		box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
@@ -1011,7 +1020,9 @@ body {
 			@include BodyFont;
 			font-size: 14px;
 		}
+
 		width: 100%;
+
 		&--top {
 			width: 100%;
 			margin-bottom: 2rem;
@@ -1026,6 +1037,7 @@ body {
 
 		&--mid {
 			width: 100%;
+
 			p {
 				&:first-child {
 					color: $gb__rood;
@@ -1036,17 +1048,19 @@ body {
 			padding-bottom: 1rem;
 			border-bottom: 2px solid #e5e4e4;
 
-			@include Link{
+			@include Link {
 				text-decoration: none;
 				color: $gb__groen-2;
 
-				&:hover{
+				&:hover {
 					text-decoration: underline;
 				}
 			}
 		}
-		&--onder{
+
+		&--onder {
 			width: 100%;
+
 			h4 {
 				font-weight: 700;
 				font-family: 'Montserrat', sans-serif;
@@ -1054,9 +1068,108 @@ body {
 				margin: 20px 0;
 			}
 
-			img{
+			img {
 				max-width: 50%;
 			}
 		}
+	}
+}
+
+
+.content {
+	&__bagger {
+		margin-top: 10rem;
+		background-color: $gb__blauw-2;
+		padding: 6rem 0 4rem;
+
+		&--container {
+			@include Container;
+			margin: 0 auto;
+			position: relative;
+			@include Flex(space-between, flex-start);
+
+			&:before {
+				content: "";
+				background-image: url('https://grondbalans.nl/wp-content/uploads/2020/07/Baggerbalans-swoop-03.svg');
+				width: $containerWidth;
+				background-repeat: no-repeat;
+				height: 300px;
+				display: block;
+				position: absolute;
+				// z-index: -1;
+				top: -160px;
+				// background-color: red;
+			}
+		}
+
+		&--left {
+			width: 65%;
+
+			h3 {
+				color: rgba(255, 255, 255, .65);
+				font-weight: 700;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 28px;
+				text-transform: uppercase;
+				margin: 0;
+
+				@include Responsive($containerWidth) {
+					font-size: clamp(2vw, 20px, 28px);
+					line-height: clamp(2vw, 20px, 28px);
+				}
+
+			}
+
+			p {
+				@include BodyFont;
+				color: #fff;
+				margin: 0;
+				font-size: 15px;
+			}
+		}
+
+		&--right {
+			width: 25%;
+		}
+
+		&--quote {
+			padding: 1rem;
+			margin-top: 3rem;
+			@include Flex(space-between, stretch);
+			border: 2px solid #fff;
+
+			&-left {
+				width: 20%;
+			}
+
+			&-right {
+				width: 75%;
+				@include Flex(center, flex-start, column);
+
+				p {
+					strong{
+						color: rgba(255,255,255,.65);
+					}
+					&:last-child{
+						color: rgba(255,255,255,.65);
+					}
+					&:first-child{
+						margin-bottom: 10px;
+						&:before {
+							content: '“';
+							font-size: 64px;
+							position: relative;
+							top: -10px;
+							line-height: 1;
+							float: left;
+							margin-right: 9px;
+							color: rgba(255, 255, 255, .65);
+							margin-bottom: -.8em;
+						}
+					}
+				}
+			}
+		}
+
 	}
 }

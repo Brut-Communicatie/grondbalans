@@ -20,11 +20,12 @@ get_header();?>
             <h2>Altijd een oplossing voor vrijgekomen baggerspecie</h2>
             <p>Baggeren is een unieke tak van sport en vereist specialistische kennis en een eigen aanpak. Daarom hebben wij alle expertise als het gaat om beheer, opslag, toepassen en bewerken van baggerspecie ondergebracht bij ons bedrijfsonderdeel Baggerbalans.
             <br/>
-Een greep uit onze expertises en baggerprojecten:</p>
+            Een greep uit onze expertises en baggerprojecten:</p>
             <div class="content__line"></div>
         </div>
     </div>
 </div>
+
 <div class="content">
     <div class="content__container">
         <?php
@@ -70,6 +71,34 @@ Een greep uit onze expertises en baggerprojecten:</p>
         ));?>
     </div>
 </div>
+
+<div class="content__bagger">
+    <div class="content__bagger--container">
+        <div class="content__bagger--left">
+            <h3>Altijd een oplossing</h3>
+            <p>
+                Onze adviseurs hebben verregaande kennis van de (lokale) markt en de wet- en regelgeving. We bemiddelen bij aanbod van partijen baggerspecie, beheren baggerdepots, coördineren baggerstromen en certificeren partijen baggerspecie.
+            <br/><br/>
+                We combineren veilige oplossingen met goede service en een eerlijke prijs. Kortom: Baggerbalans is dé specialist in baggerspecie.
+            </p>
+
+            <div class="content__bagger--quote">
+                <div class="content__bagger--quote-left">
+                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-LdWh_uA7/w:1365/h:1500/q:75/https://grondbalans.nl/wp-content/uploads/2020/01/02-Edwin.jpg" width="130px" alt="Foto van Edwin" />
+                </div>
+                <div class="content__bagger--quote-right">
+                    <p>Mijn uitdaging binnen Grondbalans? Continuïteit van grote projecten met omvangrijke grondstromen. Onze kracht? Ons landelijk netwerk, onze verregaande kennis én onze klantgerichtheid. Opdrachtgevers waarderen onze ‘afspraak-is-afspraak’- mentaliteit.</p>
+                    <p><strong>Edwin van Venetien,</strong> Manager Landelijke projecten</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__bagger--right">
+
+        </div>
+    </div>
+</div>
+
 <?php get_footer();?>
 
 
