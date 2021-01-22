@@ -650,6 +650,10 @@ html {
 
 .contact {
 	&__image {
+		@include Responsive($containerWidth) {
+			margin-top: 3rem;
+		}
+
 		img {
 			width: 200px;
 			animation: spin 3s linear infinite;
@@ -756,6 +760,11 @@ html {
 				}
 			}
 
+			&-circ {
+				@extend .contact__intro--left;
+				width: calc(60%);
+			}
+
 		}
 
 		&--right {
@@ -763,6 +772,15 @@ html {
 
 			@include Responsive(750px) {
 				width: 100% !important;
+			}
+
+			&-circ {
+				@extend .contact__intro--right;
+				width: calc(30%);
+
+				.contact__map {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -1311,5 +1329,132 @@ body {
 
 	100% {
 		transform: rotateZ(2turn);
+	}
+}
+
+.content {
+	&__full {
+		width: 100%;
+		height: 40rem;
+		margin-bottom: 4rem;
+		background-size: cover;
+
+		@include Flex(flex-end, flex-end);
+
+		@include Responsive($containerWidth) {
+			height: 15rem;
+		}
+
+		&--span {
+			// width: 100%;
+			background: #e4170e;
+			position: relative;
+			width: 50%;
+
+			@include Responsive($containerWidth) {
+				width: 100%;
+			}
+
+			p {
+				@include BodyFont;
+				position: relative;
+				color: #fff;
+				margin: 0;
+				padding: 1rem;
+				font-style: italic;
+				z-index: 22;
+				width: 550px;
+
+				@include Responsive($containerWidth) {
+					width: 100%;
+				}
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #e4170e;
+				transform-origin: 100% -45px;
+				transform: skew(-22deg);
+				transform-origin: right top;
+				z-index: 0;
+			}
+		}
+	}
+}
+
+.content {
+	&__skewed {
+		width: 100%;
+		@include Flex(flex-start, flex-start, column);
+		position: relative;
+		padding: 3rem;
+		margin-bottom: 2rem;
+		box-shadow: inset 3px 3px 0px 0px #e4170e, inset 0px -3px 0px 0px #e4170e;
+		
+		@include Responsive($containerWidth){
+			box-shadow: unset;
+			border: 3px solid #e4170e;
+		}
+		
+		h4{
+			font-weight: 700;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 38px;
+			margin: 0 0 2rem;
+		}
+
+		ul{
+			padding: 0;
+			margin: 0;
+			li{
+				list-style: none;
+				@include Flex(flex-start, center);
+				@include BodyFont;
+				font-weight: 700;
+				margin-bottom: 5px;
+				svg{
+					width: 20px;
+					margin-right: 10px;
+					animation: spin 3s linear infinite;
+					animation-play-state: paused;
+
+					path {
+						fill: $gb__rood;
+					}
+		
+	
+				}
+
+				&:hover{
+					svg{
+						animation-play-state: running;
+					}
+				}
+			}
+		}
+		&:after {
+			border-top: 3px solid #e4170e;
+			border-right: 3px solid #e4170e;
+			border-bottom: 3px solid #e4170e;
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: 0 0;
+			transform: skew(-22deg);
+			transform-origin: left bottom;
+			z-index: -1;
+
+			@include Responsive($containerWidth){
+				display: none;
+			}
+		}
 	}
 }

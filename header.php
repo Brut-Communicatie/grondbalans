@@ -56,7 +56,7 @@
 					<li><a href="<?php echo get_site_url();?>/dit-zijn-wij">Dit zijn wij</a>
 					<ul>
 						<li><a href="<?php echo get_site_url();?>/dit-zijn-wij">Dit is Grondbalans</a></li>
-						<li><a href="#">Samen circulair</a></li>
+						<li><a href="<?php echo get_site_url();?>/circulair">Samen circulair</a></li>
 					</ul>
 					</li>
 					<li><a href="<?php echo get_site_url();?>/vacatures">Werken bij</a></li>
