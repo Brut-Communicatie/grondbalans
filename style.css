@@ -2074,6 +2074,25 @@ html {
 	animation-play-state: running;
 }
 
+.contact__image--two {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	width: 100%;
+	margin-top: 3rem;
+}
+
+.contact__image--two img {
+	width: 100%;
+	margin-left: auto;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.contact__image--two img {
+		width: 100%;
+	}
+}
+
 .contact__form {
 	margin-top: 5rem;
 	height: 60rem;
@@ -2204,6 +2223,48 @@ html {
 
 .contact__intro--left-circ {
 	width: calc(60%);
+}
+
+.contact__intro--left-circ > a,
+.contact__intro--left-circ > a:active,
+.contact__intro--left-circ > a:visited,
+.contact__intro--left-circ > a:link {
+	display: flex;
+	padding: 15px 35px 15px 30px;
+	width: fit-content;
+	box-sizing: border-box;
+	font-size: 18px;
+	background-color: #43816b;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	transition: background-color .25s ease;
+}
+
+.contact__intro--left-circ > a:hover,
+.contact__intro--left-circ > a:active:hover,
+.contact__intro--left-circ > a:visited:hover,
+.contact__intro--left-circ > a:link:hover {
+	background-color: #4c9279;
+}
+
+@media screen and (max-width: calc(600px + 5px)) {
+	.contact__intro--left-circ > a,
+	.contact__intro--left-circ > a:active,
+	.contact__intro--left-circ > a:visited,
+	.contact__intro--left-circ > a:link {
+		width: 100%;
+		font-size: 15px;
+	}
+}
+
+.contact__intro--left-circ p span {
+	color: #e4170e;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .contact__intro--right, .contact__intro--right-circ {

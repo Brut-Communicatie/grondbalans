@@ -663,6 +663,19 @@ html {
 				animation-play-state: running;
 			}
 		}
+		&--two{
+			@include Flex(flex-end, flex-start);
+			width: 100%;
+			margin-top: 3rem;
+			img{
+				width: 100%;
+				margin-left: auto;
+
+				@include Responsive($containerWidth){
+					width: 100%;
+				}
+			}
+		}
 	}
 
 	&__form {
@@ -763,6 +776,18 @@ html {
 			&-circ {
 				@extend .contact__intro--left;
 				width: calc(60%);
+
+				@include Link{
+					@include Button;
+				}
+
+				p{
+					span{
+						color: $gb__rood;
+						font-weight: 700;
+						text-transform: uppercase;
+					}
+				}
 			}
 
 		}

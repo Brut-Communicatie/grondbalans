@@ -72,9 +72,50 @@ get_header();?>
     </div>
 </div>
 
+
+<div class="content">
+    <div class="content__container">
+        <div class="contact__intro">
+            <div class="contact__intro--left-circ">
+                <h3 style="margin: 2rem 0 0;">Een blik op onze circulaire toekomst</h3>
+                <p style="margin: 0 0 2rem;">Elke dag zijn we bezig met nieuwe ontwikkelingen waarmee we een nóg groter steentje kunnen bijdragen aan een goede bodem voor toekomstige generaties. Op dit moment focussen we ons op het meetbaar maken van circulariteit. Hiermee kunnen we projecten beter optimaliseren en geven we circulariteit in onze branche een nieuwe dimensie.</p>
+                <div class="content__line" style="margin:0"></div>
+            </div>
+            <div class="contact__intro--right-circ">
+                <div class="contact__image--two">
+                    <img width="1080px"  src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-Sejpkb0w/w:960/h:758/q:75/https://grondbalans.nl/wp-content/uploads/2020/12/grondbalans-circulaire-toekomst.jpg" alt="samen duurzaam samen circulair" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="content__full" style="background-image: url('https://mlmotgafwbhj.i.optimole.com/u0PFPh0-vxklIY9b/w:auto/h:auto/q:75/https://grondbalans.nl/wp-content/uploads/2020/12/grondbalans-cutout-06.png');">
     <div class="content__full--span">
         <p>“We ontwikkelen en innoveren op continue basis!”</p>
+    </div>
+</div>
+
+<div class="content">
+    <div class="content__container">
+        <div class="contact__intro">
+            <div class="contact__intro--left-circ">
+                <h3 style="margin: 2rem 0 0;">Jouw ketenpartner voor duurzame en circulaire grondstromen</h3>
+                <p style="margin: 0 0 2rem;">Grondbalans heeft de kennis en ervaring in huis om een bijdrage te leveren aan organisatiedoelen op het gebied van duurzaamheid en circulariteit. Zo werken we samen aan duurzame en circulaire oplossingen met waarde voor mens, dier en landschap. Hoe kunnen we jou helpen? We denken graag met je mee!</p>
+        
+
+                <a href="#">Neem contact met ons op</a>
+
+                <p><span>Samen mooie projecten maken!</span></p>
+                <div class="content__line" style="margin:0"></div>
+            </div>
+            <div class="contact__intro--right-circ">
+                <div class="contact__image--two">
+                    <img width="1080px"  src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-KsNBK0Fi/w:960/h:670/q:75/https://grondbalans.nl/wp-content/uploads/2020/12/grondbalans-uw-partner-voor-circulair-grondverzet.jpg" alt="samen duurzaam samen circulair" loading="lazy">
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
