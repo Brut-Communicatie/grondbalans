@@ -3242,6 +3242,12 @@ body {
 	padding: 6rem 0 4rem;
 }
 
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__bagger {
+		margin-top: 5rem;
+	}
+}
+
 .content__bagger--container {
 	width: 1180px;
 	margin: 0 auto;
@@ -3257,6 +3263,15 @@ body {
 	}
 }
 
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__bagger--container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+
 .content__bagger--container:before {
 	content: "";
 	background-image: url("https://grondbalans.nl/wp-content/uploads/2020/07/Baggerbalans-swoop-03.svg");
@@ -3268,8 +3283,21 @@ body {
 	top: -160px;
 }
 
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__bagger--container:before {
+		display: none;
+	}
+}
+
 .content__bagger--left {
 	width: 65%;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__bagger--left {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
 }
 
 .content__bagger--left h3 {
@@ -3303,7 +3331,71 @@ body {
 }
 
 .content__bagger--right {
-	width: 25%;
+	width: 27%;
+	padding: 2rem;
+	background-color: #ececec;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	border-bottom: 3px solid #e4170e;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__bagger--right {
+		width: 100%;
+	}
+}
+
+.content__bagger--right h3 {
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.content__bagger--right > a,
+.content__bagger--right > a:active,
+.content__bagger--right > a:visited,
+.content__bagger--right > a:link {
+	display: flex;
+	padding: 15px 35px 15px 30px;
+	width: fit-content;
+	box-sizing: border-box;
+	font-size: 18px;
+	background-color: #43816b;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	transition: background-color .25s ease;
+	background-color: #069;
+	color: #fff;
+}
+
+.content__bagger--right > a:hover,
+.content__bagger--right > a:active:hover,
+.content__bagger--right > a:visited:hover,
+.content__bagger--right > a:link:hover {
+	background-color: #4c9279;
+}
+
+@media screen and (max-width: calc(600px + 5px)) {
+	.content__bagger--right > a,
+	.content__bagger--right > a:active,
+	.content__bagger--right > a:visited,
+	.content__bagger--right > a:link {
+		width: 100%;
+		font-size: 15px;
+	}
+}
+
+.content__bagger--right > a:hover,
+.content__bagger--right > a:active:hover,
+.content__bagger--right > a:visited:hover,
+.content__bagger--right > a:link:hover {
+	background-color: #069;
+	color: #fff;
 }
 
 .content__bagger--quote {
