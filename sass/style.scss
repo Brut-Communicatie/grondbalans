@@ -639,6 +639,7 @@ html {
 		padding: 4rem 0;
 		background-size: cover;
 		scroll-margin-top: 7rem;
+
 		&--container {
 			@include Container;
 			margin: 0 auto;
@@ -707,6 +708,22 @@ html {
 
 			p {
 				@include BodyFont;
+			}
+
+			ul{
+				margin: 0;
+				padding:0;
+				padding-left: 3rem;
+				li{
+					list-style: none;
+					@include BodyFont;
+
+					&:before{
+						content: "✓";
+						color: rgb(90, 139, 122);
+						padding-right: 5px;
+					}
+				}
 			}
 
 		}
@@ -909,8 +926,8 @@ html {
 @import 'portfolio';
 @import 'werken';
 
-.expertise{
-	&__container{
+.expertise {
+	&__container {
 		@include Container;
 		margin: 0 auto;
 		@include Flex(flex-start, flex-start, column);
@@ -918,13 +935,97 @@ html {
 	}
 }
 
-body{
+body {
 	background-image: url("content/images/bg.png");
 	background-position: right -350px bottom;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
-	@include Responsive(1200px){
+	@include Responsive(1200px) {
 		background-image: unset;
+	}
+}
+
+.grondbank {
+	&__image{
+		margin-bottom: 1rem;
+		width: 100%;
+		img{
+			width: 100%;
+		}
+	}
+	&__item {
+		background: #ececec;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+		border-bottom: 3px solid #e4170e;
+		padding: 25px 12px;
+		width: calc(100% / 3 - 15px);
+		scroll-margin-top: 7rem;
+		@include Flex(flex-start, flex-start, column);
+
+		@include Responsive($containerWidth) {
+			width: calc(100% / 2 - 15px);
+			margin-bottom: 20px;
+		}
+
+		@include Responsive(720px) {
+			width: 100%;
+		}
+
+	}
+
+	&__details {
+		p {
+			margin: 0;
+			@include BodyFont;
+			font-size: 14px;
+		}
+		width: 100%;
+		&--top {
+			width: 100%;
+			margin-bottom: 2rem;
+
+			h3 {
+				font-weight: 700;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 18px;
+				margin: 0;
+			}
+		}
+
+		&--mid {
+			width: 100%;
+			p {
+				&:first-child {
+					color: $gb__rood;
+					margin-bottom: 10px;
+				}
+			}
+
+			padding-bottom: 1rem;
+			border-bottom: 2px solid #e5e4e4;
+
+			@include Link{
+				text-decoration: none;
+				color: $gb__groen-2;
+
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+		&--onder{
+			width: 100%;
+			h4 {
+				font-weight: 700;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 18px;
+				margin: 20px 0;
+			}
+
+			img{
+				max-width: 50%;
+			}
+		}
 	}
 }

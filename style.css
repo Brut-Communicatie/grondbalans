@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Grondbalans
 Theme URI: http://underscores.me/
@@ -2149,6 +2150,30 @@ html {
 	}
 }
 
+.contact__intro--left ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 3rem;
+}
+
+.contact__intro--left ul li {
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.contact__intro--left ul li {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.contact__intro--left ul li:before {
+	content: "✓";
+	color: #5a8b7a;
+	padding-right: 5px;
+}
+
 .contact__intro--right {
 	width: calc(100% / 2 - 5px);
 }
@@ -2967,6 +2992,55 @@ html {
 	text-decoration: underline;
 }
 
+.content__werken--socials {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.content__werken--socials > a,
+.content__werken--socials > a:active,
+.content__werken--socials > a:visited,
+.content__werken--socials > a:link {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	padding: .5em 0;
+	border-radius: .25em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	background-color: #969696;
+}
+
+.content__werken--socials > a:not(:last-child),
+.content__werken--socials > a:active:not(:last-child),
+.content__werken--socials > a:visited:not(:last-child),
+.content__werken--socials > a:link:not(:last-child) {
+	margin-right: 10px;
+}
+
+.content__werken--socials > a:hover,
+.content__werken--socials > a:active:hover,
+.content__werken--socials > a:visited:hover,
+.content__werken--socials > a:link:hover {
+	background-color: #b0b0b0;
+}
+
+.content__werken--socials > a svg,
+.content__werken--socials > a:active svg,
+.content__werken--socials > a:visited svg,
+.content__werken--socials > a:link svg {
+	fill: #fff;
+}
+
+.content__werken--socials > a svg path,
+.content__werken--socials > a:active svg path,
+.content__werken--socials > a:visited svg path,
+.content__werken--socials > a:link svg path {
+	fill: #fff;
+}
+
 .expertise__container {
 	width: 1180px;
 	margin: 0 auto;
@@ -2993,6 +3067,111 @@ body {
 	body {
 		background-image: unset;
 	}
+}
+
+.grondbank__image {
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.grondbank__image img {
+	width: 100%;
+}
+
+.grondbank__item {
+	background: #ececec;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	border-bottom: 3px solid #e4170e;
+	padding: 25px 12px;
+	width: calc(100% / 3 - 15px);
+	scroll-margin-top: 7rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.grondbank__item {
+		width: calc(100% / 2 - 15px);
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: calc(720px + 5px)) {
+	.grondbank__item {
+		width: 100%;
+	}
+}
+
+.grondbank__details {
+	width: 100%;
+}
+
+.grondbank__details p {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-size: 14px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.grondbank__details p {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.grondbank__details--top {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.grondbank__details--top h3 {
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin: 0;
+}
+
+.grondbank__details--mid {
+	width: 100%;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid #e5e4e4;
+}
+
+.grondbank__details--mid p:first-child {
+	color: #e4170e;
+	margin-bottom: 10px;
+}
+
+.grondbank__details--mid > a,
+.grondbank__details--mid > a:active,
+.grondbank__details--mid > a:visited,
+.grondbank__details--mid > a:link {
+	text-decoration: none;
+	color: #43816b;
+}
+
+.grondbank__details--mid > a:hover,
+.grondbank__details--mid > a:active:hover,
+.grondbank__details--mid > a:visited:hover,
+.grondbank__details--mid > a:link:hover {
+	text-decoration: underline;
+}
+
+.grondbank__details--onder {
+	width: 100%;
+}
+
+.grondbank__details--onder h4 {
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin: 20px 0;
+}
+
+.grondbank__details--onder img {
+	max-width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
