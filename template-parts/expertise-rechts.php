@@ -17,7 +17,7 @@
                 <a href="<?php echo $args['link'];?>">
                     <?php echo $args['button'];?>
                 </a>
-                <a href="/contact/#contact">
+                <a href="<?php echo get_site_url();?>/contact/#contact">
                     Meer info
                 </a>
                 </div>
