@@ -2023,6 +2023,18 @@ textarea {
 	background-size: 2700px auto;
 }
 
+.content-blue h1 {
+	text-transform: unset;
+}
+
+.content-blue h2 {
+	color: #069;
+}
+
+.content-blue .content__line {
+	background-color: #069;
+}
+
 @keyframes scrollBackground {
 	0% {
 		background-position: 0% 0%;
@@ -2448,6 +2460,30 @@ html {
 	}
 }
 
+.banner__block--content-blue p {
+	text-transform: unset;
+}
+
+.banner__block--content-blue > a,
+.banner__block--content-blue > a:active,
+.banner__block--content-blue > a:visited,
+.banner__block--content-blue > a:link {
+	background-color: #fff;
+	color: #069;
+}
+
+.banner__block--content-blue > a:hover,
+.banner__block--content-blue > a:active:hover,
+.banner__block--content-blue > a:visited:hover,
+.banner__block--content-blue > a:link:hover {
+	background-color: #fff;
+	color: #069;
+}
+
+.banner__block-blue {
+	background-color: rgba(0, 102, 153, 0.7);
+}
+
 .portfolio__block {
 	width: 100%;
 	margin-bottom: 3rem;
@@ -2707,6 +2743,32 @@ html {
 	.portfolio__block--left-two:before {
 		display: none;
 	}
+}
+
+.portfolio__block-blue .portfolio__block--left-content h4 {
+	color: #069;
+	margin-bottom: 1rem;
+	margin-top: 0;
+}
+
+.portfolio__block-blue .portfolio__block--left-content > a,
+.portfolio__block-blue .portfolio__block--left-content > a:active,
+.portfolio__block-blue .portfolio__block--left-content > a:visited,
+.portfolio__block-blue .portfolio__block--left-content > a:link {
+	background-color: #069;
+	color: #fff;
+}
+
+.portfolio__block-blue .portfolio__block--left-content > a:hover,
+.portfolio__block-blue .portfolio__block--left-content > a:active:hover,
+.portfolio__block-blue .portfolio__block--left-content > a:visited:hover,
+.portfolio__block-blue .portfolio__block--left-content > a:link:hover {
+	background-color: #069;
+	color: #fff;
+}
+
+.portfolio__block-blue .portfolio__block--right img {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .content__werken--container {

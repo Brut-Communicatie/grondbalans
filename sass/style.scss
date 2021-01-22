@@ -242,6 +242,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		margin: 0 auto;
 	}
 
+
+
 	&__intro {
 		@include Flex(center, center, column);
 		text-align: center;
@@ -605,6 +607,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			background-size: 2700px auto;
 		}
 	}
+	&-blue{
+
+		h1{
+			text-transform: unset;
+		}
+		h2{
+			color: $gb__blauw-2
+		}
+		.content__line{
+			background-color: $gb__blauw-2
+		}
+	}
 }
 
 @keyframes scrollBackground {
@@ -919,6 +933,23 @@ html {
 				margin-top: 2rem;
 				@include Button;
 			}
+			&-blue{
+				p{
+					text-transform: unset;
+				}
+				@include Link{
+					background-color: #fff;
+					color: #069;
+
+					&:hover{
+						background-color: #fff;
+						color: #069;
+					}
+				}
+			}
+		}
+		&-blue{
+			background-color: rgba(0,102,153,.7);
 		}
 	}
 }

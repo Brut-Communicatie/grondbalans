@@ -9,7 +9,7 @@ get_header();?>
         'heading' => "Grondbanken",
         'content' => "SNELLE OPLOSSING VOOR KLEINE PARTIJEN GROND",
         'button' => "Neem contact met ons op",
-        'link' => $siteUrl . "/contact#contact",
+        'link' => "#contact",
     );
     get_template_part( 'template-parts/banner', 'general', $args );
 ?>
