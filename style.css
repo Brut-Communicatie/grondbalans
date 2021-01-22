@@ -2264,6 +2264,7 @@ html {
 .contact__intro--left-circ p span {
 	color: #e4170e;
 	font-weight: 700;
+	font-size: 16px;
 	text-transform: uppercase;
 }
 
@@ -3781,6 +3782,56 @@ body {
 	.content__skewed:after {
 		display: none;
 	}
+}
+
+.content__form {
+	background: #ececec;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	border-bottom: 3px solid #e4170e;
+	padding: 25px 12px;
+	width: 100%;
+	margin-top: 4rem;
+}
+
+.content__form form {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.content__form form p {
+	margin: 0 !important;
+}
+
+.content__form form h5 {
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	margin: 0;
+}
+
+.content__form--right {
+	width: 40%;
+}
+
+.content__form--left {
+	width: 20%;
+}
+
+.content__form--left p {
+	margin: 0;
+}
+
+.content__form--left .wpcf7-radio {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.content__form--left .wpcf7-list-item {
+	margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

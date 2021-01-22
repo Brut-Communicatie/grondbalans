@@ -103,10 +103,7 @@ get_header();?>
             <div class="contact__intro--left-circ">
                 <h3 style="margin: 2rem 0 0;">Jouw ketenpartner voor duurzame en circulaire grondstromen</h3>
                 <p style="margin: 0 0 2rem;">Grondbalans heeft de kennis en ervaring in huis om een bijdrage te leveren aan organisatiedoelen op het gebied van duurzaamheid en circulariteit. Zo werken we samen aan duurzame en circulaire oplossingen met waarde voor mens, dier en landschap. Hoe kunnen we jou helpen? We denken graag met je mee!</p>
-        
-
-                <a href="#">Neem contact met ons op</a>
-
+                <a href="<?php echo get_site_url();?>/contact#contact">Neem contact met ons op</a>
                 <p><span>Samen mooie projecten maken!</span></p>
                 <div class="content__line" style="margin:0"></div>
             </div>

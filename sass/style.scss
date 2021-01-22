@@ -663,15 +663,17 @@ html {
 				animation-play-state: running;
 			}
 		}
-		&--two{
+
+		&--two {
 			@include Flex(flex-end, flex-start);
 			width: 100%;
 			margin-top: 3rem;
-			img{
+
+			img {
 				width: 100%;
 				margin-left: auto;
 
-				@include Responsive($containerWidth){
+				@include Responsive($containerWidth) {
 					width: 100%;
 				}
 			}
@@ -777,14 +779,15 @@ html {
 				@extend .contact__intro--left;
 				width: calc(60%);
 
-				@include Link{
+				@include Link {
 					@include Button;
 				}
 
-				p{
-					span{
+				p {
+					span {
 						color: $gb__rood;
 						font-weight: 700;
+						font-size: 16px;
 						text-transform: uppercase;
 					}
 				}
@@ -1420,29 +1423,31 @@ body {
 		padding: 3rem;
 		margin-bottom: 2rem;
 		box-shadow: inset 3px 3px 0px 0px #e4170e, inset 0px -3px 0px 0px #e4170e;
-		
-		@include Responsive($containerWidth){
+
+		@include Responsive($containerWidth) {
 			box-shadow: unset;
 			border: 3px solid #e4170e;
 		}
-		
-		h4{
+
+		h4 {
 			font-weight: 700;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 38px;
 			margin: 0 0 2rem;
 		}
 
-		ul{
+		ul {
 			padding: 0;
 			margin: 0;
-			li{
+
+			li {
 				list-style: none;
 				@include Flex(flex-start, center);
 				@include BodyFont;
 				font-weight: 700;
 				margin-bottom: 5px;
-				svg{
+
+				svg {
 					width: 20px;
 					margin-right: 10px;
 					animation: spin 3s linear infinite;
@@ -1451,17 +1456,18 @@ body {
 					path {
 						fill: $gb__rood;
 					}
-		
-	
+
+
 				}
 
-				&:hover{
-					svg{
+				&:hover {
+					svg {
 						animation-play-state: running;
 					}
 				}
 			}
 		}
+
 		&:after {
 			border-top: 3px solid #e4170e;
 			border-right: 3px solid #e4170e;
@@ -1477,8 +1483,60 @@ body {
 			transform-origin: left bottom;
 			z-index: -1;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				display: none;
+			}
+		}
+	}
+}
+
+.content {
+	&__form {
+		background: #ececec;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+		border-bottom: 3px solid #e4170e;
+		padding: 25px 12px;
+		width: 100%;
+		margin-top: 4rem;
+
+
+
+		form {
+			@include Flex(flex-start, flex-start);
+
+			p {
+				margin: 0 !important;
+			}
+
+			h5 {
+				font-weight: 700;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 25px;
+				margin: 0;
+			}
+
+			text-align: left;
+
+		}
+
+
+		&--right {
+			width: 40%;
+		}
+
+		&--left {
+			width: 20%;
+
+			p {
+				margin: 0;
+			}
+
+			.wpcf7-radio {
+				@include Flex(flex-start, flex-start, column);
+			}
+
+			.wpcf7-list-item {
+				margin: 0;
 			}
 		}
 	}
