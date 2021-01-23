@@ -154,4 +154,4 @@
     </div>
 </div>
 
-<a href="#">Lees meer over onze expertises</a>
+<a href="<?php echo get_site_url();?>/expertises">Lees meer over onze expertises</a>

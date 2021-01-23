@@ -60,7 +60,7 @@
 					</ul>
 					</li>
 					<li><a href="<?php echo get_site_url();?>/vacatures">Werken bij</a></li>
-					<li><a href="#">Vraag en aanbod</a></li>
+					<li><a href="<?php echo get_site_url();?>/vraag-en-aanbod">Vraag en aanbod</a></li>
 					<li><a href="<?php echo get_site_url();?>/contact">Contact</a></li>
 				</ul>
 			</div>

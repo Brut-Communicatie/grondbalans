@@ -78,7 +78,7 @@ get_header();?>
                         <p>
                         Als specialist in grondstromen werken wij aan een goede bodem voor toekomstige generaties. Een goede bodem is belangrijk voor onze voedselproductie, ons drinkwater én om veilig & duurzaam te kunnen wonen, werken en recreëren. Ontdek hoe wij circulariteit en duurzaamheid verweven in onze werkprocessen!
                         </p>
-                        <a href="#">
+                        <a href="<?php echo get_site_url();?>/circulair">
                             Lees meer over circulariteit
                         </a>
                     </div>
@@ -96,10 +96,7 @@ get_header();?>
                 <p>
                 Wij focussen ons op verschillende toepassingsgebieden: van de agrarische sector tot kelderbouw. Dit doen we onder andere voor overheden, loonbedrijven, aannemers, agrariërs en projectontwikkelaars. Elk project is anders. Door onze uitgebreide, lokale marktkennis bieden wij oplossingen voor elk project. En heel veel lokaal, maakt nationaal.
                 </p>
-                <a href="#" class="content__inline-link">Lees meer over circulariteit</a>
-          
-
-
+                <a href="<?php echo get_site_url();?>/circulair" class="content__inline-link">Lees meer over circulariteit</a>
         </section>
     </div>
     <div class="content__banner">
@@ -110,7 +107,7 @@ get_header();?>
 
     <div class="content__container">
             <section class="content__section--last">
-                <a href="<?php echo get_site_url();?>/contact">Neem contact met ons op</a>
+                <a href="<?php echo get_site_url();?>/contact#contact">Neem contact met ons op</a>
                 <div class="content__line"></div>
             </section>
     </div>

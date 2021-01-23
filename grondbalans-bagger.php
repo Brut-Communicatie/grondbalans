@@ -94,10 +94,7 @@ get_header();?>
         </div>
 
         <div class="content__bagger--right" id="contact">
-           <h3>CONTACTFORMULIER</h3>
-           <p>Hulp of advies nodig? Stel hier jouw vraag!</p>
-
-           <a href="#">Verzenden</a>
+            <?php echo do_shortcode('[contact-form-7 id="41" title="Contactformulier"]');?>
         </div>
     </div>
 </div>

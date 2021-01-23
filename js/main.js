@@ -17,3 +17,10 @@ if (ronKnop) {
         ronContent.classList.toggle('content__opener--show');
     })
 }
+
+const menuBurger = document.getElementsByClassName('header__nav--hamburger')[0];
+const menu = document.querySelectorAll('.header__nav ul')[0];
+menuBurger.addEventListener('click', function()  {
+    menu.classList.toggle('header__nav--show');
+    console.log(menu);
+});

@@ -30,20 +30,37 @@
     }
 
     &__nav {
+        &--show{
+            display: flex !important;
+        }
         @include Flex(flex-start, center);
 
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         color: #fff;
-
-
+        
+   
 
         ul {
             margin: 0;
             padding: 0;
 
             @include Responsive(1100px) {
+                // display: none;
+                background-color: $gb__groen-2;
+                position: absolute;
+                left: 0;
+                top: 103px;
+                // background-color: red;
+                width: 100%;
+                padding: 2rem;
+
+                @include Flex(flex-start, flex-start, column);
                 display: none;
+            }
+
+            @include Responsive(550px){
+                top: 80px;
             }
 
             @include Flex(flex-start, center);
@@ -54,9 +71,33 @@
                 list-style: none;
                 position: relative;
 
+                @include Responsive(1100px) {
+                    padding: 0 0;
+                    width: 100%;
+
+                    @include Link{
+                        margin-bottom: 10px !important;
+                        display: flex !important;
+    
+                        &:hover{
+                            color: #b5b2b1 !important;
+                        }
+                    }
+                }
+                
                 ul {
                     display: none;
                     opacity: 0;
+
+                    @include Responsive(1100px) {
+
+                        @include Flex(flex-start, flex-start, column);
+                        opacity: 1;
+                        position: relative;
+                        margin: 0;
+                        padding: 0;
+                        top: 0;
+                    }
                 }
 
                 &:hover {
@@ -73,9 +114,23 @@
                         padding: 1.25rem 1.75rem;
                         opacity: 1;
 
+                        @include Responsive(1100px) {
+                            padding: 0;
+                            width: 100%;
+                            margin: 0;
+                            background-color: unset;
+                            position: relative;
+                            top: 0;
+                            animation: none;
+                            opacity: 1;
+                        }
+
                         li {
                             margin: 5px 0;
-
+                            @include Responsive(1100px) {
+                             margin: 0;
+                             
+                            }
                             @include Link {
                                 text-transform: uppercase;
                                 color: #fff;
@@ -83,7 +138,7 @@
                                 transition: color .25s ease;
                                 background-color: transparent !important;
                                 padding: 0 !important;
-                                margin: 0 !important;
+                                margin: 0;
 
                                 word-wrap: none;
                                 white-space: nowrap;
@@ -105,18 +160,30 @@
 
 
                     margin: 0 1px 0 0;
-
+                    @include Responsive(1100px) {
+                        margin: 0;
+                    }
                     @include Link {
                         background-color: #e4170e;
                         padding: 5px 10px 5px 10px;
                         // margin: 0 1px 0 0;
 
                         transition: background-color .25s ease;
+
+                        @include Responsive(1100px) {
+                            background-color: unset;
+                            padding: 0;
+                        }
                     }
 
                     @include Link(hover) {
                         background-color: #fff;
                         color: #e4170e;
+
+                        @include Responsive(1100px) {
+                            background-color: unset;
+                            color: #fff;
+                        }
 
                     }
 
@@ -138,13 +205,23 @@
                         clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
                         text-transform: uppercase;
                         transition: background-color .25s ease;
+                        @include Responsive(1100px) {
+                            clip-path: unset;
+                            background-color: unset;
+                            padding: 0;
+                            color: #fff;
+                        }
                     }
 
 
                     @include Link(hover) {
                         background-color: #fff;
                         color: $gb__groen-2;
-                        ;
+                        @include Responsive(1100px) {
+
+                            background-color: unset;
+                            color: #fff;
+                        }
                     }
 
                 }

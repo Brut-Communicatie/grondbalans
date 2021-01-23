@@ -2,6 +2,6 @@
 ;?>
 <div class="contact__form" id="contact" style="background-image: url('<?php echo $contactBackground;?>');">
     <div class="contact__form--container">
-        <?php the_content();?>
+        <?php echo do_shortcode('[contact-form-7 id="41" title="Contactformulier"]');?>
     </div>
 </div>
