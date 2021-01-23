@@ -14,7 +14,7 @@ get_header();?>
 ?>
 
 <div class="content">
-    <div class="content__container">
+    <div class="content__container" >
         <div class="content__intro">
             <h1>SAMEN<br />
                 MOOIE PROJECTEN MAKEN!</h1>

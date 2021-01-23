@@ -5,7 +5,7 @@ $link = substr(strstr($ref, '='), strlen('='));
 }
 ?>
 
-<div class="portfolio__block">
+<div class="portfolio__block" data-aos="fade-up" data-aos-delay="250">
     <div class="portfolio__block--container">
         <div class="portfolio__block--left">
             <div class="portfolio__block--left-content">

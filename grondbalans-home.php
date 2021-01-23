@@ -19,7 +19,7 @@ get_header();?>
 </div>
 <div class="content">
     <div class="content__container">
-        <div class="content__intro">
+        <div class="content__intro" data-aos="fade-up">
             <h1>Specialist in <br />grond en bagger</h1>
             <h2>Al meer dan 20 jaar!</h2>
             <p>Grondbalans is hét aanspreekpunt voor al je grondstromen! Heb je grond nodig of wil je er juist vanaf?
@@ -34,10 +34,10 @@ get_header();?>
         </section>
 
         <section class="content__section">
-            <h3>TROTS OP ONZE MOOIE PROJECTEN</h3>
-            <h4>Wij laten grond stromen!</h4>
+            <h3 data-aos="fade-right" data-aos-delay="250">TROTS OP ONZE MOOIE PROJECTEN</h3>
+            <h4 data-aos="fade-left" data-aos-delay="250">Wij laten grond stromen!</h4>
 
-            <div class="content__projecten">
+            <div class="content__projecten" data-aos="fade-up" data-aos-delay="250">
                 <div class="content__projecten--container">
                     <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
                         <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-Iv16d7Yd/w:1280/h:720/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/Amstelveenlijn-6.jpg" alt="Project afbeelding" />
@@ -62,8 +62,8 @@ get_header();?>
         <section class="content__section">
 
         <div class="content__block">
-            <div class="content__block--container">
-                <div class="content__block--left">
+            <div class="content__block--container" data-aos="fade-up" data-aos-delay="250">
+                <div class="content__block--left" >
                 <iframe id="video-6-2_youtube_iframe" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/1_AJ9QLsm10?controls=0&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=0&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;end=0&amp;loop=0&amp;playsinline=0&amp;start=0&amp;nocookie=false&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fgrondbalans.nl&amp;widgetid=1" width="575" height="323.4375"></iframe>
                 </div>
 

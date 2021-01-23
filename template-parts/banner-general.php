@@ -2,7 +2,7 @@
 ['background'];?>');">
     <div class="banner__container">
         <div class="banner__block">
-            <div class="banner__block--content">
+            <div class="banner__block--content" >
                 <?php 
                     $fontsize = $args['fontsize'] ?? ' ';
                 ;?>

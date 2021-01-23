@@ -1,6 +1,6 @@
-<h3>Onze expertises</h3>
+<h3 data-aos="fade-up" data-aos-delay="300">Onze expertises</h3>
 
-<div class="content__expertises">
+<div class="content__expertises" data-aos="fade-right" data-aos-delay="250">
     <div class="content__expertises--container">
         <a href="<?php echo get_site_url();?>/expertises#grondstromen" class="content__expertises--item">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -154,4 +154,4 @@
     </div>
 </div>
 
-<a href="<?php echo get_site_url();?>/expertises">Lees meer over onze expertises</a>
+<a data-aos="fade-up" data-aos-delay="250" href="<?php echo get_site_url();?>/expertises">Lees meer over onze expertises</a>
