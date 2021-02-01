@@ -37,7 +37,7 @@ Wij beschikken over alle expertises die hiervoor nodig zijn:</p>
         'image' => '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
             <style type="text/css">
-                .st0{fill:#069 !important;}
+                .st0{fill:#000000;}
             </style>
             <path class="st0" d="M29.31,36.47c-2.64-0.16-5.17-1.54-6.69-3.94c-2.14-3.39-1.61-7.81,1.25-10.61c0.45-0.45,0.95-0.84,1.49-1.18
                 c3.81-2.4,8.79-1.39,11.4,2.2c0.79-0.75,1.62-1.46,2.5-2.11c-0.31-0.41-0.65-0.81-1.01-1.17c-3.88-3.91-9.95-4.63-14.64-1.73
@@ -177,10 +177,10 @@ Wij beschikken over alle expertises die hiervoor nodig zijn:</p>
         'image' => '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
     <style type="text/css">
-        .st0{fill:#FFFFFF;}
+        .baggerbalansfill{fill:#069 !important;}
     </style>
     <g>
-        <path class="st0" d="M83.65,85.94c-0.94,0-1.82-0.56-2.2-1.47c-0.87-2.13-3.54-8.14-5.38-10.3c-2.05-2.4-4.46-2.04-8.89-1.13
+        <path class="baggerbalansfill" d="M83.65,85.94c-0.94,0-1.82-0.56-2.2-1.47c-0.87-2.13-3.54-8.14-5.38-10.3c-2.05-2.4-4.46-2.04-8.89-1.13
             c-5.56,1.14-13.18,2.71-19.69-6.82c-1.45-2.13-2.82-3.29-3.76-3.26c-2.14,0.12-4.99,5.51-7.07,9.44
             c-2.41,4.55-4.69,8.85-7.73,10.54c-6.2,3.43-9.36,0.51-12.15-2.07c-1.24-1.15-2.52-2.34-4.24-3.22c-1.15-0.59-2.16-0.74-3.09-0.44
             c-1.55,0.5-2.69,2.18-2.99,2.78c-0.59,1.16-2.01,1.64-3.18,1.05c-1.17-0.58-1.65-1.99-1.07-3.16c0.2-0.4,2.03-3.96,5.74-5.18
