@@ -37,7 +37,7 @@ Wij beschikken over alle expertises die hiervoor nodig zijn:</p>
         'image' => '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
             <style type="text/css">
-                .st0{fill:#000000;}
+                .st0{fill:#069 !important;}
             </style>
             <path class="st0" d="M29.31,36.47c-2.64-0.16-5.17-1.54-6.69-3.94c-2.14-3.39-1.61-7.81,1.25-10.61c0.45-0.45,0.95-0.84,1.49-1.18
                 c3.81-2.4,8.79-1.39,11.4,2.2c0.79-0.75,1.62-1.46,2.5-2.11c-0.31-0.41-0.65-0.81-1.01-1.17c-3.88-3.91-9.95-4.63-14.64-1.73
