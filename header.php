@@ -18,8 +18,137 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
+	<style>
+body {
+  margin: 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: #404040;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body {
+  background: #fff;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  color: #4169e1;
+}
+
+.header {
+  background-color: #3f4141;
+  padding: 0.8rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header__container {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1180px) {
+  .header__container {
+    width: calc(100% - 2rem);
+  }
+}
+
+.header__logo {
+  width: 20%;
+}
+
+.header__logo img {
+  min-width: 230px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.header__nav--hamburger {
+  display: none;
+}
+
+.header__nav--hamburger svg {
+  width: 30px;
+  height: 30px;
+}
+
+.header__nav--hamburger svg path {
+  fill: #fff;
+}
+
+.page {
+  margin: 0 0 1.5em;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.page {
+  margin: 0;
+}
+
+html {
+  margin-top: 104px;
+}
+
+body {
+  background-image: url(../css/content/images/bg.png);background-position:right -350px bottom;background-repeat:no-repeat;background-attachment:fixed}</style>
 </head>
 
 <body <?php body_class(); ?>>
