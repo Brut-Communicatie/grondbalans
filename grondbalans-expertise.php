@@ -173,6 +173,7 @@ Wij beschikken over alle expertises die hiervoor nodig zijn:</p>
         'heading' => "BAGGERBALANS",
         'content' => "Ons bedrijfsonderdeel Baggerbalans beschikt over verregaande lokale marktkennis en kennis van wet- en regelgeving als het gaat om baggerstromen. Hierdoor kunnen wij altijd voorzien in een juiste oplossing voor vrijgekomen baggerspecie. Wij bemiddelen, beheren, coördineren en certificeren.",
         'button' => "Meer informatie",
+        'link' => "/baggerbalans",
         'right' => array('url' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-fWfjytCu/w:575/h:350/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/06/werken-bij-grondbalans-1920-01.jpg"),
         'image' => '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">

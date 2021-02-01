@@ -9,7 +9,12 @@
                 <p>
                     <?php echo $args['content'];?>
                 </p>
-                <a href="/contact/#contact">
+                <?php if $args['link'] :?>
+                    <a href="<?php echo $args['link'];?>">
+                <?php else :?>
+                    <a href="/contact/#contact">
+                <?php endif ;?>
+             
                     <?php echo $args['button'];?>
                 </a>
             </div>
