@@ -168,6 +168,36 @@ Wij beschikken over alle expertises die hiervoor nodig zijn:</p>
         </svg>',
     ));?>
 
+<?php get_template_part('template-parts/expertise', 'links', $args = array(
+        'id' => "baggerbalans",
+        'heading' => "BAGGERBALANS",
+        'content' => "Ons bedrijfsonderdeel Baggerbalans beschikt over verregaande lokale marktkennis en kennis van wet- en regelgeving als het gaat om baggerstromen. Hierdoor kunnen wij altijd voorzien in een juiste oplossing voor vrijgekomen baggerspecie. Wij bemiddelen, beheren, coördineren en certificeren.",
+        'button' => "Meer informatie",
+        'right' => array('url' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-fWfjytCu/w:575/h:350/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/06/werken-bij-grondbalans-1920-01.jpg"),
+        'image' => '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="88px" height="88px" viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
+    <style type="text/css">
+        .st0{fill:#FFFFFF;}
+    </style>
+    <g>
+        <path class="st0" d="M83.65,85.94c-0.94,0-1.82-0.56-2.2-1.47c-0.87-2.13-3.54-8.14-5.38-10.3c-2.05-2.4-4.46-2.04-8.89-1.13
+            c-5.56,1.14-13.18,2.71-19.69-6.82c-1.45-2.13-2.82-3.29-3.76-3.26c-2.14,0.12-4.99,5.51-7.07,9.44
+            c-2.41,4.55-4.69,8.85-7.73,10.54c-6.2,3.43-9.36,0.51-12.15-2.07c-1.24-1.15-2.52-2.34-4.24-3.22c-1.15-0.59-2.16-0.74-3.09-0.44
+            c-1.55,0.5-2.69,2.18-2.99,2.78c-0.59,1.16-2.01,1.64-3.18,1.05c-1.17-0.58-1.65-1.99-1.07-3.16c0.2-0.4,2.03-3.96,5.74-5.18
+            c2.15-0.71,4.49-0.46,6.77,0.73c2.28,1.18,3.94,2.72,5.28,3.96c2.56,2.37,3.43,3.17,6.63,1.4c1.81-1,3.95-5.04,5.84-8.6
+            c3.18-6.01,6.19-11.69,11-11.96c2.79-0.17,5.39,1.58,7.95,5.32c4.72,6.92,9.4,5.96,14.81,4.85c4.45-0.91,9.49-1.95,13.45,2.7
+            c2.67,3.13,5.81,10.73,6.16,11.58c0.5,1.21-0.09,2.6-1.3,3.09C84.25,85.88,83.95,85.94,83.65,85.94z M70.21,41.25H50.24
+            c-1.31,0-2.37-1.06-2.37-2.37c0-1.31,1.06-2.37,2.37-2.37h19.98c1.31,0,2.37,1.06,2.37,2.37C72.59,40.19,71.52,41.25,70.21,41.25z
+            M40.55,41.25H20.57c-1.31,0-2.37-1.06-2.37-2.37c0-1.31,1.06-2.37,2.37-2.37h19.98c1.31,0,2.37,1.06,2.37,2.37
+            S41.86,41.25,40.55,41.25z M83.65,26.8H63.67c-1.31,0-2.37-1.06-2.37-2.37s1.06-2.37,2.37-2.37h19.98c1.31,0,2.37,1.06,2.37,2.37
+            S84.96,26.8,83.65,26.8z M53.99,26.8H34.01c-1.31,0-2.37-1.06-2.37-2.37s1.06-2.37,2.37-2.37h19.98c1.31,0,2.37,1.06,2.37,2.37
+            C56.36,25.74,55.3,26.8,53.99,26.8z M24.33,26.8H4.35c-1.31,0-2.37-1.06-2.37-2.37s1.06-2.37,2.37-2.37h19.98
+            c1.31,0,2.37,1.06,2.37,2.37S25.64,26.8,24.33,26.8z"/>
+    </g>
+    </svg>
+',
+    ));?>
+
 
     </div>
 </div>

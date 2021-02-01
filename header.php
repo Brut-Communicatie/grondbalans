@@ -179,7 +179,7 @@ body {
 						<li><a href="<?php echo get_site_url();?>/expertises#projectrealisatie">Projectrealisatie</a></li>
 						<li><a href="<?php echo get_site_url();?>/expertises#vraagenaanbod">Vraag en aanbod</a></li>
 						<li><a href="<?php echo get_site_url();?>/expertises#grondbanken">Grondbanken</a></li>
-						<li><a href="<?php echo get_site_url();?>/baggerbalans">Baggerbalans</a></li>
+						<li><a href="<?php echo get_site_url();?>/expertise#baggerbalans">Baggerbalans</a></li>
 					</ul>
 				</li>
 					<li><a href="<?php echo get_site_url();?>/projecten">Projecten</a></li>

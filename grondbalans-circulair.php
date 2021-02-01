@@ -52,7 +52,7 @@ get_header();?>
             </div>
             <div class="contact__intro--right contact__intro--right-circ">
                 <div class="contact__map">
-                    <?php get_template_part('template-parts/map', 'contact');?>
+                    <?php get_template_part('template-parts/map', 'circulair');?>
                 </div>
             </div>
         </div>
