@@ -644,7 +644,6 @@ textarea {
 @media screen and (max-width: 1180px) {
 	.header__container {
 		width: calc(100% - 2rem);
-		overflow-y: hidden;
 	}
 }
 
@@ -966,7 +965,6 @@ textarea {
 @media screen and (max-width: 1180px) {
 	.footer__container {
 		width: calc(100% - 2rem);
-		overflow-y: hidden;
 	}
 }
 
@@ -1525,7 +1523,6 @@ textarea {
 @media screen and (max-width: 1180px) {
 	.intro__container {
 		width: calc(100% - 2rem);
-		overflow-y: hidden;
 	}
 }
 
@@ -1644,7 +1641,6 @@ textarea {
 @media screen and (max-width: 1180px) {
 	.content__container {
 		width: calc(100% - 2rem);
-		overflow-y: hidden;
 	}
 }
 
@@ -2176,7 +2172,6 @@ html {
 @media screen and (max-width: calc(550px + 5px)) {
 	html {
 		margin-top: 87px;
-		overflow-y: hidden;
 	}
 }
 
@@ -2233,7 +2228,6 @@ html {
 @media screen and (max-width: 1180px) {
 	.contact__form--container {
 		width: calc(100% - 2rem);
-		overflow-y: hidden;
 	}
 }
 
@@ -2427,7 +2421,6 @@ html {
 @media screen and (max-width: 1180px) {
 	.contact__cards--container {
 		width: calc(100% - 2rem);
-		overflow-y: hidden;
 	}
 }
 
@@ -2593,7 +2586,6 @@ html {
 @media screen and (max-width: 1180px) {
 	.banner__container {
 		width: calc(100% - 2rem);
-		overflow-y: hidden;
 	}
 }
 
@@ -3352,7 +3344,6 @@ html {
 @media screen and (max-width: 1180px) {
 	.expertise__container {
 		width: calc(100% - 2rem);
-		overflow-y: hidden;
 	}
 }
 
@@ -3532,7 +3523,6 @@ body {
 @media screen and (max-width: 1180px) {
 	.content__bagger--container {
 		width: calc(100% - 2rem);
-		overflow-y: hidden;
 	}
 }
 
