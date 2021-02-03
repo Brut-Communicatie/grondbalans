@@ -282,3 +282,42 @@ function grondbalans_projecten_customfields() {
 }
 
 add_action('acf/init', 'grondbalans_projecten_customfields');
+
+function grondbalans_nieuws() {
+    $labels = array(
+        'name'                  => _x( 'Nieuws', 'Post type general name', 'textdomain' ),
+        'singular_name'         => _x( 'Nieuws', 'Post type singular name', 'textdomain' ),
+        'menu_name'             => _x( 'Nieuws', 'Admin Menu text', 'textdomain' ),
+        'name_admin_bar'        => _x( 'Nieuws', 'Add New on Toolbar', 'textdomain' ),
+        'add_new'               => __( 'Nieuws toevoegen', 'textdomain' ),
+        'add_new_item'          => __( 'Nieuws toevoegen', 'textdomain' ),
+        'new_item'              => __( 'Nieuws toevoegen', 'textdomain' ),
+        'edit_item'             => __( 'Nieuws bewerken', 'textdomain' ),
+        'view_item'             => __( 'Bekijk nieuws', 'textdomain' ),
+        'all_items'             => __( 'Al het nieuws', 'textdomain' ),
+        'search_items'          => __( 'Zoek nieuws', 'textdomain' ),
+        'parent_item_colon'     => __( 'Parent neuws:', 'textdomain' ),
+        'not_found'             => __( 'Geen nieuws gevonden', 'textdomain' ),
+		'not_found_in_trash'    => __( 'Geen nieuws gevonden', 'textdomain' ),
+    );
+ 
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'nieuws' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+		'menu_position'      => null,
+		'taxonomies' => array('post_tag'),
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+    );
+ 
+    register_post_type( 'nieuws', $args );
+}
+ 
+add_action( 'init', 'grondbalans_nieuws' );
