@@ -1951,6 +1951,8 @@ textarea {
 
 .content__projecten--item img {
 	object-fit: cover;
+	display: flex;
+	flex-grow: 1;
 }
 
 .content__block {

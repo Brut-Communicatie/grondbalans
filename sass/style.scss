@@ -463,6 +463,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 			img {
 				object-fit: cover;
+				display: flex;
+				flex-grow: 1;
 			}
 		}
 	}
