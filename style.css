@@ -4273,4 +4273,8 @@ body {
 	margin: 0;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */
