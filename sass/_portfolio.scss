@@ -33,6 +33,16 @@
                     background-color: $gb__rood;
                     margin-right: 10px;
                 }
+
+                @include Responsive($containerWidth){
+                    &:last-child{
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            @include Responsive($containerWidth){
+                flex-wrap: wrap;
             }
         }
 

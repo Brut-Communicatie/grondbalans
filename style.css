@@ -2776,6 +2776,21 @@ html {
 	margin-right: 10px;
 }
 
+@media screen and (max-width: calc(1180px + 5px)) {
+	.portfolio__block--buttons > a:last-child,
+	.portfolio__block--buttons > a:active:last-child,
+	.portfolio__block--buttons > a:visited:last-child,
+	.portfolio__block--buttons > a:link:last-child {
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.portfolio__block--buttons {
+		flex-wrap: wrap;
+	}
+}
+
 .portfolio__block--right {
 	width: calc(100% / 2 - 8px);
 	display: flex;
