@@ -2175,6 +2175,7 @@ html {
 @media screen and (max-width: calc(550px + 5px)) {
 	html {
 		margin-top: 87px;
+		overflow-x: hidden;
 	}
 }
 

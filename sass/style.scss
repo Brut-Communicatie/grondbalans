@@ -643,6 +643,7 @@ html {
 
 	@include Responsive(550px) {
 		margin-top: 87px;
+		overflow-x: hidden;
 	}
 }
 
