@@ -146,9 +146,7 @@ a {
 html {
   margin-top: 104px;
 }
-
-body {
-  background-image: url(../css/content/images/bg.png);background-position:right -350px bottom;background-repeat:no-repeat;background-attachment:fixed}</style>
+</style>
 </head>
 
 <body <?php body_class(); ?>>
