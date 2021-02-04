@@ -55,10 +55,6 @@ body {
   line-height: 1.5;
 }
 
-body {
-  background: #fff;
-}
-
 img {
   height: auto;
   max-width: 100%;
