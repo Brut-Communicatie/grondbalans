@@ -852,6 +852,7 @@ textarea {
 .header__nav ul li:nth-child(5) > a:hover {
 	background-color: #fff;
 	color: #e4170e;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(1100px + 5px)) {
@@ -892,6 +893,7 @@ textarea {
 .header__nav ul li:nth-child(6) > a:hover {
 	background-color: #fff;
 	color: #43816b;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(1100px + 5px)) {
@@ -914,6 +916,7 @@ textarea {
 
 .header__nav ul li > a:hover {
 	color: #5a8b7a;
+	opacity: 0.8;
 }
 
 .header__nav--hamburger {
@@ -1611,6 +1614,7 @@ textarea {
 
 .intro__block > a:hover {
 	background-color: #4c9279;
+	opacity: 0.8;
 }
 
 .intro__block:after {
@@ -1680,7 +1684,7 @@ textarea {
 .content__intro h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
-	color: #e4170e;
+	color: #c42517;
 	margin: 0;
 	font-weight: 700;
 	margin-bottom: 2rem;
@@ -1715,7 +1719,7 @@ textarea {
 	display: block;
 	width: 100px;
 	height: 4px;
-	background-color: #e4170e;
+	background-color: #c42517;
 	margin: 0 auto;
 	margin-top: 2rem;
 }
@@ -1763,10 +1767,10 @@ textarea {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: background-color .25s ease;
+	transition: opacity .25s ease;
 }
 
 .content__section > a:hover, .content__section--last > a:hover,
@@ -1776,7 +1780,7 @@ textarea {
 .content__section--last > a:visited:hover,
 .content__section > a:link:hover,
 .content__section--last > a:link:hover {
-	background-color: #4c9279;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -1795,7 +1799,7 @@ textarea {
 .content__section h4, .content__section--last h4 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
-	color: #e4170e;
+	color: #c42517;
 	margin: 0;
 	font-weight: 700;
 	margin-bottom: 2rem;
@@ -1899,12 +1903,12 @@ textarea {
 
 .content__expertises--item .st0 {
 	transition: all .25s ease;
-	fill: #e4170e;
+	fill: #c42517;
 }
 
 .content__expertises--item:hover {
 	color: #fff !important;
-	background-color: #e4170e;
+	background-color: #c42517;
 }
 
 .content__expertises--item:hover svg .st0 {
@@ -2052,10 +2056,10 @@ textarea {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: background-color .25s ease;
+	transition: opacity .25s ease;
 	font-size: 16px;
 }
 
@@ -2063,7 +2067,7 @@ textarea {
 .content__block--right-content > a:active:hover,
 .content__block--right-content > a:visited:hover,
 .content__block--right-content > a:link:hover {
-	background-color: #4c9279;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -2354,17 +2358,17 @@ html {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: background-color .25s ease;
+	transition: opacity .25s ease;
 }
 
 .contact__intro--left-circ > a:hover,
 .contact__intro--left-circ > a:active:hover,
 .contact__intro--left-circ > a:visited:hover,
 .contact__intro--left-circ > a:link:hover {
-	background-color: #4c9279;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -2378,7 +2382,7 @@ html {
 }
 
 .contact__intro--left-circ p span {
-	color: #e4170e;
+	color: #c42517;
 	font-weight: 700;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -2626,6 +2630,8 @@ html {
 	.banner__block--content h1 {
 		word-break: break-all;
 		hyphens: auto;
+		font-size: clamp(34px, 4vw, 54px);
+		line-height: clamp(34px, 4vw, 54px);
 	}
 }
 
@@ -2651,17 +2657,17 @@ html {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: background-color .25s ease;
+	transition: opacity .25s ease;
 }
 
 .banner__block--content > a:hover,
 .banner__block--content > a:active:hover,
 .banner__block--content > a:visited:hover,
 .banner__block--content > a:link:hover {
-	background-color: #4c9279;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -2743,10 +2749,10 @@ html {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: background-color .25s ease;
+	transition: opacity .25s ease;
 	font-size: 16px;
 }
 
@@ -2754,7 +2760,7 @@ html {
 .portfolio__block--buttons > a:active:hover,
 .portfolio__block--buttons > a:visited:hover,
 .portfolio__block--buttons > a:link:hover {
-	background-color: #4c9279;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -2772,7 +2778,7 @@ html {
 .portfolio__block--buttons > a:visited:first-child,
 .portfolio__block--buttons > a:link:first-child {
 	clip-path: unset;
-	background-color: #e4170e;
+	background-color: #c42517;
 	margin-right: 10px;
 }
 
@@ -2836,7 +2842,7 @@ html {
 }
 
 .portfolio__block--left-content svg path {
-	fill: #e4170e;
+	fill: #c42517;
 }
 
 .portfolio__block--left-content h3 {
@@ -2859,7 +2865,7 @@ html {
 	margin: 0.5rem 0 0rem 0;
 	font-size: 23px;
 	font-weight: 800;
-	color: #e4170e;
+	color: #c42517;
 }
 
 @media screen and (max-width: calc(1180px + 5px)) {
@@ -2914,10 +2920,10 @@ html {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: background-color .25s ease;
+	transition: opacity .25s ease;
 	font-size: 16px;
 }
 
@@ -2925,7 +2931,7 @@ html {
 .portfolio__block--left-content > a:active:hover,
 .portfolio__block--left-content > a:visited:hover,
 .portfolio__block--left-content > a:link:hover {
-	background-color: #4c9279;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -3057,7 +3063,7 @@ html {
 .content__werken--left h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
-	color: #e4170e;
+	color: #c42517;
 	margin: 0;
 	font-weight: 700;
 }
@@ -3439,7 +3445,7 @@ body {
 }
 
 .grondbank__details--mid p:first-child {
-	color: #e4170e;
+	color: #c42517;
 	margin-bottom: 10px;
 }
 
@@ -3636,10 +3642,10 @@ body {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: background-color .25s ease;
+	transition: opacity .25s ease;
 	background-color: #069;
 	color: #fff;
 }
@@ -3648,7 +3654,7 @@ body {
 .content__bagger--right > a:active:hover,
 .content__bagger--right > a:visited:hover,
 .content__bagger--right > a:link:hover {
-	background-color: #4c9279;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -3938,7 +3944,7 @@ body {
 }
 
 .content__skewed ul li svg path {
-	fill: #e4170e;
+	fill: #c42517;
 }
 
 .content__skewed ul li:hover svg {
@@ -4120,14 +4126,14 @@ body {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: background-color .25s ease;
+	transition: opacity .25s ease;
 }
 
 .content__form--right .wpcf7-submit:hover {
-	background-color: #4c9279;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -4215,16 +4221,16 @@ body {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: background-color .25s ease;
+	transition: opacity .25s ease;
 	border: 0;
 	margin-top: 1rem;
 }
 
 .contact__form--general input[type="submit"]:hover {
-	background-color: #4c9279;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
