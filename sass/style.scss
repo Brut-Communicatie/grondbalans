@@ -981,6 +981,12 @@ html {
 				font-size: 54px;
 				margin: 0;
 				line-height: normal;
+				max-width: 100%;
+
+				@include Responsive($containerWidth){
+					word-break: break-all;
+					hyphens: auto;
+				}
 			}
 
 			p {

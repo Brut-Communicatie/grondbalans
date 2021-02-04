@@ -2619,6 +2619,14 @@ html {
 	font-size: 54px;
 	margin: 0;
 	line-height: normal;
+	max-width: 100%;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.banner__block--content h1 {
+		word-break: break-all;
+		hyphens: auto;
+	}
 }
 
 .banner__block--content p {
