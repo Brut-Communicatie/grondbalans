@@ -2320,7 +2320,7 @@ html {
 .contact__intro--left ul, .contact__intro--left-circ ul {
 	margin: 0;
 	padding: 0;
-	padding-left: 3rem;
+	padding-left: 0rem;
 }
 
 .contact__intro--left ul li, .contact__intro--left-circ ul li {
@@ -2881,6 +2881,12 @@ html {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.portfolio__block--left-content ul {
+		flex-wrap: wrap;
+	}
 }
 
 .portfolio__block--left-content ul li {

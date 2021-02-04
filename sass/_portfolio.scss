@@ -119,7 +119,9 @@
                     padding: 0;
                     margin: 0;
                     @include Flex(flex-start, flex-start);
-
+                    @include Responsive($containerWidth){
+                        flex-wrap: wrap;
+                    }
                     li {
                         font-family: 'Montserrat', sans-serif;
                         list-style: none;
