@@ -179,7 +179,7 @@ html {
 					<li><a href="<?php echo get_site_url();?>/projecten">Projecten</a></li>
 					<li><a href="<?php echo get_site_url();?>/dit-zijn-wij">Dit zijn wij</a>	</li>
 						<li><a href="<?php echo get_site_url();?>/duurzaam-circulair-grondverzet">Samen circulair</a></li>
-						<li><a href="<?php echo get_site_url();?>/nieuws">Nieuws</a></li>
+						<li><a href="<?php echo get_site_url();?>/nieuws/">Nieuws</a></li>
 					<li><a href="<?php echo get_site_url();?>/vacatures">Werken bij</a></li>
 					<li><a href="<?php echo get_site_url();?>/vraag-en-aanbod">Vraag en aanbod</a></li>
 					<li><a href="<?php echo get_site_url();?>/contact">Contact</a></li>
