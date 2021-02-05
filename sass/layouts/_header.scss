@@ -194,13 +194,10 @@ $mobile: 1330px;
                 }
 
                 &:nth-child(8) {
-                    // display: flex;
 
                     @include Link {
                         padding: 5px 10px 5px 10px;
                         width: fit-content;
-                        // box-sizing: border-box;
-                        // font-size: 18px;
                         background-color: $gb__groen-2;
                         color: #fff;
                         text-decoration: none;
@@ -229,13 +226,13 @@ $mobile: 1330px;
 
                 }
 
-
                 @include Link {
                     color: #fff;
                     text-decoration: none;
                     text-transform: uppercase;
                     font-size: 14.5px;
-                    letter-spacing: 1px;
+                    letter-spacing: 0.5px;
+                    font-weight: 600;
                 }
 
                 @include Link(hover) {

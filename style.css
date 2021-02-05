@@ -906,7 +906,8 @@ textarea {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 14.5px;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
+	font-weight: 600;
 }
 
 .header__nav ul li > a:hover {
