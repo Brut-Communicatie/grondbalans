@@ -4379,4 +4379,8 @@ body {
 	color: #fff;
 }
 
+.content__bagger--right .wpcf7-not-valid-tip {
+	color: red;
+}
+
 /*# sourceMappingURL=style.css.map */
