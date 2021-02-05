@@ -293,6 +293,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 				margin: 0;
 			}
 		}
+
+		a{
+			color: $gb__groen-2;
+			transition: opacity .2s ease;
+			&:hover{
+				opacity: 0.8;
+			}
+		}
 	}
 
 	&__line {
@@ -658,7 +666,7 @@ html {
 
 		img {
 			width: 200px;
-			animation: spin 3s linear infinite;
+			animation: spin 8s linear infinite;
 			animation-play-state: paused;
 
 			&:hover {
@@ -1847,4 +1855,11 @@ body{
 	font-weight: 500;
 	font-size: 15px;
 	padding: 2rem !important;
+}
+
+.contact__form--general{
+	.wpcf7-not-valid-tip{
+		color: #fff;
+	}
+
 }

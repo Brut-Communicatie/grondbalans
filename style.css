@@ -1712,6 +1712,15 @@ textarea {
 	}
 }
 
+.content__intro a {
+	color: #43816b;
+	transition: opacity .2s ease;
+}
+
+.content__intro a:hover {
+	opacity: 0.8;
+}
+
 .content__line {
 	display: block;
 	width: 100px;
@@ -2184,7 +2193,7 @@ html {
 
 .contact__image img {
 	width: 200px;
-	animation: spin 3s linear infinite;
+	animation: spin 8s linear infinite;
 	animation-play-state: paused;
 }
 
@@ -4364,6 +4373,10 @@ body {
 	font-weight: 500;
 	font-size: 15px;
 	padding: 2rem !important;
+}
+
+.contact__form--general .wpcf7-not-valid-tip {
+	color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
