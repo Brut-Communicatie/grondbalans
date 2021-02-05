@@ -15,6 +15,7 @@ if (ronKnop) {
     const ronContent = document.getElementsByClassName('content__opener--about')[0];
     ronKnop.addEventListener('click', function(){
         ronContent.classList.toggle('content__opener--show');
+        ronKnop.classList.toggle('content__opener-minus');
     })
 }
 
