@@ -136,7 +136,7 @@
 
                 p {
                     @include BodyFont;
-                    font-size: 15px;
+                    font-size: 16px;
                 }
 
                 @include Link {
@@ -144,7 +144,6 @@
                     @include Button;
                     font-size: 16px;
                 }
-
             }
 
             &:before {

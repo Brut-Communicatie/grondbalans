@@ -2029,7 +2029,7 @@ textarea {
 .content__block--right-content p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 @media screen and (max-width: calc(1180px + 5px)) {
@@ -2899,7 +2899,7 @@ html {
 .portfolio__block--left-content p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 @media screen and (max-width: calc(1180px + 5px)) {
