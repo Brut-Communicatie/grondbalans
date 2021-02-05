@@ -212,6 +212,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 		@include Link(hover) {
 			background-color: lighten($gb__groen-2, 5%);
+			opacity: 1 !important;
 		}
 
 

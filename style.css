@@ -1610,6 +1610,7 @@ textarea {
 
 .intro__block > a:hover {
 	background-color: #4c9279;
+	opacity: 1 !important;
 	opacity: 0.8;
 }
 
