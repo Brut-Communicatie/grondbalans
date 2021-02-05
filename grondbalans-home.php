@@ -3,7 +3,7 @@
 get_header();?>
 
 <div class="intro">
-    <video autoplay muted loop>
+    <video autoplay muted loop playsinline poster="<?php echo get_template_directory_uri();?>/content/video/poster.jpg">
         <source src="<?php echo get_template_directory_uri();?>/content/video/header.webm" type="video/webm">
     </video>
     <div class="intro__container">

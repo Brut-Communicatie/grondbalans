@@ -212,6 +212,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 		@include Link(hover) {
 			background-color: lighten($gb__groen-2, 5%);
+			opacity: 1 !important;
 		}
 
 
@@ -290,6 +291,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 			@include Responsive(980px) {
 				margin: 0;
+			}
+		}
+
+		a{
+			color: $gb__groen-2;
+			transition: opacity .2s ease;
+			&:hover{
+				opacity: 0.8;
 			}
 		}
 	}
@@ -459,11 +468,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			@include Responsive(650px) {
 				width: 100%;
 				margin-bottom: 8px;
-				height: 250px;
 			}
 
 			img {
 				object-fit: cover;
+				display: flex;
+				flex-grow: 1;
 			}
 		}
 	}
@@ -536,7 +546,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 				p {
 					@include BodyFont;
 
-					font-size: 15px;
+					font-size: 16px;
 				}
 
 				@include Link {
@@ -656,7 +666,7 @@ html {
 
 		img {
 			width: 200px;
-			animation: spin 3s linear infinite;
+			animation: spin 8s linear infinite;
 			animation-play-state: paused;
 
 			&:hover {
@@ -760,7 +770,7 @@ html {
 			ul {
 				margin: 0;
 				padding: 0;
-				padding-left: 3rem;
+				padding-left: 0rem;
 
 				li {
 					list-style: none;
@@ -861,6 +871,7 @@ html {
 				font-family: 'Montserrat', sans-serif;
 				font-size: 31px;
 				margin: 0;
+				color: black;
 			}
 		}
 
@@ -980,6 +991,15 @@ html {
 				font-size: 54px;
 				margin: 0;
 				line-height: normal;
+				max-width: 100%;
+
+				@include Responsive($containerWidth){
+					word-break: break-word;
+					hyphens: auto;
+					font-size: clamp(34px, 4vw, 54px);
+					line-height: clamp(34px, 4vw, 54px);
+					margin-bottom: 10px;
+				}
 			}
 
 			p {
@@ -1348,10 +1368,15 @@ body {
 
 .content {
 	&__opener {
-
-
 		@include Flex(flex-start, flex-start, column);
 
+		&-minus{
+			i{
+				&:after{
+					content: "-" !important;
+				}
+			}
+		}
 		@include Link {
 			background-color: grey !important;
 			clip-path: unset !important;
@@ -1362,7 +1387,27 @@ body {
 			text-decoration: none;
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
+			0 1px 2px rgba(0,0,0,0.24);
 			font-size: 16px;
+			transition: opacity .3s ease;
+			display: flex;
+			align-items: center;
+
+			i {
+				margin-left: auto;
+				font-style: normal;
+				font-size: 25px;
+				font-weight: 700;
+
+				&:after{
+					content: "+";
+				}
+			}
+
+			&:hover{
+				opacity: 0.8;
+			}
 		}
 
 		&--about {
@@ -1383,9 +1428,8 @@ body {
 			display: block;
 			max-height: 800px;
 			transition: max-height 0.7s ease, padding 1s cubic-bezier(1, 0, 0, 1);
+			}
 		}
-	}
-
 }
 
 @keyframes spin {
@@ -1404,7 +1448,7 @@ body {
 		height: 40rem;
 		margin-bottom: 4rem;
 		background-size: cover;
-
+		overflow: hidden;
 		@include Flex(flex-end, flex-end);
 
 		@include Responsive($containerWidth) {
@@ -1766,5 +1810,61 @@ body {
 				margin: 0;
 			}
 		}
+	}
+}
+
+body{
+	overflow-x: hidden;
+}
+
+@media only screen and (max-width : 768px) {
+    .aos-animate {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+}
+
+
+//ContactForm 7
+
+.wpcf7-not-valid-tip{
+	font-size: 15px;
+}
+
+.wpcf7-response-output{
+	background-color: $gb__grijs;
+	color: black;
+	border: 0 !important;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	padding: 2rem !important;
+}
+
+.contact__form--general{
+	.wpcf7-not-valid-tip{
+		color: #fff;
+	}
+}
+
+.content__bagger--right{
+	.wpcf7-not-valid-tip{
+		color: red;
 	}
 }

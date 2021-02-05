@@ -55,10 +55,6 @@ body {
   line-height: 1.5;
 }
 
-body {
-  background: #fff;
-}
-
 img {
   height: auto;
   max-width: 100%;
@@ -79,7 +75,7 @@ a {
 }
 
 .header__container {
-  width: 1180px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -146,9 +142,7 @@ a {
 html {
   margin-top: 104px;
 }
-
-body {
-  background-image: url(../css/content/images/bg.png);background-position:right -350px bottom;background-repeat:no-repeat;background-attachment:fixed}</style>
+</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -183,12 +177,9 @@ body {
 					</ul>
 				</li>
 					<li><a href="<?php echo get_site_url();?>/projecten">Projecten</a></li>
-					<li><a href="<?php echo get_site_url();?>/dit-zijn-wij">Dit zijn wij</a>
-					<ul>
-						<li><a href="<?php echo get_site_url();?>/dit-zijn-wij">Dit is Grondbalans</a></li>
-						<li><a href="<?php echo get_site_url();?>/circulair">Samen circulair</a></li>
-					</ul>
-					</li>
+					<li><a href="<?php echo get_site_url();?>/dit-zijn-wij">Dit zijn wij</a>	</li>
+						<li><a href="<?php echo get_site_url();?>/duurzaam-circulair-grondverzet">Samen circulair</a></li>
+						<li><a href="<?php echo get_site_url();?>/nieuws">Nieuws</a></li>
 					<li><a href="<?php echo get_site_url();?>/vacatures">Werken bij</a></li>
 					<li><a href="<?php echo get_site_url();?>/vraag-en-aanbod">Vraag en aanbod</a></li>
 					<li><a href="<?php echo get_site_url();?>/contact">Contact</a></li>

@@ -6,7 +6,7 @@ get_header();?>
     $siteUrl = get_site_url();
     $args = array(
         'background' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-JhL38Ah9/w:auto/h:auto/q:75/https://grondbalans.nl/wp-content/uploads/2020/01/grondbalans-grondbanken-e1586246216358.jpg",
-        'heading' => "Grondbanken",
+        'heading' => "GRONDBANKEN",
         'content' => "SNELLE OPLOSSING VOOR KLEINE PARTIJEN GROND",
         'button' => "Neem contact met ons op",
         'link' => "#contact",
@@ -19,7 +19,7 @@ get_header();?>
         <div class="contact__intro">
             <div class="contact__intro--left">
                 <h2>
-                    Grondbanken
+                    GRONDBANKEN
                 </h2>
 
                 <p>

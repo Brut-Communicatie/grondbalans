@@ -1,4 +1,4 @@
-<div class="portfolio__block" id="<?php echo $args['id'];?>">
+<div class="portfolio__block" id="<?php echo $args['id'];?>" data-aos="fade-right" data-aos-delay="200">
     <div class="portfolio__block--container">
         <div class="portfolio__block--left">
             <div class="portfolio__block--left-content">
