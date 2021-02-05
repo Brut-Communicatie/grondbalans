@@ -3,9 +3,8 @@
 get_header();?>
 
 <div class="intro">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline poster="<?php echo get_template_directory_uri();?>/content/video/poster.jpg">
         <source src="<?php echo get_template_directory_uri();?>/content/video/header.webm" type="video/webm">
-        <source src="<?php echo get_template_directory_uri();?>/content/video/poster.jpg" type="poster">
     </video>
     <div class="intro__container">
         <div class="intro__block">
