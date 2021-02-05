@@ -985,10 +985,11 @@ html {
 				max-width: 100%;
 
 				@include Responsive($containerWidth){
-					word-break: break-all;
+					word-break: break-word;
 					hyphens: auto;
 					font-size: clamp(34px, 4vw, 54px);
 					line-height: clamp(34px, 4vw, 54px);
+					margin-bottom: 10px;
 				}
 			}
 
