@@ -1830,3 +1830,20 @@ body{
         animation: none !important;
     }
 }
+
+
+//ContactForm 7
+
+.wpcf7-not-valid-tip{
+	font-size: 15px;
+}
+
+.wpcf7-response-output{
+	background-color: $gb__grijs;
+	color: black;
+	border: 0 !important;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	padding: 2rem !important;
+}
