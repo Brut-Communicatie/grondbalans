@@ -1438,7 +1438,7 @@ body {
 		height: 40rem;
 		margin-bottom: 4rem;
 		background-size: cover;
-
+		overflow: hidden;
 		@include Flex(flex-end, flex-end);
 
 		@include Responsive($containerWidth) {
