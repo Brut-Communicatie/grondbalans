@@ -1868,3 +1868,57 @@ body{
 		color: red;
 	}
 }
+
+
+$firstBreakpoint: 1105px;
+$secondBreakpoint: 705px;
+.nieuws{
+	width: 100%;
+	&__container{
+		@include Container;
+		margin: 0 auto;
+	}
+
+	&__row{
+		width: 100%;
+		@include Flex(flex-start, stretch, row);
+		background-color: pink;
+
+		@include Responsive($firstBreakpoint){
+			flex-wrap: wrap;
+		}
+	}
+
+	&__item{
+		@include Flex(flex-start, flex-start, column);
+		width: calc(100% / 3 - 10px);
+		margin-right: 20px;
+		background-color: cyan;
+
+		@include Responsive($firstBreakpoint){
+			width: calc(100% / 2 - 10px);
+		}
+
+		@include Responsive($secondBreakpoint){
+			width: 100%;
+			margin-right: 0px;
+		}
+
+		&:nth-child(3n+3){
+			margin-right: 0px;
+
+			@include Responsive($firstBreakpoint){
+				margin-right: 10px;
+			}
+
+			@include Responsive($secondBreakpoint){
+				margin-right: 0px;
+			}
+		}
+		&:nth-child(2n+2){
+			@include Responsive($firstBreakpoint){
+				margin-right: 0px;
+			}
+		}
+	}
+}

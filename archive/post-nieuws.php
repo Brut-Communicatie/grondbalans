@@ -20,5 +20,38 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
  </p>
         </div>
     </div>
-    
+</div>
+
+<div class="nieuws">
+    <div class="nieuws__container">
+        <div class="nieuws__row">
+            <?php
+            $the_query = new WP_Query( array('posts_per_page'=>3,
+            'post_type'=>'nieuws',
+            'paged' => get_query_var('paged') ? get_query_var('paged') : 1) 
+            ); 
+            ?>
+            <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+
+            <div class="nieuws__item">
+                <?php the_post_thumbnail();?>
+                <a href="<?php the_permalink(); ?>" class="file-title" target="_blank">
+                <i class="fa fa-angle-right" aria-hidden="true"></i> <?php echo get_the_title(); ?>
+                </a>
+                <div class="file-description"><?php the_content(); ?></div>
+            </div>
+
+            <?php
+            endwhile;
+            echo '</div>';
+            $big = 999999999;
+            echo paginate_links( array(
+            'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+            'format' => '?paged=%#%',
+            'current' => max( 1, get_query_var('paged') ),
+            'total' => $the_query->max_num_pages
+            ) );
+            wp_reset_postdata();
+            ;?>
+    </div>
 </div>
