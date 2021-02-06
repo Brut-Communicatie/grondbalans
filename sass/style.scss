@@ -294,10 +294,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			}
 		}
 
-		a{
+		a {
 			color: $gb__groen-2;
 			transition: opacity .2s ease;
-			&:hover{
+
+			&:hover {
 				opacity: 0.8;
 			}
 		}
@@ -993,7 +994,7 @@ html {
 				line-height: normal;
 				max-width: 100%;
 
-				@include Responsive($containerWidth){
+				@include Responsive($containerWidth) {
 					word-break: break-word;
 					hyphens: auto;
 					font-size: clamp(34px, 4vw, 54px);
@@ -1281,40 +1282,42 @@ body {
 				}
 			}
 
-			.contact__form--general{
+			.contact__form--general {
 				padding: 0;
-				h5{
+
+				h5 {
 					color: #000;
 
 					@include BodyFont;
 					font-size: 15px;
 				}
 
-				h4{
+				h4 {
 					color: #000;
 					font-size: 20px;
 					text-transform: uppercase;
 				}
 
-				p{
+				p {
 					color: #000;
 				}
 
-				label{
+				label {
 					color: #000;
 					line-height: 0;
 				}
-				input[type="submit"]{
+
+				input[type="submit"] {
 
 					background-color: $gb__blauw-2 !important;
 
-					&:hover{
+					&:hover {
 						background-color: $gb__blauw-2 !important;
 					}
 				}
 
-				.wpcf7-acceptance{
-					label{
+				.wpcf7-acceptance {
+					label {
 						line-height: 15px !important;
 					}
 				}
@@ -1370,13 +1373,14 @@ body {
 	&__opener {
 		@include Flex(flex-start, flex-start, column);
 
-		&-minus{
-			i{
-				&:after{
+		&-minus {
+			i {
+				&:after {
 					content: "-" !important;
 				}
 			}
 		}
+
 		@include Link {
 			background-color: grey !important;
 			clip-path: unset !important;
@@ -1387,8 +1391,8 @@ body {
 			text-decoration: none;
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
-			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
-			0 1px 2px rgba(0,0,0,0.24);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+				0 1px 2px rgba(0, 0, 0, 0.24);
 			font-size: 16px;
 			transition: opacity .3s ease;
 			display: flex;
@@ -1400,12 +1404,12 @@ body {
 				font-size: 25px;
 				font-weight: 700;
 
-				&:after{
+				&:after {
 					content: "+";
 				}
 			}
 
-			&:hover{
+			&:hover {
 				opacity: 0.8;
 			}
 		}
@@ -1428,8 +1432,8 @@ body {
 			display: block;
 			max-height: 800px;
 			transition: max-height 0.7s ease, padding 1s cubic-bezier(1, 0, 0, 1);
-			}
 		}
+	}
 }
 
 @keyframes spin {
@@ -1583,7 +1587,7 @@ body {
 
 		@include BodyFont;
 
-		@include Responsive($containerWidth){
+		@include Responsive($containerWidth) {
 			padding: 2rem;
 		}
 
@@ -1599,9 +1603,10 @@ body {
 			}
 		}
 
-		&--column{
+		&--column {
 			@include Flex(flex-start, flex-start, column);
 		}
+
 		&--radio {
 			margin: 10px 0;
 
@@ -1651,7 +1656,7 @@ body {
 		form {
 			@include Flex(flex-start, stretch);
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				@include Flex(flex-start, flex-start, column);
 			}
 
@@ -1684,15 +1689,21 @@ body {
 			width: 40%;
 			padding-left: 2rem;
 
-			input[type="text"], input[type="email"], input[type="name"], input[type="tel"]{
+			input[type="text"],
+			input[type="email"],
+			input[type="name"],
+			input[type="tel"] {
 				width: 100%;
 			}
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				width: 100%;
 				padding-left: 0;
 
-				input[type="text"], input[type="email"], input[type="name"], input[type="tel"]{
+				input[type="text"],
+				input[type="email"],
+				input[type="name"],
+				input[type="tel"] {
 					width: 100%;
 				}
 			}
@@ -1714,7 +1725,7 @@ body {
 			border-right: 1px solid rgb(194, 194, 194);
 			min-height: 100%;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				width: 100%;
 				border: 0;
 			}
@@ -1736,118 +1747,122 @@ body {
 }
 
 
-.contact{
-	&__form{
-		&--general{
+.contact {
+	&__form {
+		&--general {
 			padding: 4rem;
 
-			h4{
+			h4 {
 				font-family: 'Montserrat', sans-serif;
-			font-weight: 700;
-			color: #fff;
-			font-size: 30px;
-			margin: 0;
-			// margin-bottom: 2rem;
+				font-weight: 700;
+				color: #fff;
+				font-size: 30px;
+				margin: 0;
+				// margin-bottom: 2rem;
 			}
 
-			h5{
+			h5 {
 				font-family: 'Montserrat', sans-serif;
-			font-weight: 400;
-			color: #fff;
-			font-size: 24px;
-			margin: 0;
-			// margin-bottom: 2rem;
+				font-weight: 400;
+				color: #fff;
+				font-size: 24px;
+				margin: 0;
+				// margin-bottom: 2rem;
 			}
 
-			p{
+			p {
 				@include BodyFont;
 				color: #fff;
 			}
 
-			input{
+			input {
 				width: 100%;
 			}
 
-			input[type="submit"]{
+			input[type="submit"] {
 				@include Button;
 				border: 0;
 				margin-top: 1rem;
 			}
 
-			label{
+			label {
 				@include BodyFont;
 				color: #fff;
 				font-size: 14px;
 			}
 		}
-		&--item{
 
-			input{
+		&--item {
+
+			input {
 				margin-top: -2rem;
 			}
 
 
 			margin-bottom: 1rem;
-			br{
+
+			br {
 				margin-top: -1rem;
 			}
 
-			&:last-child{
+			&:last-child {
 				margin-bottom: 0;
 			}
-			input[type="checkbox"]{
+
+			input[type="checkbox"] {
 				width: fit-content;
 				margin-right: 10px;
 				margin-left: 0;
 				margin-top: 0;
 			}
-			label{
+
+			label {
 				@include Flex(flex-start, center);
 				width: 100%;
 			}
 
-			.wpcf7-list-item{
+			.wpcf7-list-item {
 				margin: 0;
 			}
 		}
 	}
 }
 
-body{
+body {
 	overflow-x: hidden;
 }
 
 @media only screen and (max-width : 768px) {
-    .aos-animate {
-        /*CSS transitions*/
-        -o-transition-property: none !important;
-        -moz-transition-property: none !important;
-        -ms-transition-property: none !important;
-        -webkit-transition-property: none !important;
-        transition-property: none !important;
-        /*CSS transforms*/
-        -o-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        -webkit-transform: none !important;
-        transform: none !important;
-        /*CSS animations*/
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
-        animation: none !important;
-    }
+	.aos-animate {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
 }
 
 
 //ContactForm 7
 
-.wpcf7-not-valid-tip{
+.wpcf7-not-valid-tip {
 	font-size: 15px;
 }
 
-.wpcf7-response-output{
+.wpcf7-response-output {
 	background-color: $gb__grijs;
 	color: black;
 	border: 0 !important;
@@ -1857,14 +1872,14 @@ body{
 	padding: 2rem !important;
 }
 
-.contact__form--general{
-	.wpcf7-not-valid-tip{
+.contact__form--general {
+	.wpcf7-not-valid-tip {
 		color: #fff;
 	}
 }
 
-.content__bagger--right{
-	.wpcf7-not-valid-tip{
+.content__bagger--right {
+	.wpcf7-not-valid-tip {
 		color: red;
 	}
 }
@@ -1872,52 +1887,142 @@ body{
 
 $firstBreakpoint: 1105px;
 $secondBreakpoint: 705px;
-.nieuws{
+
+.nieuws {
 	width: 100%;
-	&__container{
+
+	&__container {
 		@include Container;
 		margin: 0 auto;
 	}
 
-	&__row{
+	&__row {
 		width: 100%;
 		@include Flex(flex-start, stretch, row);
-		background-color: pink;
+		flex-wrap: wrap;
 
-		@include Responsive($firstBreakpoint){
-			flex-wrap: wrap;
-		}
 	}
 
-	&__item{
+	&__item {
 		@include Flex(flex-start, flex-start, column);
 		width: calc(100% / 3 - 10px);
-		margin-right: 20px;
-		background-color: cyan;
+		margin-right: 15px;
+		background-color: #fff;
 
-		@include Responsive($firstBreakpoint){
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+		margin-bottom: 15px;
+
+		@include Responsive($firstBreakpoint) {
 			width: calc(100% / 2 - 10px);
+			margin-right: 20px;
 		}
 
-		@include Responsive($secondBreakpoint){
+		@include Responsive($secondBreakpoint) {
 			width: 100%;
 			margin-right: 0px;
 		}
 
-		&:nth-child(3n+3){
+		&:nth-child(3n+3) {
 			margin-right: 0px;
 
-			@include Responsive($firstBreakpoint){
-				margin-right: 10px;
+			@include Responsive($firstBreakpoint) {
+				margin-right: 20px;
 			}
 
-			@include Responsive($secondBreakpoint){
+			@include Responsive($secondBreakpoint) {
 				margin-right: 0px;
 			}
 		}
-		&:nth-child(2n+2){
-			@include Responsive($firstBreakpoint){
+
+		&:nth-child(2n+2) {
+			@include Responsive($firstBreakpoint) {
 				margin-right: 0px;
+			}
+		}
+
+		&--content {
+			width: 90%;
+			height: 100%;
+			margin: 0 auto;
+
+			@include Flex(flex-start, center, column);
+
+			&--title {
+				margin-top: 15px;
+
+				@include Link {
+					color: $gb__rood;
+					text-decoration: none;
+					font-family: 'Montserrat', sans-serif;
+					font-weight: 700;
+					font-size: 18px;
+					text-align: center;
+				}
+
+			}
+
+			&--date {
+				font-size: 14px;
+				color: #757575;
+				font-family: 'Montserrat', sans-serif;
+				margin-top: 15px;
+			}
+
+			&--line {
+				width: 35px;
+				height: 1px;
+				background: #aaa;
+				display: block;
+				text-align: center;
+				margin: 10px auto;
+			}
+			&--summary{
+				font-family: 'Montserrat', sans-serif;
+				text-align: center;
+			}
+			&--button{
+				margin-bottom: 15px;
+				margin-top: auto;
+				@include Link{
+					@include Button;
+					font-size: 15px;
+				}
+			}
+		}
+
+		&--thumb {
+			width: 100%;
+			height: 250px;
+			background-size: cover;
+
+			&:hover {
+				.nieuws__item--thumb-title {
+					opacity: 1;
+				}
+			}
+
+			&-title {
+				opacity: 0;
+				transition: all .4s ease;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.508);
+				@include Flex(center, center);
+
+				h4 {
+					margin: 0;
+					color: #fff;
+					font-family: 'Montserrat', sans-serif;
+					font-weight: 200;
+					font-size: 18px;
+					width: 80%;
+					text-align: center;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
 			}
 		}
 	}

@@ -26,7 +26,7 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
     <div class="nieuws__container">
         <div class="nieuws__row">
             <?php
-            $the_query = new WP_Query( array('posts_per_page'=>3,
+            $the_query = new WP_Query( array('posts_per_page'=>9,
             'post_type'=>'nieuws',
             'paged' => get_query_var('paged') ? get_query_var('paged') : 1) 
             ); 
@@ -34,11 +34,32 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
             <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
             <div class="nieuws__item">
-                <?php the_post_thumbnail();?>
-                <a href="<?php the_permalink(); ?>" class="file-title" target="_blank">
-                <i class="fa fa-angle-right" aria-hidden="true"></i> <?php echo get_the_title(); ?>
+                
+                <?php
+                if (has_post_thumbnail()) {
+                    $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail_name');
+                    echo '<a href="'. get_the_permalink() .'" class="nieuws__item--thumb" style="background-image:url('. $thumb[0] .');">';
+                }
+                ;?>
+                    <div class="nieuws__item--thumb-title">
+                        <h4><?php echo get_the_title();?></h4>
+                    </div>
                 </a>
-                <div class="file-description"><?php the_content(); ?></div>
+
+                <div class="nieuws__item--content">
+                    <div class="nieuws__item--content--title">
+                        <a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?>
+                        </a>
+                    </div>
+                    <div class="nieuws__item--content--date">
+                        <?php echo get_the_date();?>
+                    </div>
+                    <div class="nieuws__item--content--line"></div>
+                <div class="nieuws__item--content--summary"><?php the_content(); ?></div>
+                    <div class="nieuws__item--content--button">
+                        <a href="<?php the_permalink();?>">Lees meer</a>
+                    </div>
+                </div>
             </div>
 
             <?php
