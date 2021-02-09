@@ -1535,6 +1535,7 @@ body {
 
 				svg {
 					width: 20px;
+					min-width: 20px;
 					margin-right: 10px;
 					animation: spin 3s linear infinite;
 					animation-play-state: paused;
