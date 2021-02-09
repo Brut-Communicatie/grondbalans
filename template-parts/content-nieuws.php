@@ -1,3 +1,10 @@
+<div class="nieuws__page--breadcrumbs">
+    <p>
+    <a href="<?php echo get_home_url();?>">Home </a>» <a href="/nieuws">Nieuws </a>» <?php echo the_title();?>
+    </p>
+</div>
+
+
 <div class="nieuws__page">
     <div class="nieuws__page--content">
         <?php

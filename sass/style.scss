@@ -2030,9 +2030,23 @@ $secondBreakpoint: 705px;
 		@include Flex(space-between, flex-start, row);
 		@include Container;
 		margin: 0 auto;
-		margin-top: 5rem;
+		margin-top: 2rem;
 		margin-bottom: 3rem;
 
+		&--breadcrumbs{
+			@include Container;
+			margin: 0 auto;
+			margin-top: 5rem;
+
+			p{
+				@include BodyFont;
+				font-size: 12px;
+				@include Link{
+					color: $gb__groen-2;
+					text-decoration: none;
+				}
+			}
+		}
 		&--content{
 			width: 65%;
 			@include Flex(flex-start, flex-start, column);
