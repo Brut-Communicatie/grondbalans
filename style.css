@@ -4603,15 +4603,70 @@ body {
 }
 
 .nieuws__page--content {
-	width: 75%;
+	width: 65%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: column;
 }
 
+.nieuws__page--content h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin: 25px 0 12px !important;
+	font-size: 38px;
+	line-height: 38px;
+}
+
+.nieuws__page--content img {
+	width: 100%;
+}
+
+.nieuws__page--content p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin: 0 0 10px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.nieuws__page--content p {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.nieuws__page--content p strong {
+	font-weight: 700;
+}
+
+.nieuws__page--content p > a,
+.nieuws__page--content p > a:active,
+.nieuws__page--content p > a:visited,
+.nieuws__page--content p > a:link {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #43816b;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.nieuws__page--content p > a,
+	.nieuws__page--content p > a:active,
+	.nieuws__page--content p > a:visited,
+	.nieuws__page--content p > a:link {
+		font-size: clamp(1vw, 15px, 18px);
+	}
+}
+
+.nieuws__page--content p > a:hover,
+.nieuws__page--content p > a:active:hover,
+.nieuws__page--content p > a:visited:hover,
+.nieuws__page--content p > a:link:hover {
+	text-decoration: underline;
+}
+
 .nieuws__page--sidebar {
-	width: 20%;
+	width: 32%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;

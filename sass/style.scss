@@ -2033,11 +2033,46 @@ $secondBreakpoint: 705px;
 		margin-top: 5rem;
 
 		&--content{
-			width: 75%;
+			width: 65%;
 			@include Flex(flex-start, flex-start, column);
+
+			h1{
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				margin: 25px 0 12px !important;
+				font-size: 38px;
+				line-height: 38px;
+			}
+
+
+			img {
+				width: 100%;
+			}
+
+			p{
+				@include BodyFont;
+				margin: 0 0 10px;
+
+				strong{
+					font-weight: 700;
+				}
+
+				@include Link{
+					@include BodyFont;
+					color: $gb__groen-2;
+					font-weight: 700;
+					text-decoration: none;
+
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+
+		
 		}
 		&--sidebar{
-			width: 20%;
+			width: 32%;
 			@include Flex(flex-start, flex-start, column);
 			border: 2px solid black;
 		}
