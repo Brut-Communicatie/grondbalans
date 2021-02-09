@@ -2050,6 +2050,8 @@ $secondBreakpoint: 705px;
 		&--content{
 			width: 65%;
 			@include Flex(flex-start, flex-start, column);
+			border-bottom: 1px solid #ececec;
+			padding-bottom: 2rem;
 
 			h1{
 				font-family: 'Montserrat', sans-serif;
@@ -2093,6 +2095,27 @@ $secondBreakpoint: 705px;
 			border: 2px solid #ececec;
 			padding: 30px 30px 55px;
 			height: 100%;
+		}
+		&--buttons{
+
+			margin-top: 30px;
+			@include Link{
+				@include Button;
+			}
+
+			p{
+				@include BodyFont;
+				color: $gb__rood;
+				font-weight: 700;
+				margin-top: 30px;
+				text-transform: uppercase;
+			}
+		}
+		&--line{
+			width: 90px;
+			height: 4px;
+			display: block;
+			background-color: $gb__rood;
 		}
 	}
 }

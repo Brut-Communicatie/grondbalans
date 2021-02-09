@@ -19,6 +19,21 @@
         $content = apply_filters('the_content', $query->post_content);
         echo $content;
         ;?>
+        <div class="nieuws__page--buttons">
+            <a href="#">Neem contact met ons op</a>
+            <p>Samen mooie projecten maken!</p>
+            <div class="nieuws__page--line">
+            </div>
+        </div>
+        
+        <?php
+        	the_post_navigation(
+				array(
+					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Vorig bericht:', 'grondbalans' ) . '</span> <span class="nav-title">%title</span>',
+					'next_text' => '<span class="nav-subtitle">' . esc_html__( '| Volgend bericht:', 'grondbalans' ) . '</span> <span class="nav-title">%title</span>',
+				)
+			);
+        ?>
     </div>
     <div class="nieuws__page--sidebar">
         <h3>Meer nieuws</h3>
