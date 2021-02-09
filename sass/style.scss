@@ -2026,7 +2026,7 @@ $secondBreakpoint: 705px;
 			}
 		}
 	}
-	&__page{
+	&__page {
 		@include Flex(space-between, flex-start, row);
 		@include Container;
 		margin: 0 auto;
