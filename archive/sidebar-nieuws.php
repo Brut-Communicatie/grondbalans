@@ -6,22 +6,23 @@
     ?>
     <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
-        
+        <a href="<?php the_permalink(); ?>">
         <?php
         if (has_post_thumbnail()) {
             $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail_name');
-            echo '<a href="'. get_the_permalink() .'" class="nieuws__item--thumb" style="background-image:url('. $thumb[0] .');">';
+            echo '<div class="nieuws__page--sidebar--img" style="background-image: url('. $thumb[0] .');"></div>';
         }
         ;?>
+        <div class="nieuws__page--sidebar--content">
+            <h5>
+            <?php echo get_the_title(); ?>
+            </h5>
+            <p>
+            <?php echo get_the_date();?>
+            </p>
+        </div>
 
-        <h4><?php echo get_the_title();?></h4>
-
-        <a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?>
         </a>
-
-    
-        <?php echo get_the_date();?>
-       
 
     <?php
     endwhile;

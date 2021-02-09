@@ -2094,6 +2094,50 @@ $secondBreakpoint: 705px;
 			border: 2px solid #ececec;
 			padding: 30px 30px 55px;
 			height: 100%;
+
+			@include Link{
+				width: 100%;
+				@include Flex(space-between, flex-start, row);
+				margin-bottom: 15px;
+				color: $gb__groen-2;
+				text-decoration: none;
+
+				h5{
+					@include BodyFont;
+					font-size: 16px;
+					margin: 0;
+					font-weight: 200;
+				}
+
+				p{
+					@include BodyFont;
+					margin: 0;
+					font-size: 14px;
+					color: #999;
+				}
+			}
+
+			&--content{
+				width: 80%;
+				@include Flex(flex-start, flex-start, column);
+			}
+			&--img{
+				width: 50px;
+				height: 50px;
+				background-size: cover;
+				display: block;
+				padding: 2px;
+				border: 1px solid rgba(0,0,0,.1);
+			}
+			h3{
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				margin: 0;
+				margin-bottom: 15px;
+				font-size: 38px;
+				line-height: 38px;
+				text-transform: uppercase;
+			}
 		}
 		&--buttons{
 			width: 100%;
