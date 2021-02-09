@@ -2050,8 +2050,7 @@ $secondBreakpoint: 705px;
 		&--content{
 			width: 65%;
 			@include Flex(flex-start, flex-start, column);
-			border-bottom: 1px solid #ececec;
-			padding-bottom: 2rem;
+
 
 			h1{
 				font-family: 'Montserrat', sans-serif;
@@ -2097,8 +2096,11 @@ $secondBreakpoint: 705px;
 			height: 100%;
 		}
 		&--buttons{
-
+			width: 100%;
+			border-bottom: 1px solid #ececec;
 			margin-top: 30px;
+			padding-bottom: 2rem;
+			margin-bottom: 10px;
 			@include Link{
 				@include Button;
 			}
@@ -2116,6 +2118,23 @@ $secondBreakpoint: 705px;
 			height: 4px;
 			display: block;
 			background-color: $gb__rood;
+		}
+		&--navigation{
+			@include Flex(flex-start, flex-start, column);
+			
+			
+				margin: 0;
+				@include Link{
+					@include BodyFont;
+					text-decoration: none;
+					font-size: 14px;
+					color: $gb__groen-2;
+
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			
 		}
 	}
 }

@@ -25,15 +25,10 @@
             <div class="nieuws__page--line">
             </div>
         </div>
-        
-        <?php
-        	the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Vorig bericht:', 'grondbalans' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( '| Volgend bericht:', 'grondbalans' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-        ?>
+        <div class="nieuws__page--navigation">
+        <?php previous_post_link('%link', 'Vorig bericht: %title'); ?>
+        <?php next_post_link('%link', 'Volgend bericht: %title'); ?>
+        </div>
     </div>
     <div class="nieuws__page--sidebar">
         <h3>Meer nieuws</h3>
