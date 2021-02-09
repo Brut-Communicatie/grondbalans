@@ -2033,6 +2033,9 @@ $secondBreakpoint: 705px;
 		margin-top: 2rem;
 		margin-bottom: 3rem;
 
+		@include Responsive($containerWidth){
+			flex-wrap: wrap;
+		}
 		&--breadcrumbs{
 			@include Container;
 			margin: 0 auto;
@@ -2050,7 +2053,9 @@ $secondBreakpoint: 705px;
 		&--content{
 			width: 65%;
 			@include Flex(flex-start, flex-start, column);
-
+			@include Responsive($containerWidth){
+				width: 100%;
+			}
 
 			h1{
 				font-family: 'Montserrat', sans-serif;
@@ -2095,6 +2100,12 @@ $secondBreakpoint: 705px;
 			padding: 30px 30px 55px;
 			height: 100%;
 
+			@include Responsive($containerWidth){
+				width: 100%;
+				margin-top: 2rem;
+			}
+
+
 			@include Link{
 				width: 100%;
 				@include Flex(space-between, flex-start, row);
@@ -2134,7 +2145,7 @@ $secondBreakpoint: 705px;
 				font-weight: 700;
 				margin: 0;
 				margin-bottom: 15px;
-				font-size: 38px;
+				font-size: 32px;
 				line-height: 38px;
 				text-transform: uppercase;
 			}
