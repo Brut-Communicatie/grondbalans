@@ -20,7 +20,7 @@
         echo $content;
         ;?>
         <div class="nieuws__page--buttons">
-            <a href="#">Neem contact met ons op</a>
+            <a href="/contact#contact">Neem contact met ons op</a>
             <p>Samen mooie projecten maken!</p>
             <div class="nieuws__page--line">
             </div>
