@@ -55,7 +55,8 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
                         <?php echo get_the_date();?>
                     </div>
                     <div class="nieuws__item--content--line"></div>
-                <div class="nieuws__item--content--summary"><?php the_excerpt(); ?></div>
+                <div class="nieuws__item--content--summary">
+                <?php the_excerpt(); ?></div>
                     <div class="nieuws__item--content--button">
                         <a href="<?php the_permalink();?>">Lees meer</a>
                     </div>
