@@ -4473,6 +4473,7 @@ body {
 
 .nieuws__item--content--title {
 	margin-top: 15px;
+	text-align: center;
 }
 
 .nieuws__item--content--title > a,
@@ -4583,6 +4584,39 @@ body {
 
 .nieuws__item--thumb-title h4:hover {
 	text-decoration: underline;
+}
+
+.nieuws__page {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: row;
+	width: 1180px;
+	margin: 0 auto;
+	margin-top: 5rem;
+}
+
+@media screen and (max-width: 1180px) {
+	.nieuws__page {
+		width: calc(100% - 2rem);
+	}
+}
+
+.nieuws__page--content {
+	width: 75%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.nieuws__page--sidebar {
+	width: 20%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	border: 2px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1950,7 +1950,7 @@ $secondBreakpoint: 705px;
 
 			&--title {
 				margin-top: 15px;
-
+				text-align: center;
 				@include Link {
 					color: $gb__rood;
 					text-decoration: none;
@@ -2024,6 +2024,22 @@ $secondBreakpoint: 705px;
 					}
 				}
 			}
+		}
+	}
+	&__page{
+		@include Flex(space-between, flex-start, row);
+		@include Container;
+		margin: 0 auto;
+		margin-top: 5rem;
+
+		&--content{
+			width: 75%;
+			@include Flex(flex-start, flex-start, column);
+		}
+		&--sidebar{
+			width: 20%;
+			@include Flex(flex-start, flex-start, column);
+			border: 2px solid black;
 		}
 	}
 }
