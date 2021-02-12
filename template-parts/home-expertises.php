@@ -154,4 +154,4 @@
     </div>
 </div>
 
-<a data-aos="fade-up" data-aos-delay="250" href="<?php echo get_site_url();?>/expertises">Lees meer over onze expertises</a>
+<a href="<?php echo get_site_url();?>/expertises">Lees meer over onze expertises</a>

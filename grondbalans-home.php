@@ -29,7 +29,7 @@ get_header();?>
             <div class="content__line"></div>
         </div>
 
-        <section class="content__section">
+        <section class="content__section"  class="content__intro" data-aos="fade-up">
             <?php get_template_part('template-parts/home' , 'expertises');?>
         </section>
 
