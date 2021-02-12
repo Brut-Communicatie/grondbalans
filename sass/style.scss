@@ -957,9 +957,13 @@ html {
 .banner {
 	width: 100%;
 	height: 450px;
-
+	margin-bottom: 7rem;
 	background-size: cover;
 	background-position: center center;
+
+	@include Responsive($containerWidth) {
+		margin-bottom: 2rem;
+	}
 
 	&__container {
 		@include Container;
@@ -1952,6 +1956,7 @@ $secondBreakpoint: 705px;
 			&--title {
 				margin-top: 15px;
 				text-align: center;
+
 				@include Link {
 					color: $gb__rood;
 					text-decoration: none;
@@ -1978,14 +1983,17 @@ $secondBreakpoint: 705px;
 				text-align: center;
 				margin: 10px auto;
 			}
-			&--summary{
+
+			&--summary {
 				font-family: 'Montserrat', sans-serif;
 				text-align: center;
 			}
-			&--button{
+
+			&--button {
 				margin-bottom: 15px;
 				margin-top: auto;
-				@include Link{
+
+				@include Link {
 					@include Button;
 					font-size: 15px;
 				}
@@ -2027,6 +2035,7 @@ $secondBreakpoint: 705px;
 			}
 		}
 	}
+
 	&__page {
 		@include Flex(space-between, flex-start, row);
 		@include Container;
@@ -2034,31 +2043,35 @@ $secondBreakpoint: 705px;
 		margin-top: 2rem;
 		margin-bottom: 3rem;
 
-		@include Responsive($containerWidth){
+		@include Responsive($containerWidth) {
 			flex-wrap: wrap;
 		}
-		&--breadcrumbs{
+
+		&--breadcrumbs {
 			@include Container;
 			margin: 0 auto;
 			margin-top: 5rem;
 
-			p{
+			p {
 				@include BodyFont;
 				font-size: 12px;
-				@include Link{
+
+				@include Link {
 					color: $gb__groen-2;
 					text-decoration: none;
 				}
 			}
 		}
-		&--content{
+
+		&--content {
 			width: 65%;
 			@include Flex(flex-start, flex-start, column);
-			@include Responsive($containerWidth){
+
+			@include Responsive($containerWidth) {
 				width: 100%;
 			}
 
-			h1{
+			h1 {
 				font-family: 'Montserrat', sans-serif;
 				font-weight: 700;
 				margin: 25px 0 12px !important;
@@ -2071,57 +2084,58 @@ $secondBreakpoint: 705px;
 				width: 100%;
 			}
 
-			p{
+			p {
 				@include BodyFont;
 				margin: 0 0 10px;
 
-				strong{
+				strong {
 					font-weight: 700;
 				}
 
-				@include Link{
+				@include Link {
 					@include BodyFont;
 					color: $gb__groen-2;
 					font-weight: 700;
 					text-decoration: none;
 
-					&:hover{
+					&:hover {
 						text-decoration: underline;
 					}
 				}
 			}
 
-		
+
 		}
-		&--sidebar{
+
+		&--sidebar {
 			width: 32%;
 			@include Flex(flex-start, flex-start, column);
-			background: rgba(255,255,255,.8);
+			background: rgba(255, 255, 255, .8);
 			border: 2px solid #ececec;
 			padding: 30px 30px 55px;
 			height: 100%;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				width: 100%;
 				margin-top: 2rem;
 			}
 
 
-			@include Link{
+			@include Link {
 				width: 100%;
 				@include Flex(space-between, flex-start, row);
 				margin-bottom: 15px;
 				color: $gb__groen-2;
 				text-decoration: none;
 
-				h5{
+				h5 {
 					@include BodyFont;
 					font-size: 16px;
 					margin: 0;
 					font-weight: 200;
 				}
 
-				p{
+				p {
 					@include BodyFont;
 					margin: 0;
 					font-size: 14px;
@@ -2129,19 +2143,21 @@ $secondBreakpoint: 705px;
 				}
 			}
 
-			&--content{
+			&--content {
 				width: 80%;
 				@include Flex(flex-start, flex-start, column);
 			}
-			&--img{
+
+			&--img {
 				width: 50px;
 				height: 50px;
 				background-size: cover;
 				display: block;
 				padding: 2px;
-				border: 1px solid rgba(0,0,0,.1);
+				border: 1px solid rgba(0, 0, 0, .1);
 			}
-			h3{
+
+			h3 {
 				font-family: 'Montserrat', sans-serif;
 				font-weight: 700;
 				margin: 0;
@@ -2151,17 +2167,19 @@ $secondBreakpoint: 705px;
 				text-transform: uppercase;
 			}
 		}
-		&--buttons{
+
+		&--buttons {
 			width: 100%;
 			border-bottom: 1px solid #ececec;
 			margin-top: 30px;
 			padding-bottom: 2rem;
 			margin-bottom: 10px;
-			@include Link{
+
+			@include Link {
 				@include Button;
 			}
 
-			p{
+			p {
 				@include BodyFont;
 				color: $gb__rood;
 				font-weight: 700;
@@ -2169,28 +2187,31 @@ $secondBreakpoint: 705px;
 				text-transform: uppercase;
 			}
 		}
-		&--line{
+
+		&--line {
 			width: 90px;
 			height: 4px;
 			display: block;
 			background-color: $gb__rood;
 		}
-		&--navigation{
-			@include Flex(flex-start, flex-start, column);
-			
-			
-				margin: 0;
-				@include Link{
-					@include BodyFont;
-					text-decoration: none;
-					font-size: 14px;
-					color: $gb__groen-2;
 
-					&:hover{
-						text-decoration: underline;
-					}
+		&--navigation {
+			@include Flex(flex-start, flex-start, column);
+
+
+			margin: 0;
+
+			@include Link {
+				@include BodyFont;
+				text-decoration: none;
+				font-size: 14px;
+				color: $gb__groen-2;
+
+				&:hover {
+					text-decoration: underline;
 				}
-			
+			}
+
 		}
 	}
 }

@@ -282,7 +282,7 @@ $mobile: 1330px;
     background-color: $gb__grijs;
     padding: 2rem 0;
     padding-bottom: 3rem;
-
+    margin-top: 3rem;
     &__container {
         @include Container;
         @include Flex(space-between, flex-start);

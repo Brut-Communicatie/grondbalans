@@ -6,6 +6,8 @@
         'button' => "",
     );
     get_template_part( 'template-parts/banner', 'general', $args );
+    setlocale(LC_TIME, 'NL_nl');
+// echo strftime('%e %B %Y om %H:%M',time());
 ?>
 <div class="content">
     <div class="content__container" >
@@ -52,7 +54,11 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
                         </a>
                     </div>
                     <div class="nieuws__item--content--date">
-                        <?php echo get_the_date();?>
+                        <!-- <?php echo get_the_date();?> -->
+                        <?php 
+                        $date = date('d-m-Y', strtotime(get_the_date()));
+                        // var_dump($date);
+                        echo strftime('%e %B %Y', strtotime($date));?>
                     </div>
                     <div class="nieuws__item--content--line"></div>
                 <div class="nieuws__item--content--summary">
