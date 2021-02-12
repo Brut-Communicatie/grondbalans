@@ -1777,7 +1777,8 @@ textarea {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 }
 
 .content__section > a:hover, .content__section--last > a:hover,
@@ -1787,7 +1788,7 @@ textarea {
 .content__section--last > a:visited:hover,
 .content__section > a:link:hover,
 .content__section--last > a:link:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -2066,7 +2067,8 @@ textarea {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 	font-size: 16px;
 }
 
@@ -2074,7 +2076,7 @@ textarea {
 .content__block--right-content > a:active:hover,
 .content__block--right-content > a:visited:hover,
 .content__block--right-content > a:link:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -2368,14 +2370,15 @@ html {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 }
 
 .contact__intro--left-circ > a:hover,
 .contact__intro--left-circ > a:active:hover,
 .contact__intro--left-circ > a:visited:hover,
 .contact__intro--left-circ > a:link:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -2676,14 +2679,15 @@ html {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 }
 
 .banner__block--content > a:hover,
 .banner__block--content > a:active:hover,
 .banner__block--content > a:visited:hover,
 .banner__block--content > a:link:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -2768,7 +2772,8 @@ html {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 	font-size: 16px;
 }
 
@@ -2776,7 +2781,7 @@ html {
 .portfolio__block--buttons > a:active:hover,
 .portfolio__block--buttons > a:visited:hover,
 .portfolio__block--buttons > a:link:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -2945,7 +2950,8 @@ html {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 	font-size: 16px;
 }
 
@@ -2953,7 +2959,7 @@ html {
 .portfolio__block--left-content > a:active:hover,
 .portfolio__block--left-content > a:visited:hover,
 .portfolio__block--left-content > a:link:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -3667,7 +3673,8 @@ body {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 	background-color: #069;
 	color: #fff;
 }
@@ -3676,7 +3683,7 @@ body {
 .content__bagger--right > a:active:hover,
 .content__bagger--right > a:visited:hover,
 .content__bagger--right > a:link:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -4191,11 +4198,12 @@ body {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 }
 
 .content__form--right .wpcf7-submit:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -4286,13 +4294,14 @@ body {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 	border: 0;
 	margin-top: 1rem;
 }
 
 .contact__form--general input[type="submit"]:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -4543,7 +4552,8 @@ body {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 	font-size: 15px;
 }
 
@@ -4551,7 +4561,7 @@ body {
 .nieuws__item--content--button > a:active:hover,
 .nieuws__item--content--button > a:visited:hover,
 .nieuws__item--content--button > a:link:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {
@@ -4848,14 +4858,15 @@ body {
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 }
 
 .nieuws__page--buttons > a:hover,
 .nieuws__page--buttons > a:active:hover,
 .nieuws__page--buttons > a:visited:hover,
 .nieuws__page--buttons > a:link:hover {
-	opacity: 0.8;
+	filter: brightness(110%);
 }
 
 @media screen and (max-width: calc(600px + 5px)) {

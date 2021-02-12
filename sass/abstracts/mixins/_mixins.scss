@@ -69,10 +69,11 @@
 	font-weight: 700;
 	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
 	text-transform: uppercase;
-	transition: opacity .25s ease;
+	transition: filter .25s ease;
+	filter: brightness(100%);
 
 	&:hover{
-		opacity: 0.8;
+		filter: brightness(110%);
 	}
 
 	@include Responsive(600px){
