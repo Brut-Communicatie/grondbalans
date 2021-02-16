@@ -1039,7 +1039,7 @@ textarea {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.footer__left--item ul li {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -1703,7 +1703,7 @@ textarea {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__intro p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -1828,7 +1828,7 @@ textarea {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__section p, .content__section--last p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -2046,7 +2046,7 @@ textarea {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__block--right-content p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -2128,7 +2128,7 @@ textarea {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__inline-link {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -2322,7 +2322,7 @@ html {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.contact__intro--left p, .contact__intro--left-circ p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -2340,7 +2340,7 @@ html {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.contact__intro--left ul li, .contact__intro--left-circ ul li {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -2929,7 +2929,7 @@ html {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.portfolio__block--left-content p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3110,7 +3110,7 @@ html {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__werken--left p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3216,7 +3216,7 @@ html {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__werken--vacatures p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3241,7 +3241,7 @@ html {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__werken--quote p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3263,7 +3263,7 @@ html {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__werken--quote-bio p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3279,7 +3279,7 @@ html {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__werken--quote-bio strong {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3306,7 +3306,7 @@ html {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__werken--block p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3450,7 +3450,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.grondbank__details p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3515,7 +3515,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__summary p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3631,7 +3631,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__bagger--left p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3717,7 +3717,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__bagger--right .contact__form--general h5 {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3860,7 +3860,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__opener--about {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3926,7 +3926,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__full--span p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -3994,7 +3994,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__skewed ul li {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4049,7 +4049,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__form {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4098,7 +4098,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.content__form--radio input[type="radio"] + span {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4273,7 +4273,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.contact__form--general p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4320,7 +4320,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.contact__form--general label {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4653,7 +4653,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.nieuws__page--breadcrumbs p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4699,7 +4699,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.nieuws__page--content p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4723,7 +4723,7 @@ body {
 	.nieuws__page--content p > a:active,
 	.nieuws__page--content p > a:visited,
 	.nieuws__page--content p > a:link {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4783,7 +4783,7 @@ body {
 	.nieuws__page--sidebar > a:active h5,
 	.nieuws__page--sidebar > a:visited h5,
 	.nieuws__page--sidebar > a:link h5 {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4803,7 +4803,7 @@ body {
 	.nieuws__page--sidebar > a:active p,
 	.nieuws__page--sidebar > a:visited p,
 	.nieuws__page--sidebar > a:link p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4890,7 +4890,7 @@ body {
 
 @media screen and (max-width: calc(1180px + 5px)) {
 	.nieuws__page--buttons p {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 
@@ -4925,7 +4925,7 @@ body {
 	.nieuws__page--navigation > a:active,
 	.nieuws__page--navigation > a:visited,
 	.nieuws__page--navigation > a:link {
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
 

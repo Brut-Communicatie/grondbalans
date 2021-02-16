@@ -94,6 +94,6 @@
 	font-size: 18px;
 
 	@include Responsive($containerWidth){
-		font-size: clamp(1vw, 15px, 18px);
+		font-size: clamp(1vw, 16px, 18px);
 	}
 }
