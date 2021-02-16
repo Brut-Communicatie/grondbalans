@@ -766,6 +766,10 @@ html {
 
 			p {
 				@include BodyFont;
+
+				strong{
+					font-weight: 600;
+				}
 			}
 
 			ul {

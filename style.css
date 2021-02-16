@@ -2326,6 +2326,10 @@ html {
 	}
 }
 
+.contact__intro--left p strong, .contact__intro--left-circ p strong {
+	font-weight: 600;
+}
+
 .contact__intro--left ul, .contact__intro--left-circ ul {
 	margin: 0;
 	padding: 0;
