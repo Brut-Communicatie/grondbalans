@@ -1008,6 +1008,11 @@ html {
 					line-height: clamp(34px, 4vw, 54px);
 					margin-bottom: 10px;
 				}
+
+				@include Responsive(670px){
+					font-size: 30px !important;
+					line-height: 30px !important;
+				}
 			}
 
 			p {
