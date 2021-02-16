@@ -2657,6 +2657,13 @@ html {
 	}
 }
 
+@media screen and (max-width: calc(670px + 5px)) {
+	.banner__block--content h1 {
+		font-size: 30px !important;
+		line-height: 30px !important;
+	}
+}
+
 .banner__block--content p {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
