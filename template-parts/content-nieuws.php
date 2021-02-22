@@ -29,7 +29,7 @@
         <?php previous_post_link('%link', 'Vorig bericht: %title'); ?>
         <?php next_post_link('%link', 'Volgend bericht: %title'); ?>
         </div>
-        <br/><br/>
+        <br/>
         <?php 
         echo apply_filters( 'the_content',' [addtoany] ');
         ?>
