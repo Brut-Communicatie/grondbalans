@@ -63,7 +63,7 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
                     </div>
                     <div class="nieuws__item--content--line"></div>
                 <div class="nieuws__item--content--summary">
-                <?php echo get_the_content(); ?></div>
+                <?php echo get_the_excerpt(); ?></div>
                     <div class="nieuws__item--content--button">
                         <a href="<?php the_permalink();?>">Lees meer</a>
                     </div>
