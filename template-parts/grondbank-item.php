@@ -22,6 +22,5 @@
             <h4>Samenwerkingsverband met:</h4>
             <img src="<?php echo $args['logo'];?>" alt="Logo van partner"/>
         </div>
-
     </div>
 </div>

@@ -31,7 +31,7 @@
         </div>
         <br/>
         <?php 
-        echo apply_filters( 'the_content',' [addtoany] ');
+            echo apply_filters( 'the_content',' [addtoany] ');
         ?>
     </div>
     <div class="nieuws__page--sidebar">

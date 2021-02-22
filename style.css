@@ -3514,7 +3514,7 @@ body {
 }
 
 .grondbank__details--onder img {
-	max-width: 50%;
+	height: 50px;
 }
 
 .content__summary p {

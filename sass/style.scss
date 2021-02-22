@@ -1159,7 +1159,11 @@ body {
 			}
 
 			img {
-				max-width: 50%;
+
+				// Aanpassing febuari -> vast formaat =/= vaste hoogte (?) 
+				// max-width: 50%;
+
+				height: 50px;
 			}
 		}
 	}
