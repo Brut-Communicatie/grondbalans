@@ -333,46 +333,14 @@ add_action( 'pre_get_posts', function ( $q ) {
 });
 
 
-// function wpdocs_excerpt_more( $more ) {
-//     if ( ! is_single() ) {
-//         $more = sprintf( '...',
-//             get_permalink( get_the_ID() ),
-//             __( 'Read More', 'textdomain' )
-//         );
-//     }
+function wpdocs_excerpt_more( $more ) {
+    if ( ! is_single() ) {
+        $more = sprintf( '...',
+            get_permalink( get_the_ID() ),
+            __( 'Read More', 'textdomain' )
+        );
+    }
  
-//     return $more;
-// }
-// add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
-
-function custom_tptn_trim_excerpt( $text, $id ) {
-	$raw_excerpt = $text;
-
-	$text = get_the_content( null, false, $id );
-
-	$text = strip_shortcodes( $text );
-
-	$text = apply_filters( 'the_content', $text );
-	$text = str_replace( ']]>', ']]>', $text );
-
-	/***Add the allowed HTML tags separated by a comma.*/
-	$allowed_tags = '<br>,<li>,<p>,<strong>';
-	$text         = strip_tags( $text, $allowed_tags );
-
-	/***Change the excerpt word count.*/
-	$excerpt_length = 60;
-	$excerpt_length = apply_filters( 'excerpt_length', $excerpt_length );
-
-	/*** Change the excerpt ending.*/
-	$excerpt_end  = ' <a href="' . get_permalink( $id ) . '">&raquo; Continue Reading.</a>';
-	$excerpt_more = apply_filters( 'excerpt_more', ' ' . $excerpt_end );
-
-	$words = preg_split( "/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY );
-	if ( count( $words ) > $excerpt_length ) {
-		array_pop( $words );
-		$text = implode( ' ', $words );
-		$text = $text . $excerpt_more;
-	}
-	return apply_filters( 'wp_trim_excerpt', $text, $raw_excerpt );
+    return $more;
 }
-add_filter( 'tptn_excerpt', 'custom_tptn_trim_excerpt', 10, 2 );
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );

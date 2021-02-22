@@ -19,7 +19,7 @@
             </h5>
             <p>
             <?php 
-             $date = get_the_date( 'j M Y');
+             $date = get_the_date( 'j F Y');
             echo $date; ?>
             </p>
         </div>
