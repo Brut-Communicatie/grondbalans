@@ -18,7 +18,9 @@
             <?php echo get_the_title(); ?>
             </h5>
             <p>
-            <?php echo get_the_date();?>
+            <?php 
+             $date = get_the_date( 'j M Y');
+            echo $date; ?>
             </p>
         </div>
 

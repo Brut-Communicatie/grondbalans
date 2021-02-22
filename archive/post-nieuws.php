@@ -57,8 +57,7 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
 
                         <!-- <?php echo get_the_date();?> -->
                         <?php 
-                        $date = get_the_date( 'D M j');
-                        // var_dump($date);
+                        $date = get_the_date( 'j M Y');
                         echo $date;?>
                     </div>
                     <div class="nieuws__item--content--line"></div>
