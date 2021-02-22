@@ -332,6 +332,7 @@ add_action( 'pre_get_posts', function ( $q ) {
 
 });
 
+
 function wpdocs_excerpt_more( $more ) {
     if ( ! is_single() ) {
         $more = sprintf( '...',
@@ -344,57 +345,30 @@ function wpdocs_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
-if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) : 
 
-	function wpse_custom_wp_trim_excerpt( $wpse_excerpt ) {
+function lt_html_excerpt($text) { // Fakes an excerpt if needed
+    global $post;
+    if ( '' == $text ) {
+        $text = get_the_content('');
+        $text = apply_filters('the_content', $text);
+        $text = str_replace('\]\]\>', ']]&gt;', $text);
+        /*just add all the tags you want to appear in the excerpt --
+        be sure there are no white spaces in the string of allowed tags */
+        $text = strip_tags($text,'<p><br><b><a><em><strong>');
+        /* you can also change the length of the excerpt here, if you want */
+        $excerpt_length = 55; 
+        $words = explode(' ', $text, $excerpt_length + 1);
+        if (count($words)> $excerpt_length) {
+            array_pop($words);
+            array_push($words, '[...]');
+            $text = implode(' ', $words);
+        }
+    }
+    return $text;
+}
 
-	$raw_excerpt = $wpse_excerpt;
-		if ( '' == $wpse_excerpt ) {
+/* remove the default filter */
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 
-			$wpse_excerpt = get_the_content( '' );
-			$wpse_excerpt = strip_shortcodes( $wpse_excerpt );
-			$wpse_excerpt = apply_filters( 'the_content', $wpse_excerpt );
-			$wpse_excerpt = str_replace( ']]>', ']]&gt;', $wpse_excerpt );
-
-			//Set the excerpt word count and only break after sentence is complete.
-			$excerpt_word_count = 75;
-			$excerpt_length = apply_filters( 'excerpt_length', $excerpt_word_count ); 
-			$tokens = array();
-			$excerptOutput = '';
-			$count = 0;
-
-			// Divide the string into tokens; HTML tags, or words, followed by any whitespace
-			preg_match_all( '/(<[^>]+>|[^<>\s]+)\s*/u', $wpse_excerpt, $tokens );
-
-			foreach ( $tokens[0] as $token ) { 
-
-				if ( $count >= $excerpt_length && preg_match( '/[\,\;\?\.\!]\s*$/uS', $token ) ) { 
-					// Limit reached, continue until , ; ? . or ! occur at the end
-					$excerptOutput .= trim( $token );
-					break;
-				}
-
-				// Add words to complete sentence
-				$count++;
-
-				// Append what's left of the token
-				$excerptOutput .= $token;
-			}
-
-			$wpse_excerpt = trim( force_balance_tags( $excerptOutput ) );
-
-				$excerpt_end = ' <a href="'. esc_url( get_permalink() ) . '">' . '&nbsp;&raquo;&nbsp;' . sprintf( __( 'Read more about: %s &nbsp;&raquo;', 'wpse' ), get_the_title() ) . '</a>'; 
-				$excerpt_more = apply_filters( 'excerpt_more', ' ' . $excerpt_end ); 
-
-				$wpse_excerpt .= $excerpt_more; /* Add read more in new paragraph */
-
-			return $wpse_excerpt;   
-
-		}
-		return apply_filters( 'wpse_custom_wp_trim_excerpt', $wpse_excerpt, $raw_excerpt );
-	}
-
-endif; 
-
-remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
-add_filter( 'get_the_excerpt', 'wpse_custom_wp_trim_excerpt' ); 
+/* now, add your own filter */
+add_filter('get_the_excerpt', 'lt_html_excerpt');
