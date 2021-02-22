@@ -81,5 +81,6 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
             ) );
             wp_reset_postdata();
             ;?>
+            <?php do_shortcode('[addtoany buttons="facebook,twitter,email"]');?>
     </div>
 </div>

@@ -767,7 +767,7 @@ html {
 			p {
 				@include BodyFont;
 
-				strong{
+				strong {
 					font-weight: 600;
 				}
 			}
@@ -1009,7 +1009,7 @@ html {
 					margin-bottom: 10px;
 				}
 
-				@include Responsive(670px){
+				@include Responsive(670px) {
 					font-size: 30px !important;
 					line-height: 30px !important;
 				}
@@ -1995,10 +1995,11 @@ $secondBreakpoint: 705px;
 			&--summary {
 				font-family: 'Montserrat', sans-serif;
 				text-align: center;
-				p{
-					margin-bottom: 10px;
+
+				p {
+					margin-bottom: 20px;
 				}
-				
+
 			}
 
 			&--button {
@@ -2017,6 +2018,7 @@ $secondBreakpoint: 705px;
 			height: 250px;
 			background-size: cover;
 			margin-bottom: 1rem;
+
 			&:hover {
 				.nieuws__item--thumb-title {
 					opacity: 1;

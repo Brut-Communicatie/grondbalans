@@ -78,7 +78,7 @@ get_header();?>
                         <p>
                         Als specialist in grondstromen werken wij aan een goede bodem voor toekomstige generaties. Een goede bodem is belangrijk voor onze voedselproductie, ons drinkwater én om veilig & duurzaam te kunnen wonen, werken en recreëren. Ontdek hoe wij circulariteit en duurzaamheid verweven in onze werkprocessen!
                         </p>
-                        <a href="<?php echo get_site_url();?>/circulair">
+                        <a href="<?php echo get_site_url();?>/duurzaam-circulair-grondverzet/">
                             Lees meer over circulariteit
                         </a>
                     </div>

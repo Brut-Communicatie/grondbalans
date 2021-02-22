@@ -340,7 +340,6 @@ function wpdocs_excerpt_more( $more ) {
             __( 'Read More', 'textdomain' )
         );
     }
- 
     return $more;
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
