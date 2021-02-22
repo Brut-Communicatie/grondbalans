@@ -29,6 +29,7 @@
         <?php previous_post_link('%link', 'Vorig bericht: %title'); ?>
         <?php next_post_link('%link', 'Volgend bericht: %title'); ?>
         </div>
+        <?php do_shortcode('[addtoany]');?>
     </div>
     <div class="nieuws__page--sidebar">
         <h3>Meer nieuws</h3>
