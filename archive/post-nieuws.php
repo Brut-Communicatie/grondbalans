@@ -54,6 +54,7 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
                         </a>
                     </div>
                     <div class="nieuws__item--content--date">
+
                         <!-- <?php echo get_the_date();?> -->
                         <?php 
                         $date = date('d-m-Y', strtotime(get_the_date()));
@@ -62,7 +63,7 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
                     </div>
                     <div class="nieuws__item--content--line"></div>
                 <div class="nieuws__item--content--summary">
-                <?php get_content(); ?></div>
+                <?php the_excerpt(); ?></div>
                     <div class="nieuws__item--content--button">
                         <a href="<?php the_permalink();?>">Lees meer</a>
                     </div>

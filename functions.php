@@ -343,7 +343,7 @@ function custom_tptn_trim_excerpt( $text, $id ) {
 	$text = str_replace( ']]>', ']]>', $text );
 
 	/***Add the allowed HTML tags separated by a comma.*/
-	$allowed_tags = '<br>,<li>,<p>,<strong>';
+	$allowed_tags = '<br>,<li>,<p>,<strong>,<em>';
 	$text         = strip_tags( $text, $allowed_tags );
 
 	/***Change the excerpt word count.*/
@@ -376,10 +376,3 @@ function wpdocs_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
-function get_content($more_link_text = '(more...)', $stripteaser = 0, $more_file = '')
-{
-	$content = get_the_content($more_link_text, $stripteaser, $more_file);
-	$content = apply_filters('the_content', $content);
-	$content = str_replace(']]>', ']]&gt;', $content);
-	return $content;
-}
