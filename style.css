@@ -4350,10 +4350,10 @@ body {
 }
 
 .contact__form--item input[type="checkbox"] {
-	width: fit-content;
 	margin-right: 10px;
 	margin-left: 0;
 	margin-top: 0;
+	width: auto;
 }
 
 .contact__form--item label {
