@@ -951,7 +951,6 @@ textarea {
 	background-color: #b5b2b1;
 	padding: 2rem 0;
 	padding-bottom: 3rem;
-	margin-top: 3rem;
 }
 
 .footer__container {
@@ -1871,7 +1870,7 @@ textarea {
 	text-decoration: none;
 	transition: all .25s ease;
 	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 1px;
