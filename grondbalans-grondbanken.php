@@ -216,7 +216,7 @@ get_header();?>
             ));?>
 
             <?php get_template_part('template-parts/grondbank', 'item', $args = array(
-                'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-scpgFnu5/w:338/h:135/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/sliedrecht-2.jpg",
+                'foto' => "https://i.imgur.com/IXHv48V.jpg",
                 'title' => "Grondbank Sliedrecht",
                 'plaats' => "gb-sliedrecht",
                 'adres' => "Rivierdijk 2d",
