@@ -1910,12 +1910,14 @@ $secondBreakpoint: 705px;
 	&__pagination{
 		display: flex;
 		justify-content: center;
+		margin-bottom: 2rem;
+
 		@include BodyFont;
-		
+
 		@include Link{
 			margin: 0 5px;
 			color: $gb__groen-2;
-			padding: 5px;
+			padding: 5px 10px;
 			text-decoration: none;
 			border: 1px solid $gb__groen-2;
 			&:hover{
@@ -1926,7 +1928,7 @@ $secondBreakpoint: 705px;
 		span{
 			margin: 0 5px;
 			color: $gb__groen-2;
-			padding: 5px;
+			padding: 5px 10px;
 			text-decoration: none;
 			border: 1px solid $gb__groen-2;
 		}
