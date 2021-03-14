@@ -4512,10 +4512,11 @@ body {
 
 .nieuws__pagination span {
 	margin: 0 5px;
-	color: #43816b;
+	background-color: #b5b2b1;
+	color: black;
 	padding: 5px 10px;
 	text-decoration: none;
-	border: 1px solid #43816b;
+	border: 1px solid #b5b2b1;
 }
 
 .nieuws__container {

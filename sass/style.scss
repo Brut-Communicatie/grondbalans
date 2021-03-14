@@ -1925,12 +1925,13 @@ $secondBreakpoint: 705px;
 				color: #fff;
 			}
 		}
-		span{
+		span {
 			margin: 0 5px;
-			color: $gb__groen-2;
+			background-color: $gb__grijs;
+			color: rgb(0, 0, 0);
 			padding: 5px 10px;
 			text-decoration: none;
-			border: 1px solid $gb__groen-2;
+			border: 1px solid $gb__grijs;
 		}
 	}
 	&__container {
