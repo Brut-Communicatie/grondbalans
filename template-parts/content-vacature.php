@@ -6,7 +6,7 @@ get_header();
     $siteUrl = get_site_url();
     $title = get_the_title();
     $args = array(
-        'background' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-nww0_pY5/w:auto/h:auto/q:75/https://grondbalans.nl/wp-content/uploads/2020/01/header-grondbalans-vacatures-scaled.jpg",
+        'background' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-fWfjytCu/w:auto/h:auto/q:75/https://grondbalans.nl/wp-content/uploads/2020/06/werken-bij-grondbalans-1920-01.jpg",
         'heading' => "Werken bij grondbalans",
         'content' => $title,
     );
