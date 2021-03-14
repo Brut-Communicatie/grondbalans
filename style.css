@@ -2669,6 +2669,7 @@ html {
 	color: #fff;
 	margin: 0;
 	font-size: 18px;
+	width: 90%;
 }
 
 .banner__block--content > a,
@@ -5225,6 +5226,44 @@ body {
 		width: 100%;
 		font-size: 15px;
 	}
+}
+
+.content__vacature--sidebar--line {
+	margin: 20px auto;
+	border-top: 3px solid #c42517;
+	width: 30%;
+}
+
+.content__vacature--sidebar ul {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-left: 1rem;
+	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.content__vacature--sidebar ul {
+		font-size: clamp(1vw, 16px, 18px);
+	}
+}
+
+.content__vacature--sidebar ul li {
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.content__vacature--sidebar ul li::before {
+	content: "\2022";
+	color: #c42517;
+	font-size: 30px !important;
+	line-height: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -178,9 +178,29 @@ html {
 				</li>
 					<li><a href="<?php echo get_site_url();?>/projecten">Projecten</a></li>
 					<li><a href="<?php echo get_site_url();?>/dit-zijn-wij">Dit zijn wij</a>	</li>
-						<li><a href="<?php echo get_site_url();?>/duurzaam-circulair-grondverzet">Samen circulair</a></li>
-						<li><a href="<?php echo get_site_url();?>/nieuws/">Nieuws</a></li>
-					<li><a href="<?php echo get_site_url();?>/vacatures">Werken bij</a></li>
+          <li><a href="<?php echo get_site_url();?>/duurzaam-circulair-grondverzet">Samen circulair</a></li>
+          <li><a href="<?php echo get_site_url();?>/nieuws/">Nieuws</a></li>
+					<li><a href="<?php echo get_site_url();?>/vacatures">Werken bij</a>
+          <?php
+                    $args = array(
+                        'post_type' => 'vacature',
+                        'post_per_page' => 5
+                    );
+
+                    $query = new WP_Query($args);
+                    if ( $query->have_posts() ) :
+                      echo '<ul>';
+                        while ( $query->have_posts() ) : $query->the_post();
+                            $title = get_the_title();
+                            $link = get_the_permalink();
+                            echo "<li><a href='$link'>$title</a></li>";
+                        endwhile;
+                        echo '</ul>';
+                    else :
+                        return;
+                    endif;
+              ;?>
+          </li>
 					<li><a href="<?php echo get_site_url();?>/vraag-en-aanbod">Vraag en aanbod</a></li>
 					<li><a href="<?php echo get_site_url();?>/contact">Contact</a></li>
 				</ul>

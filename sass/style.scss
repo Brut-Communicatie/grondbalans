@@ -1021,6 +1021,7 @@ html {
 				color: #fff;
 				margin: 0;
 				font-size: 18px;
+				width: 90%;
 			}
 
 			@include Link {
@@ -2371,6 +2372,35 @@ $secondBreakpoint: 705px;
 		&--sidebar{
 		@include Link{
 			@include Button;
+		}
+
+		&--line{
+			margin: 20px auto;
+			border-top: 3px solid $gb__rood;
+			width: 30%;
+		}
+
+		ul{
+			@include BodyFont;
+			font-size: 15px;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			padding-left: 1rem;
+			margin-bottom: 1rem;
+			li{
+				padding-left: 1.5em; 
+				text-indent: -1.5em;
+				@include Flex(flex-start, center);
+			}
+			li::before {
+				content: "\2022"; 
+				color: $gb__rood; 
+				// margin-right: 15px;
+				font-size: 30px !important;
+				line-height: 0;
+
+			}
 		}
 	}
 	}

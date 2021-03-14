@@ -305,6 +305,20 @@ function grondbalans_projecten_customfields() {
 				'name' => 'werktijden',
 				'type' => 'text',
 			),
+			array (
+				'key' => 'opsomming',
+				'label' => 'Opsomming 1',
+				'name' => 'opsomming',
+				'type' => 'textarea',
+				'formatting' => 'HTML',
+			),
+			array (
+				'key' => 'opsomming2',
+				'label' => 'Opsomming 2',
+				'name' => 'opsomming2',
+				'type' => 'textarea',
+				'formatting' => 'HTML',
+			),
 		),
 		'location' => array (
 			array (

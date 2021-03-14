@@ -71,23 +71,9 @@ get_header();
                     <h3>ONZE VACATURES</h3>
                     <a href="#contact">Direct solliciteren</a>
                     <p><?php the_title();?></p>
-                    <ul>
-                        <li>Handelen in grond</li>
-                        <li>Circulair en duurzaam</li>
-                        <li>Uitbreiden netwerk</li>
-                        <li>Uitvoer projecten</li>
-                        <li>Kennis van wet- & regelgeving</li>
-                        <li>Regiomanagement</li>
-                    </ul>
-                    <div class="content__werken--vacatures--line"></div>
-                    <ul>
-                        <li>Handelen in grond</li>
-                        <li>Circulair en duurzaam</li>
-                        <li>Uitbreiden netwerk</li>
-                        <li>Uitvoer projecten</li>
-                        <li>Kennis van wet- & regelgeving</li>
-                        <li>Regiomanagement</li>
-                    </ul>
+                    <?php echo the_field('opsomming');?>
+                    <div class="content__vacature--sidebar--line"></div>
+                    <?php echo the_field('opsomming2');?>
                 </div>
 
                 <div class="content__werken--quote">
