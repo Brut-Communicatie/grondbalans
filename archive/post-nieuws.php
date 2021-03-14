@@ -72,6 +72,7 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
             <?php
             endwhile;
             echo '</div>';
+            echo '<div class="nieuws__pagination">';
             $big = 999999999;
             echo paginate_links( array(
             'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
@@ -79,6 +80,7 @@ bodem, bodemtoepassing en gerelateerde onderwerpen. Ook geven wij je graag een k
             'current' => max( 1, get_query_var('paged') ),
             'total' => $the_query->max_num_pages
             ) );
+            echo '</div>';
             wp_reset_postdata();
             ;?>
 

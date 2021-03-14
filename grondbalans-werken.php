@@ -43,7 +43,24 @@ get_header();?>
             <div class="content__werken--right">
                 <div class="content__werken--vacatures">
                     <h3>ONZE VACATURES</h3>
-                    <p>Sorry, we hebben op dit moment geen vacatures.</p>
+                    <?php
+                    $args = array(
+                        'post_type' => 'vacature',
+                        'post_per_page' => 5
+                    );
+
+                    $query = new WP_Query($args);
+                    if ( $query->have_posts() ) :
+                        while ( $query->have_posts() ) : $query->the_post();
+                            $title = get_the_title();
+                            $link = get_the_permalink();
+                            echo "<a href='$link'>$title</a>";
+                        endwhile;
+                    else :
+                        _e( '<p>Sorry, we hebben op dit moment geen vacatures.</p>', 'textdomain' );
+                    endif;
+                    ;?>
+                    <div class="content__werken--vacatures--line"></div>
                 </div>
 
                 <div class="content__werken--quote">

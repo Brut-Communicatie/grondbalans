@@ -1907,7 +1907,9 @@ $secondBreakpoint: 705px;
 
 .nieuws {
 	width: 100%;
-
+	&__pagination{
+		background-color: red;
+	}
 	&__container {
 		@include Container;
 		margin: 0 auto;
@@ -2231,5 +2233,120 @@ $secondBreakpoint: 705px;
 			}
 
 		}
+	}
+}
+
+.content {
+	&__vacature {
+		&--content {
+			margin-top: 2rem;
+			@include BodyFont;
+			font-size: 14px;
+
+			p {
+				font-size: 14px;
+				margin: 0 0 1rem;
+
+				@include Link {
+					color: $gb__groen-2;
+					font-weight: 600;
+				}
+			}
+		}
+
+		&--details {
+			@include Flex(flex-start, flex-start, column);
+			width: 100%;
+			margin: 2rem 0 0;
+		}
+
+		&--row {
+			@include Flex(space-between, flex-start);
+			width: 100%;
+			margin-bottom: 1rem;
+
+			@include Responsive(500px) {
+				flex-wrap: wrap;
+				margin-bottom: 0;
+			}
+		}
+
+		&--item {
+			width: calc(100% / 2 - 10px);
+			@include Flex(flex-start, center);
+
+			@include Responsive(500px) {
+				width: 100%;
+				margin-bottom: 1rem;
+			}
+
+			svg {
+				// width: 30px;
+				margin-right: 25px;
+
+				@include Responsive(500px) {
+					width: 20px;
+				}
+
+				path {
+					color: $gb__rood;
+				}
+			}
+
+		}
+
+		&--specifics {
+			@include Flex(flex-start, flex-start, column);
+
+			h4 {
+				@include BodyFont;
+				margin: 0;
+				color: $gb__grijs;
+				font-weight: 100;
+				font-size: 14px;
+			}
+
+			p {
+				@include BodyFont;
+				text-transform: uppercase;
+				margin: 0;
+
+
+			}
+		}
+
+		&--contact {
+			background-color: #ececec;
+			padding: 65px 45px 85px;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+			border-bottom: 3px solid $gb__rood;
+			width: 100%;
+			margin: 2rem 0;
+
+			.contact__form--general {
+				padding: 0;
+
+				h4,
+				h5,
+				p,
+				label {
+					color: black;
+				}
+
+				p {
+					font-size: 14px;
+
+					@include Link {
+						color: $gb__groen-2;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+		&--sidebar{
+		@include Link{
+			@include Button;
+		}
+	}
 	}
 }

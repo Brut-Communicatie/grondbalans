@@ -23,7 +23,7 @@
 				font-family: 'Montserrat', sans-serif;
 				font-size: 40px;
 				text-transform: uppercase;
-				line-height: 60px;
+				line-height: 40px;
 				margin: 0;
 				font-weight: 700;
 
@@ -66,6 +66,27 @@
 				@include Responsive($containerWidth) {
 					font-size: clamp(4.5vw, 25px, 30px);
 					line-height: clamp(4.5vw, 25px, 30px);
+				}
+			}
+
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				padding-left: 1rem;
+				margin-bottom: 1rem;
+				li{
+					padding-left: 1.5em; 
+					text-indent: -1.5em;
+					@include Flex(flex-start, center);
+				}
+				li::before {
+					content: "\2022"; 
+					color: $gb__rood; 
+					// margin-right: 15px;
+					font-size: 30px !important;
+					line-height: 0;
+
 				}
 			}
 
@@ -124,6 +145,7 @@
 				margin: 0;
 				font-weight: 700;
 				margin-top: 2rem;
+				margin-bottom: 1rem;
 
 				@include Responsive($containerWidth) {
 					font-size: clamp(4.5vw, 25px, 30px);
@@ -134,6 +156,19 @@
 			p {
 				@include BodyFont;
 				font-size: 15px;
+			}
+
+			@include Link{
+				@include BodyFont;
+				color: $gb__groen-2;
+				text-decoration: none;
+				font-size: 14.4px;
+				margin-top: 10px;
+			}
+			&--line{
+				margin-top: 20px;
+				border-top: 3px solid rgba(0,0,0,.12);
+				width: 40%;
 			}
 		}
 
@@ -180,6 +215,10 @@
 			padding: 45px 30px 55px;
 			border: 2px solid #5a8b7a;
 			width: 100%;
+
+			@include Responsive($containerWidth){
+				margin-bottom: 2rem;
+			}
 
 			h4{
 				font-family: 'Montserrat', sans-serif;

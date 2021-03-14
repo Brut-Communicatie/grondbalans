@@ -223,14 +223,6 @@ function grondbalans_projecten() {
 add_action( 'init', 'grondbalans_projecten' );
 
 function grondbalans_projecten_customfields() {
-	$true_false_field = array(
-	
-		/* ... Insert generic settings here ... */
-		
-		/* (string) Text shown along side the checkbox */
-		'message' => "hoi",
-		
-	);
 
 	acf_add_local_field_group(array(
 		'key' => 'projectField',
@@ -275,6 +267,51 @@ function grondbalans_projecten_customfields() {
 					'param' => 'post_type',
 					'operator' => '==',
 					'value' => 'projecten',
+				),
+			),
+		),
+	));
+	acf_add_local_field_group(array(
+		'key' => 'vacatureField',
+		'title' => 'Content',
+		'fields' => array (
+			array (
+				'key' => 'provincie',
+				'label' => 'Regio provincie',
+				'name' => 'provincie',
+				'type' => 'text',
+			),
+			array (
+				'key' => 'dienstverband',
+				'label' => 'Dienstverband',
+				'name' => 'dienstverband',
+				'type' => 'text',
+			),
+			array (
+				'key' => 'salarisindicatie',
+				'label' => 'Salarisindicatie',
+				'name' => 'salarisindicatie',
+				'type' => 'text',
+			),
+			array (
+				'key' => 'regio',
+				'label' => 'Regio',
+				'name' => 'regio',
+				'type' => 'text',
+			),
+			array (
+				'key' => 'werktijden',
+				'label' => 'Werktijden',
+				'name' => 'werktijden',
+				'type' => 'text',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'vacature',
 				),
 			),
 		),
@@ -343,3 +380,42 @@ function wpdocs_excerpt_more( $more ) {
     return $more;
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+function grondbalans_vacature() {
+    $labels = array(
+        'name'                  => _x( 'Vacature', 'Post type general name', 'textdomain' ),
+        'singular_name'         => _x( 'Vacature', 'Post type singular name', 'textdomain' ),
+        'menu_name'             => _x( 'Vacatures', 'Admin Menu text', 'textdomain' ),
+        'name_admin_bar'        => _x( 'Vacatures', 'Add New on Toolbar', 'textdomain' ),
+        'add_new'               => __( 'Vacature toevoegen', 'textdomain' ),
+        'add_new_item'          => __( 'Vacature toevoegen', 'textdomain' ),
+        'new_item'              => __( 'Vacature toevoegen', 'textdomain' ),
+        'edit_item'             => __( 'Vacature bewerken', 'textdomain' ),
+        'view_item'             => __( 'Bekijk vacatures', 'textdomain' ),
+        'all_items'             => __( 'Alle vacatures', 'textdomain' ),
+        'search_items'          => __( 'Zoek vacatures', 'textdomain' ),
+        'parent_item_colon'     => __( 'Parent vacature:', 'textdomain' ),
+        'not_found'             => __( 'Geen vacatures gevonden', 'textdomain' ),
+		'not_found_in_trash'    => __( 'Geen vacatures gevonden', 'textdomain' ),
+    );
+ 
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'vacature' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+		'menu_position'      => null,
+		'taxonomies' => array('post_tag'),
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+    );
+ 
+    register_post_type( 'vacature', $args );
+}
+ 
+add_action( 'init', 'grondbalans_vacature' );
