@@ -1908,7 +1908,28 @@ $secondBreakpoint: 705px;
 .nieuws {
 	width: 100%;
 	&__pagination{
-		background-color: red;
+		display: flex;
+		justify-content: center;
+		@include BodyFont;
+		
+		@include Link{
+			margin: 0 5px;
+			color: $gb__groen-2;
+			padding: 5px;
+			text-decoration: none;
+			border: 1px solid $gb__groen-2;
+			&:hover{
+				background-color: $gb__groen-2;
+				color: #fff;
+			}
+		}
+		span{
+			margin: 0 5px;
+			color: $gb__groen-2;
+			padding: 5px;
+			text-decoration: none;
+			border: 1px solid $gb__groen-2;
+		}
 	}
 	&__container {
 		@include Container;

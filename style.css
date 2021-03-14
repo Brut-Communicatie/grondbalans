@@ -4478,7 +4478,43 @@ body {
 }
 
 .nieuws__pagination {
-	background-color: red;
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.nieuws__pagination {
+		font-size: clamp(1vw, 16px, 18px);
+	}
+}
+
+.nieuws__pagination > a,
+.nieuws__pagination > a:active,
+.nieuws__pagination > a:visited,
+.nieuws__pagination > a:link {
+	margin: 0 5px;
+	color: #43816b;
+	padding: 5px;
+	text-decoration: none;
+	border: 1px solid #43816b;
+}
+
+.nieuws__pagination > a:hover,
+.nieuws__pagination > a:active:hover,
+.nieuws__pagination > a:visited:hover,
+.nieuws__pagination > a:link:hover {
+	background-color: #43816b;
+	color: #fff;
+}
+
+.nieuws__pagination span {
+	margin: 0 5px;
+	color: #43816b;
+	padding: 5px;
+	text-decoration: none;
+	border: 1px solid #43816b;
 }
 
 .nieuws__container {
