@@ -62,7 +62,7 @@ get_header();
                     <?php the_content();?>
                 </div>
                 <div class="content__vacature--contact" id="contact">
-                    <?php echo do_shortcode('[contact-form-7 id="54" title="Sollicitatie"]');?>
+                    <?php echo do_shortcode('[contact-form-7 id="72" title="Sollicitatie"]');?>
                 </div>
             </div>
 
