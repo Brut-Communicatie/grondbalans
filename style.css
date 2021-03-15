@@ -5273,4 +5273,8 @@ body {
 	line-height: 0;
 }
 
+.grecaptcha-badge {
+	display: none !important;
+}
+
 /*# sourceMappingURL=style.css.map */
