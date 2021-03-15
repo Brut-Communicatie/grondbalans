@@ -2098,6 +2098,10 @@ $secondBreakpoint: 705px;
 			margin: 0 auto;
 			margin-top: 5rem;
 
+			@include Responsive($containerWidth){
+				margin-top: 2rem;
+			}
+
 			p {
 				@include BodyFont;
 				font-size: 12px;

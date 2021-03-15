@@ -4756,6 +4756,12 @@ body {
 	}
 }
 
+@media screen and (max-width: calc(1180px + 5px)) {
+	.nieuws__page--breadcrumbs {
+		margin-top: 2rem;
+	}
+}
+
 .nieuws__page--breadcrumbs p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
