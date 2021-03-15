@@ -30,8 +30,8 @@
 
 				@include Responsive($containerWidth) {
 					word-break: break-word;
-					font-size: clamp(4.5vw, 30px, 40px);
-					line-height: clamp(4.5vw, 30px, 40px);
+					font-size: clamp(4.5vw, 24px, 40px);
+					line-height: clamp(4.5vw, 24px, 40px);
 				}
 			}
 
