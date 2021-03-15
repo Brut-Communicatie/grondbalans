@@ -13,7 +13,7 @@ get_header();?>
             </p>
 
             <div class="content__form">
-                <p>Hallo</p>
+                <?php echo do_shortcode('[contact-form-7 id="38" title="Vraag & aanbod"]');?>
             </div>
         </div>
     </div>
