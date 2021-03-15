@@ -13,7 +13,7 @@ get_header();?>
             </p>
 
             <div class="content__form">
-                <?php the_content();?>
+                <p>Hallo</p>
             </div>
         </div>
     </div>
