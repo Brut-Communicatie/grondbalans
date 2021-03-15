@@ -63,7 +63,7 @@
 		</div>
 	</footer><!-- #colophon -->
 	<div class="footer__disclaimer">
-		<p>Copyright © <?php echo date("Y");?> Grondbalans B.V. | Alle rechten voorbehouden | <a href="#" target="_blank" rel="noopener norefferer">Algemene voorwaarden</a></p>
+		<p>Copyright © <?php echo date("Y");?> Grondbalans B.V. | Alle rechten voorbehouden | <a href="/privacyverklaring" target="_blank" rel="noopener norefferer">Algemene voorwaarden</a></p>
 	</div>
 </div><!-- #page -->
 
