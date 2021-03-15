@@ -801,7 +801,6 @@ textarea {
 	padding: 0 !important;
 	margin: 0;
 	word-wrap: none;
-	white-space: nowrap;
 }
 
 .header__nav ul li:hover ul li > a:hover,

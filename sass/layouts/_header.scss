@@ -145,11 +145,12 @@ $mobile: 1330px;
                                 margin: 0;
 
                                 word-wrap: none;
-                                white-space: nowrap;
+                                // white-space: nowrap;
 
 
                                 &:hover {
                                     color: rgb(205, 205, 205);
+                                    
                                 }
                             }
                         }
