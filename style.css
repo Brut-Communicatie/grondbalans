@@ -3057,6 +3057,7 @@ html {
 	justify-content: space-between;
 	align-items: flex-start;
 	margin-top: 4rem;
+	margin-bottom: 1rem;
 }
 
 @media screen and (max-width: calc(1180px + 5px)) {

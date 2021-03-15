@@ -4,6 +4,7 @@
 		&--container {
 			@include Flex(space-between, flex-start);
 			margin-top: 4rem;
+			margin-bottom: 1rem;
 
 			@include Responsive($containerWidth) {
 				@include Flex(flex-start, flex-start, column);
