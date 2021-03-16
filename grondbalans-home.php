@@ -64,7 +64,19 @@ get_header();?>
         <div class="content__block">
             <div class="content__block--container" data-aos="fade-up" data-aos-delay="250">
                 <div class="content__block--left" >
-                <iframe id="homeVideo" frameborder="0" src="" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="575" height="323.4375"></iframe>
+                <!-- <iframe id="homeVideo" frameborder="0" src="" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="575" height="323.4375"></iframe> -->
+
+                <iframe
+                    width="575"
+                    height="323.4375"
+                    src="https://www.youtube.com/embed/1_AJ9QLsm10?controls=0&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=0&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;end=0&amp;loop=0&amp;playsinline=0&amp;start=0&amp;nocookie=false&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fgrondbalans.nl&amp;widgetid=1"
+                    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/1_AJ9QLsm10?controls=0&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=0&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=1&amp;end=0&amp;loop=0&amp;playsinline=0&amp;start=0&amp;nocookie=false&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fgrondbalans.nl&amp;widgetid=1><img src=https://img.youtube.com/vi/1_AJ9QLsm10/hqdefault.jpg alt='Grondbalans'><span>▶</span></a>"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
+                    >
+                </iframe>
                 </div>
 
                 <div class="content__block--right">
@@ -111,11 +123,5 @@ get_header();?>
             </section>
     </div>
 </div>
-
-<script type="text/javascript">
-    setTimeout(() => {
-        document.getElementById('homeVideo').src = 'https://www.youtube.com/embed/1_AJ9QLsm10?controls=0&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=0&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;end=0&amp;loop=0&amp;playsinline=0&amp;start=0&amp;nocookie=false&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fgrondbalans.nl&amp;widgetid=1';
-    }, (1500));
-</script>
 
 <?php get_footer();?>
