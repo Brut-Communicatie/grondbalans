@@ -95,7 +95,7 @@ get_header();?>
                 <p>
                 Wij focussen ons op verschillende toepassingsgebieden: van de agrarische sector tot kelderbouw. Dit doen we onder andere voor overheden, loonbedrijven, aannemers, agrariërs en projectontwikkelaars. Elk project is anders. Door onze uitgebreide, lokale marktkennis bieden wij oplossingen voor elk project. En heel veel lokaal, maakt nationaal.
                 </p>
-                <a href="<?php echo get_site_url();?>/circulair" class="content__inline-link">Lees meer over circulariteit</a>
+                <a href="<?php echo get_site_url();?>/duurzaam-circulair-grondverzet" class="content__inline-link">Lees meer over circulariteit</a>
         </section>
     </div>
     <div class="content__banner">
