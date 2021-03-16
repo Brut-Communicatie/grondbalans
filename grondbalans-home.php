@@ -64,7 +64,6 @@ get_header();?>
         <div class="content__block">
             <div class="content__block--container" data-aos="fade-up" data-aos-delay="250">
                 <div class="content__block--left" >
-                <!-- <iframe id="homeVideo" frameborder="0" src="" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="575" height="323.4375"></iframe> -->
 
                 <iframe
                     width="575"
@@ -74,7 +73,8 @@ get_header();?>
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
-                    title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
+                    title="Grondbalans"
+                    loading="lazy"
                     >
                 </iframe>
                 </div>
