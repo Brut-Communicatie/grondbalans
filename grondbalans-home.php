@@ -64,7 +64,7 @@ get_header();?>
         <div class="content__block">
             <div class="content__block--container" data-aos="fade-up" data-aos-delay="250">
                 <div class="content__block--left" >
-                <iframe id="homeVideo" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="575" height="323.4375"></iframe>
+                <iframe id="homeVideo" frameborder="0" src="" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="575" height="323.4375"></iframe>
                 </div>
 
                 <div class="content__block--right">
