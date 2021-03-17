@@ -56,6 +56,7 @@ body {
 }
 
 img {
+  height: auto;
   max-width: 100%;
 }
 

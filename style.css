@@ -504,6 +504,7 @@ object {
 }
 
 img {
+	height: auto;
 	max-width: 100%;
 }
 
@@ -2829,6 +2830,7 @@ html {
 .portfolio__block--right {
 	width: calc(100% / 2 - 8px);
 	display: flex;
+	align-items: flex-start;
 }
 
 @media screen and (max-width: calc(870px + 5px)) {
