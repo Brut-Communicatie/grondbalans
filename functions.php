@@ -334,6 +334,7 @@ function grondbalans_projecten_customfields() {
 
 add_action('acf/init', 'grondbalans_projecten_customfields');
 
+
 function grondbalans_nieuws() {
     $labels = array(
         'name'                  => _x( 'Nieuws', 'Post type general name', 'textdomain' ),

@@ -13,7 +13,7 @@ get_header();?>
     );
     get_template_part( 'template-parts/banner', 'general', $args );
 ?>
-
+	<?php while ( have_posts() ) : the_post(); ?>
 
 <div class="content">
     <div class="content__container">
@@ -37,6 +37,19 @@ get_header();?>
     </div>
 </div>
 
+<?php
+    $contact = get_field('contact');
+    $landelijk = $contact['landelijk'];
+    $zuid = $contact['regiozuid'];
+    $zuidwest = $contact['regiozuidwest'];
+    $west = $contact['regiowest'];
+    $noordwest = $contact['regionoordwest'];
+    $middenoost = $contact['regiomiddenoost'];
+    $noordoost = $contact['regionoordoost'];
+    $noord = $contact['regionoord'];
+    $bedrijfsvoering = $contact['bedrijfsvoering'];
+;?>
+
 <div class="contact__cards">
     <div class="contact__cards--container">
         <div class="contact__cards--row">
@@ -46,10 +59,10 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-8wKPrU38/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/09-Dirkjan.jpg", 
-                        'naam' => "Dirkjan Reijersen van Buuren", 
-                        'titel' => "Directeur Grondbalans", 
-                        'tel' => "06-26 13 61 56", 
-                        'email' => "d.vanbuuren@grondbalans.nl")
+                        'naam' =>  $landelijk['1']['naam'], 
+                        'titel' => $landelijk['1']['functie'], 
+                        'tel' => $landelijk['1']['telefoon'], 
+                        'email' => $landelijk['1']['email'])
                     );?>
                 </div>
 
@@ -57,10 +70,10 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-LdWh_uA7/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/02-Edwin.jpg", 
-                        'naam' => "Edwin van Venetiën", 
-                        'titel' => "Projectmanager", 
-                        'tel' => "06-51 51 46 96", 
-                        'email' => "e.vanvenetien@grondbalans.nl")
+                        'naam' =>  $landelijk['2']['naam'], 
+                        'titel' => $landelijk['2']['functie'], 
+                        'tel' => $landelijk['2']['telefoon'], 
+                        'email' => $landelijk['2']['email'])
                     );?>
                 </div>
 
@@ -68,10 +81,10 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-PcVLP1ZA/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/11/Koen-scaled-e1604488596733.jpg", 
-                        'naam' => "Koen Regensburg", 
-                        'titel' => "Coördinator Projectontwikkeling", 
-                        'tel' => "06-82 94 51 85", 
-                        'email' => "k.regensburg@grondbalans.nl")
+                        'naam' =>  $landelijk['3']['naam'], 
+                        'titel' => $landelijk['3']['functie'], 
+                        'tel' => $landelijk['3']['telefoon'], 
+                        'email' => $landelijk['3']['email'])
                     );?>
                 </div>
             </div>
@@ -82,31 +95,31 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-BsWcSC5U/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/01-Wijnand.jpg", 
-                        'naam' => "Wijnand Vink", 
-                        'titel' => "Regioverantwoordelijk", 
-                        'tel' => "06-22 23 41 23", 
-                        'email' => "w.vink@grondbalans.nl")
+                        'naam' =>  $zuid['1']['naam'], 
+                        'titel' => $zuid['1']['functie'], 
+                        'tel' => $zuid['1']['telefoon'], 
+                        'email' => $zuid['1']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-sMKro3aj/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/06/Foto-Roel-website-scaled-e1594208518178.jpg", 
-                        'naam' => "Roel van Aarle", 
-                        'titel' => "Projectcoördinator", 
-                        'tel' => "06-12 07 28 01", 
-                        'email' => "r.vanaarle@grondbalans.nl")
+                        'naam' =>  $zuid['2']['naam'], 
+                        'titel' => $zuid['2']['functie'], 
+                        'tel' => $zuid['2']['telefoon'], 
+                        'email' => $zuid['2']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info contact__cards--grondbank">
                     <?php get_template_part('template-parts/contact', 'grondbank', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-3jDNiD8Z/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/04/Afbeelding4-1.png", 
-                        'persoon' => "Wijnand Vink",
+                        'persoon' => $zuid['3']['naam'],
                         'naam' => "Grondbanken", 
-                        'titel' => "Eindhoven", 
-                        'tel' => "06-22 23 41 23", 
-                        'email' => "w.vink@grondbalans.nl")
+                        'titel' => $zuid['3']['regio'],
+                        'tel' => $zuid['3']['telefoon'],
+                        'email' => $zuid['3']['email'])
                     );?>
                 </div>
             </div>
@@ -117,31 +130,31 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-bidOpenV/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/07-Roald.jpg", 
-                        'naam' => "Roald Brink", 
-                        'titel' => "Regioverantwoordelijk", 
-                        'tel' => "06-46 64 85 45", 
-                        'email' => "r.brink@grondbalans.nl")
+                        'naam' =>  $zuidwest['1']['naam'], 
+                        'titel' => $zuidwest['1']['functie'], 
+                        'tel' => $zuidwest['1']['telefoon'], 
+                        'email' => $zuidwest['1']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0--Sbk6W3m/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/10/Ronald_pasfoto-scaled-e1602165227252.jpg", 
-                        'naam' => "Ronald Kooiman", 
-                        'titel' => "(Junior) Projectcoördinator", 
-                        'tel' => "06-27 08 88 07", 
-                        'email' => "r.kooiman@grondbalans.nl")
+                        'naam' =>  $zuidwest['2']['naam'], 
+                        'titel' => $zuidwest['2']['functie'], 
+                        'tel' => $zuidwest['2']['telefoon'], 
+                        'email' => $zuidwest['2']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info contact__cards--grondbank">
                     <?php get_template_part('template-parts/contact', 'grondbank', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-3jDNiD8Z/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/04/Afbeelding4-1.png", 
-                        'persoon' => "Roald Brink",
+                        'persoon' => $zuidwest['3']['naam'],
                         'naam' => "Grondbanken", 
-                        'titel' => "Sliedrecht", 
-                        'tel' => "06-46 64 85 45", 
-                        'email' => "r.brink@grondbalans.nl")
+                        'titel' => $zuidwest['3']['regio'],
+                        'tel' => $zuidwest['3']['telefoon'],
+                        'email' => $zuidwest['3']['email'])
                     );?>
                 </div>
             </div>
@@ -154,61 +167,61 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-UiLvoUIQ/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/14-Erik.jpg", 
-                        'naam' => "Erik Streng", 
-                        'titel' => "Regioverantwoordelijk", 
-                        'tel' => "06-46 64 85 44", 
-                        'email' => "e.streng@grondbalans.nl")
+                        'naam' =>  $west['1']['naam'], 
+                        'titel' => $west['1']['functie'], 
+                        'tel' => $west['1']['telefoon'], 
+                        'email' => $west['1']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-DDS9LkSD/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/Bart.jpg", 
-                        'naam' => "Bart van Meerendonk", 
-                        'titel' => "Projectcoördinator", 
-                        'tel' => "06-27 08 88 08", 
-                        'email' => "b.vanmeerendonk@grondbalans.nl")
+                        'naam' =>  $west['2']['naam'], 
+                        'titel' => $west['2']['functie'], 
+                        'tel' => $west['2']['telefoon'], 
+                        'email' => $west['2']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-T7T2EtBb/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/Wouter.jpg", 
-                        'naam' => "Wouter Brak", 
-                        'titel' => "Projectcoördinator", 
-                        'tel' => "06-55 10 62 57", 
-                        'email' => "w.brak@grondbalans.nl")
+                        'naam' =>  $west['3']['naam'], 
+                        'titel' => $west['3']['functie'], 
+                        'tel' => $west['3']['telefoon'], 
+                        'email' => $west['3']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-kngqsq4j/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/11-Ruud.jpg", 
-                        'naam' => "Ruud Hagen", 
-                        'titel' => "Projectmedewerker", 
-                        'tel' => "030-237 23 10", 
-                        'email' => "r.hagen@grondbalans.nl")
+                        'naam' =>  $west['4']['naam'], 
+                        'titel' => $west['4']['functie'], 
+                        'tel' => $west['4']['telefoon'], 
+                        'email' => $west['4']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-4-p5d2k2/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/21-Petra.jpg", 
-                        'naam' => "Petra Beun", 
-                        'titel' => "Algemene ondersteuning", 
-                        'tel' => "030-237 23 00", 
-                        'email' => "p.beun@grondbalans.nl")
+                        'naam' =>  $west['5']['naam'], 
+                        'titel' => $west['5']['functie'], 
+                        'tel' => $west['5']['telefoon'], 
+                        'email' => $west['5']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info contact__cards--grondbank">
                     <?php get_template_part('template-parts/contact', 'grondbank', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-3jDNiD8Z/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/04/Afbeelding4-1.png", 
-                        'persoon' => "Wouter Brak",
+                        'persoon' => $west['6']['naam'],
                         'naam' => "Grondbanken", 
-                        'titel' => "Aalsmeer | Lisse", 
-                        'tel' => "06-55 10 62 57", 
-                        'email' => "w.brak@grondbalans.nl")
+                        'titel' => $west['6']['regio'],
+                        'tel' => $west['6']['telefoon'],
+                        'email' => $west['6']['email'])
                     );?>
                 </div>
             </div>
@@ -218,41 +231,41 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-_AsFMQwY/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/12-Martien.jpg", 
-                        'naam' => "Martien Bos", 
-                        'titel' => "Regioverantwoordelijk", 
-                        'tel' => "06-45 72 02 13", 
-                        'email' => "m.bos@grondbalans.nl")
+                        'naam' =>  $noordwest['1']['naam'], 
+                        'titel' => $noordwest['1']['functie'], 
+                        'tel' => $noordwest['1']['telefoon'], 
+                        'email' => $noordwest['1']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-aLlKdwb9/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/13-Bob.jpg", 
-                        'naam' => "Bob Schotten", 
-                        'titel' => "Regioverantwoordelijk", 
-                        'tel' => "06-46 64 85 42", 
-                        'email' => "b.schotten@grondbalans.nl")
+                        'naam' =>  $noordwest['2']['naam'], 
+                        'titel' => $noordwest['2']['functie'], 
+                        'tel' => $noordwest['2']['telefoon'], 
+                        'email' => $noordwest['2']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-51Ri8sD9/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/Noortje.jpg", 
-                        'naam' => "Noortje van Egmond", 
-                        'titel' => "Projectmedewerker", 
-                        'tel' => "072-576 32 40", 
-                        'email' => "n.vanegmond@grondbalans.nl")
+                        'naam' =>  $noordwest['3']['naam'], 
+                        'titel' => $noordwest['3']['functie'], 
+                        'tel' => $noordwest['3']['telefoon'], 
+                        'email' => $noordwest['3']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info contact__cards--grondbank">
                     <?php get_template_part('template-parts/contact', 'grondbank', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-3jDNiD8Z/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/04/Afbeelding4-1.png", 
-                        'persoon' => "Noortje van Egmond",
+                        'persoon' => $noordwest['4']['naam'],
                         'naam' => "Grondbanken", 
-                        'titel' => "Alkmaar | Middenmeer", 
-                        'tel' => "072-576 32 40", 
-                        'email' => "n.vanegmond@grondbalans.nl")
+                        'titel' => $noordwest['4']['regio'],
+                        'tel' => $noordwest['4']['telefoon'],
+                        'email' => $noordwest['4']['email'])
                     );?>
                 </div>
             </div>
@@ -262,51 +275,51 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-fuYRA1Ze/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/04-Joris.jpg", 
-                        'naam' => "Joris van den Pol", 
-                        'titel' => "Regioverantwoordelijk", 
-                        'tel' => "06-27 08 88 09", 
-                        'email' => "j.vandenpol@grondbalans.nl")
+                        'naam' =>  $middenoost['1']['naam'], 
+                        'titel' => $middenoost['1']['functie'], 
+                        'tel' => $middenoost['1']['telefoon'], 
+                        'email' => $middenoost['1']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-A8dFTkp9/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/Coen-Rebel_rgb.jpg", 
-                        'naam' => "Coen Rebel", 
-                        'titel' => "Projectcoördinator", 
-                        'tel' => "06-27 08 88 00", 
-                        'email' => "c.rebel@grondbalans.nl")
+                        'naam' =>  $middenoost['2']['naam'], 
+                        'titel' => $middenoost['2']['functie'], 
+                        'tel' => $middenoost['2']['telefoon'], 
+                        'email' => $middenoost['2']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-7xFK6uun/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/22-Hanneke.jpg", 
-                        'naam' => "Hanneke van Ginkel", 
-                        'titel' => "Projectmedewerker", 
-                        'tel' => "030-237 23 01", 
-                        'email' => "h.vanginkel@grondbalans.nl")
+                        'naam' =>  $middenoost['3']['naam'], 
+                        'titel' => $middenoost['3']['functie'], 
+                        'tel' => $middenoost['3']['telefoon'], 
+                        'email' => $middenoost['3']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-M5n2NQ_c/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/11/Lars-scaled-e1604493878322.jpg", 
-                        'naam' => "Lars Streefland", 
-                        'titel' => "Junior Projectcöordinator", 
-                        'tel' => "06-82 96 51 48", 
-                        'email' => "l.streefland@grondbalans.nl")
+                        'naam' =>  $middenoost['4']['naam'], 
+                        'titel' => $middenoost['4']['functie'], 
+                        'tel' => $middenoost['4']['telefoon'], 
+                        'email' => $middenoost['4']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info contact__cards--grondbank">
                     <?php get_template_part('template-parts/contact', 'grondbank', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-3jDNiD8Z/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/04/Afbeelding4-1.png", 
-                        'persoon' => "Coen Rebel",
+                        'persoon' => $middenoost['5']['naam'],
                         'naam' => "Grondbanken", 
-                        'titel' => "Almere | Bunnik | Ermelo | Nieuwegein", 
-                        'tel' => "06-27 08 88 00", 
-                        'email' => "c.rebel@grondbalans.nl")
+                        'titel' => $middenoost['5']['regio'],
+                        'tel' => $middenoost['5']['telefoon'],
+                        'email' => $middenoost['5']['email'])
                     );?>
                 </div>
             </div>
@@ -318,41 +331,41 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-mO1a3Z7k/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/17-Dirk.jpg", 
-                        'naam' => "Dirk Naberman", 
-                        'titel' => "Directeur Noordoost", 
-                        'tel' => "06-83 52 30 75", 
-                        'email' => "dirk@grondbalansnoordoost.nl")
+                        'naam' =>  $noordoost['1']['naam'], 
+                        'titel' => $noordoost['1']['functie'], 
+                        'tel' => $noordoost['1']['telefoon'], 
+                        'email' => $noordoost['1']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0--K3rXWVy/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/18-Rick.jpg", 
-                        'naam' => "Rick Jansen", 
-                        'titel' => "Projectcoördinator", 
-                        'tel' => "06-83 69 52 19", 
-                        'email' => "rick@grondbalansnoordoost.nl")
+                        'naam' =>  $noordoost['2']['naam'], 
+                        'titel' => $noordoost['2']['functie'], 
+                        'tel' => $noordoost['2']['telefoon'], 
+                        'email' => $noordoost['2']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-nGnMFKDe/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/20-Janneke.jpg", 
-                        'naam' => "Janneke Knobbe", 
-                        'titel' => "Projectmedewerker", 
-                        'tel' => "0521-52 19 30", 
-                        'email' => "janneke@grondbalansnoordoost.nl")
+                        'naam' =>  $noordoost['3']['naam'], 
+                        'titel' => $noordoost['3']['functie'], 
+                        'tel' => $noordoost['3']['telefoon'], 
+                        'email' => $noordoost['3']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info contact__cards--grondbank">
                     <?php get_template_part('template-parts/contact', 'grondbank', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-3jDNiD8Z/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/04/Afbeelding4-1.png", 
-                        'persoon' => "Rick Jansen",
+                        'persoon' => $noordoost['4']['naam'],
                         'naam' => "Grondbanken", 
-                        'titel' => "Kampen | Steenwijk", 
-                        'tel' => "06-83 69 52 19", 
-                        'email' => "rick@grondbalansnoordoost.nl")
+                        'titel' => $noordoost['4']['regio'],
+                        'tel' => $noordoost['4']['telefoon'],
+                        'email' => $noordoost['4']['email'])
                     );?>
                 </div>
             </div>
@@ -362,31 +375,31 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-txyubfHs/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/19-Mimmo.jpg", 
-                        'naam' => "Mimmo Siligato", 
-                        'titel' => "Regioverantwoordelijk", 
-                        'tel' => "06-51 79 01 92", 
-                        'email' => "mimmo@grondbalansnoordoost.nl")
+                        'naam' =>  $noord['1']['naam'], 
+                        'titel' => $noord['1']['functie'], 
+                        'tel' => $noord['1']['telefoon'], 
+                        'email' => $noord['1']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-x6DFpeRc/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/03/Tamara_Bol-square.jpg", 
-                        'naam' => "Tamara Bol", 
-                        'titel' => "Projectmedewerker", 
-                        'tel' => "0521-52 19 30", 
-                        'email' => "tamara@grondbalansnoordoost.nl")
+                        'naam' =>  $noord['2']['naam'], 
+                        'titel' => $noord['2']['functie'], 
+                        'tel' => $noord['2']['telefoon'], 
+                        'email' => $noord['2']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info contact__cards--grondbank">
                     <?php get_template_part('template-parts/contact', 'grondbank', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-3jDNiD8Z/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/04/Afbeelding4-1.png", 
-                        'persoon' => "Mimmo Siligato",
+                        'persoon' => $noord['3']['naam'],
                         'naam' => "Grondbanken", 
-                        'titel' => "Franeker | Groningen | Leeuwarden", 
-                        'tel' => "06-51 79 01 92", 
-                        'email' => "mimmo@grondbalansnoordoost.nl")
+                        'titel' => $noord['3']['regio'],
+                        'tel' => $noord['3']['telefoon'],
+                        'email' => $noord['3']['email'])
                     );?>
                 </div>
             </div>
@@ -396,46 +409,47 @@ get_header();?>
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-jKFk0esA/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/26-Linda.jpg", 
-                        'naam' => "Linda Dudink", 
-                        'titel' => "Eigenaar/bestuurder", 
-                        'tel' => "06-27 08 88 01", 
-                        'email' => "l.dudink@grondbalans.nl")
+                        'naam' =>  $bedrijfsvoering['1']['naam'], 
+                        'titel' => $bedrijfsvoering['1']['functie'], 
+                        'tel' => $bedrijfsvoering['1']['telefoon'], 
+                        'email' => $bedrijfsvoering['1']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-nPmVlRNf/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/Wendy_Grondbalans.jpg", 
-                        'naam' => "Wendy Stolwijk", 
-                        'titel' => "Management assistente", 
-                        'tel' => "06-46 64 85 48", 
-                        'email' => "w.stolwijk@grondbalans.nl")
+                        'naam' =>  $bedrijfsvoering['2']['naam'], 
+                        'titel' => $bedrijfsvoering['2']['functie'], 
+                        'tel' => $bedrijfsvoering['2']['telefoon'], 
+                        'email' => $bedrijfsvoering['2']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-olp3xNMI/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/24-Evelyn.jpg", 
-                        'naam' => "Evelyn Praat", 
-                        'titel' => "Financiën", 
-                        'tel' => "072-576 32 32", 
-                        'email' => "e.praat@grondbalans.nl")
+                        'naam' =>  $bedrijfsvoering['3']['naam'], 
+                        'titel' => $bedrijfsvoering['3']['functie'], 
+                        'tel' => $bedrijfsvoering['3']['telefoon'], 
+                        'email' => $bedrijfsvoering['3']['email'])
                     );?>
                 </div>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
                         'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-CuuUh1mc/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/Richard-warmenhoven.jpg", 
-                        'naam' => "Richard Warmenhoven", 
-                        'titel' => "ICT", 
-                        'tel' => "06-22 23 41 20", 
-                        'email' => "r.warmenhoven@grondbalans.nl")
+                        'naam' =>  $bedrijfsvoering['4']['naam'], 
+                        'titel' => $bedrijfsvoering['4']['functie'], 
+                        'tel' => $bedrijfsvoering['4']['telefoon'], 
+                        'email' => $bedrijfsvoering['4']['email'])
                     );?>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<?php endwhile; // end of the loop. ?>
 <?php get_template_part('template-parts/form', 'contact');?>
 
 <?php get_footer();?>
