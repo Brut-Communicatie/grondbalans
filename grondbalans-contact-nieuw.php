@@ -38,6 +38,7 @@ get_header();?>
 </div>
 
 <?php
+
     $contact = get_field('contact');
     $landelijk = $contact['landelijk'];
     $zuid = $contact['regiozuid'];
@@ -48,6 +49,8 @@ get_header();?>
     $noordoost = $contact['regionoordoost'];
     $noord = $contact['regionoord'];
     $bedrijfsvoering = $contact['bedrijfsvoering'];
+
+    var_dump($landelijk);
 ;?>
 
 <div class="contact__cards">
