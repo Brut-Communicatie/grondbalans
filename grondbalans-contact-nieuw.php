@@ -13,7 +13,7 @@ get_header();?>
     );
     get_template_part( 'template-parts/banner', 'general', $args );
 ?>
-	<?php while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
 
 <div class="content">
     <div class="content__container">
@@ -39,7 +39,7 @@ get_header();?>
 
 <?php
 
-    $contact = get_field('contact');
+    $contact = get_field('contact', false);
     $landelijk = $contact['landelijk'];
     $zuid = $contact['regiozuid'];
     $zuidwest = $contact['regiozuidwest'];
