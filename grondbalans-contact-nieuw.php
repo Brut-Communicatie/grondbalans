@@ -49,9 +49,6 @@ get_header();?>
     $noordoost = $contact['regionoordoost'];
     $noord = $contact['regionoord'];
     $bedrijfsvoering = $contact['bedrijfsvoering'];
-    echo '<pre>';
-    var_dump($contact);
-    echo '</pre>';
 ;?>
 
 <div class="contact__cards">
