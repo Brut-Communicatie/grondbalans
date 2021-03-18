@@ -50,7 +50,7 @@ get_header();?>
     $noord = $contact['regionoord'];
     $bedrijfsvoering = $contact['bedrijfsvoering'];
 
-    var_dump($landelijk);
+    var_dump($contact);
 ;?>
 
 <div class="contact__cards">
