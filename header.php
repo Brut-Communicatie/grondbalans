@@ -143,6 +143,16 @@ html {
   margin-top: 104px;
 }
 </style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163948068-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163948068-1');
+</script>
 </head>
 
 <body <?php body_class(); ?>>
