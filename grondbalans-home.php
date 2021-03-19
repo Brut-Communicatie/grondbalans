@@ -74,7 +74,6 @@ get_header();?>
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     title="Grondbalans"
-                    loading="lazy"
                     >
                 </iframe>
                 </div>
