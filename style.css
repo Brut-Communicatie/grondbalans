@@ -746,6 +746,7 @@ textarea {
 		margin: 0;
 		padding: 0;
 		top: 0;
+		margin-left: 2rem;
 	}
 }
 
@@ -776,6 +777,7 @@ textarea {
 		top: 0;
 		animation: none;
 		opacity: 1;
+		margin-left: 2rem;
 	}
 }
 
