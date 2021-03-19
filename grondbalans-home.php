@@ -40,19 +40,19 @@ get_header();?>
             <div class="content__projecten" data-aos="fade-up" data-aos-delay="250">
                 <div class="content__projecten--container">
                     <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
-                        <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-Iv16d7Yd/w:1280/h:720/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/Amstelveenlijn-6.jpg" alt="Project afbeelding" />
+                        <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-Iv16d7Yd/w:1280/h:720/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/Amstelveenlijn-6.jpg" alt="Project afbeelding" loading="lazy"/>
                     </a>
 
                     <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
-                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-kL-icow9/w:2000/h:1334/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/DJI_0474-scaled.jpg"  alt="Project afbeelding" />
+                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-kL-icow9/w:2000/h:1334/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/DJI_0474-scaled.jpg"  alt="Project afbeelding" loading="lazy"/>
                     </a>
 
                     <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
-                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-ui3BS7bP/w:2000/h:1500/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/IMG_4355-005-1-scaled.jpg" alt="Project afbeelding" />
+                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-ui3BS7bP/w:2000/h:1500/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/IMG_4355-005-1-scaled.jpg" alt="Project afbeelding" loading="lazy" />
                     </a>
 
                     <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
-                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-CzLrXqQO/w:1768/h:1126/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/Landverbetering-Haarlemmermeer.jpg" alt="Project afbeelding" />
+                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-CzLrXqQO/w:1768/h:1126/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/Landverbetering-Haarlemmermeer.jpg" alt="Project afbeelding" loading="lazy" />
                     </a>
                 </div>
             </div>
