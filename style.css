@@ -699,7 +699,7 @@ textarea {
 
 @media screen and (max-width: calc(550px + 5px)) {
 	.header__nav ul {
-		top: 80px;
+		top: 100px;
 	}
 }
 
