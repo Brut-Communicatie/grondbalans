@@ -67,6 +67,24 @@
 	</div>
 </div><!-- #page -->
 
+
+<div class="popup">
+	<div class="popup__container">
+		<div class="popup__left">
+			<p>Grond of baggerspecie nodig? Of wil je er juist van af?</p>
+			<a href="#">Melden</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
 <?php wp_footer(); ?>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

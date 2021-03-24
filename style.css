@@ -5280,4 +5280,36 @@ body {
 	display: none !important;
 }
 
+.popup {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	display: flex;
+	width: 400px;
+	height: 250px;
+	background-color: #ececec;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.popup__container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.popup__container p {
+	color: #c42517;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.popup__container p {
+		font-size: clamp(1vw, 16px, 18px);
+	}
+}
+
 /*# sourceMappingURL=style.css.map */
