@@ -28,6 +28,8 @@ menuBurger.addEventListener('click', function()  {
 
 const popup = document.getElementsByClassName('popup')[0];
 const closePopup = document.getElementsByClassName('popup__close')[0];
+const popupBtn = document.getElementsByClassName('popup__button')[0];
+const popupForm = document.getElementsByClassName('popup__form')[0];
 
 setTimeout(() => {
     popup.classList.add('popup--show');
@@ -36,4 +38,8 @@ setTimeout(() => {
 
 closePopup.addEventListener("click", function(){
     popup.classList.remove('popup--show');
+})
+
+popupBtn.addEventListener("click", function(){
+    popupForm.classList.add('popup__form--show');
 })

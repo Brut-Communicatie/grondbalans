@@ -75,11 +75,14 @@
 		</div>
 		<div class="popup__left">
 			<p>Grond of baggerspecie nodig? Of wil je er juist van af?</p>
-			<a href="#">Melden</a>
+			<a class="popup__button" href="#">Melden</a>
 		</div>
 	</div>
 </div>
 
+<div class="popup__form">
+<div class="popup__form--block"></div>
+</div>
 
 
 
