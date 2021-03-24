@@ -5294,6 +5294,10 @@ body {
 .popup__container {
 	width: 90%;
 	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
 }
 
 .popup__container p {
@@ -5309,6 +5313,47 @@ body {
 @media screen and (max-width: calc(1180px + 5px)) {
 	.popup__container p {
 		font-size: clamp(1vw, 16px, 18px);
+	}
+}
+
+.popup__left {
+	width: 60%;
+}
+
+.popup__left > a,
+.popup__left > a:active,
+.popup__left > a:visited,
+.popup__left > a:link {
+	display: flex;
+	padding: 15px 35px 15px 30px;
+	width: fit-content;
+	box-sizing: border-box;
+	font-size: 18px;
+	background-color: #43816b;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	transition: filter .25s ease;
+	filter: brightness(100%);
+}
+
+.popup__left > a:hover,
+.popup__left > a:active:hover,
+.popup__left > a:visited:hover,
+.popup__left > a:link:hover {
+	filter: brightness(110%);
+}
+
+@media screen and (max-width: calc(600px + 5px)) {
+	.popup__left > a,
+	.popup__left > a:active,
+	.popup__left > a:visited,
+	.popup__left > a:link {
+		width: 100%;
+		font-size: 15px;
 	}
 }
 

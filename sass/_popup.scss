@@ -2,19 +2,21 @@
     position: fixed;
     bottom: 25px;
     right: 25px;
-    
+
     display: flex;
     width: 400px;
     height: 250px;
     background-color: #ececec;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-    0 2px 2px rgba(0,0,0,0.12), 
-    0 4px 4px rgba(0,0,0,0.12), 
-    0 8px 8px rgba(0,0,0,0.12),
-    0 16px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+        0 2px 2px rgba(0, 0, 0, 0.12),
+        0 4px 4px rgba(0, 0, 0, 0.12),
+        0 8px 8px rgba(0, 0, 0, 0.12),
+        0 16px 16px rgba(0, 0, 0, 0.12);
+
     &__container {
         width: 90%;
         margin: 0 auto;
+        @include Flex(space-between, center, row);
 
         p {
             color: $gb__rood;
@@ -24,6 +26,14 @@
             line-height: 25px;
             font-weight: 900;
             text-transform: uppercase;
+        }
+    }
+
+    &__left {
+        width: 60%;
+
+        @include Link {
+            @include Button;
         }
     }
 }
