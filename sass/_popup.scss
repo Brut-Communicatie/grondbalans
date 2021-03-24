@@ -1,39 +1,100 @@
 .popup {
     position: fixed;
-    bottom: 25px;
+    bottom: 55px;
     right: 25px;
-
+    opacity: 0;
+    transform: translateY(5rem);
     display: flex;
     width: 400px;
-    height: 250px;
+    height: 160px;
     background-color: #ececec;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
         0 2px 2px rgba(0, 0, 0, 0.12),
         0 4px 4px rgba(0, 0, 0, 0.12),
         0 8px 8px rgba(0, 0, 0, 0.12),
         0 16px 16px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 50px;
+        z-index: -2;
+        background: #ececec;
+        transform-origin: bottom left;
+        transform: skew(-13deg, 0deg);
+    }
 
     &__container {
         width: 90%;
         margin: 0 auto;
         @include Flex(space-between, center, row);
+        margin-top: 3rem;
 
         p {
             color: $gb__rood;
 
             @include BodyFont;
-            font-size: 25px;
-            line-height: 25px;
+            font-size: 21px;
+            line-height: 21px;
             font-weight: 900;
             text-transform: uppercase;
+            margin: 0 0 1rem;
         }
     }
 
     &__left {
         width: 60%;
+        @include Flex(flex-start, flex-start, column);
 
         @include Link {
-            @include Button;
+            background-color: $gb__rood;
+            padding: 20px 30px;
+            border-radius: 40px;
+            @include BodyFont;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 600;
+
+            &:hover {
+                background-color: darken($gb__rood, 10%);
+            }
         }
+    }
+
+    &__close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        line-height: 0;
+        background-color: red;
+        padding: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: blue;
+        }
+    }
+
+    &--show {
+        animation: showPopUp .5s ease forwards;
+    }
+}
+
+@keyframes showPopUp {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

@@ -25,3 +25,15 @@ menuBurger.addEventListener('click', function()  {
     menu.classList.toggle('header__nav--show');
     console.log(menu);
 });
+
+const popup = document.getElementsByClassName('popup')[0];
+const closePopup = document.getElementsByClassName('popup__close')[0];
+
+setTimeout(() => {
+    popup.classList.add('popup--show');
+    console.log('ie');
+}, 1000);
+
+closePopup.addEventListener("click", function(){
+    popup.classList.remove('popup--show');
+})
