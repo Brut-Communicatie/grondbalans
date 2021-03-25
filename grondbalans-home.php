@@ -33,6 +33,41 @@ get_header();?>
             <?php get_template_part('template-parts/home' , 'expertises');?>
         </section>
 
+        <section id="case-gallery">
+        <?php
+        $args = array (
+            'post_type' => 'projecten',
+            'posts_per_page' => 4
+        );
+
+        $getProjects = new WP_QUERY($args);
+        
+        while ( $getProjects->have_posts() ) : $getProjects->the_post();
+            $postFields = get_fields();
+            $titleCase = get_field('subtitle');
+            $image = get_field('imageLink');
+            $imageLink = $image{'url'};
+            $permalink = get_permalink();
+            // var_dump($getProjects);
+            
+            // get_permalink()
+            // the_title(); the gary
+            ?>
+            <article class="cases">
+            <button onClick="previewCase()">Preview</button>
+                <a href="<?php echo $permalink ?>">
+                    
+                    <img src="<?php echo $imageLink ?>" >
+                    <?php 
+                    echo '<h2>' . $titleCase . '</h2>';
+                    ?>
+                </a>
+            </article>
+            <?php
+        endwhile;
+        ;?>
+        </section>
+
         <section class="content__section">
             <h3 data-aos="fade-right" data-aos-delay="250">TROTS OP ONZE MOOIE PROJECTEN</h3>
             <h4 data-aos="fade-left" data-aos-delay="250">Wij laten grond stromen!</h4>
@@ -122,5 +157,7 @@ get_header();?>
             </section>
     </div>
 </div>
+
+<script src="/js/previewCase.js"></script>
 
 <?php get_footer();?>
