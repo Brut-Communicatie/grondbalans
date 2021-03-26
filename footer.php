@@ -71,11 +71,14 @@
 <div class="popup">
 	<div class="popup__container">
 		<div class="popup__close">
-			x
+		<img src="<?php echo get_template_directory_uri();?>/content/popup/times.svg" alt="Times" />
 		</div>
 		<div class="popup__left">
 			<p>Grond of baggerspecie nodig? Of wil je er juist van af?</p>
 			<a class="popup__button" href="#">Melden</a>
+		</div>
+		<div class="popup__right">
+		<img src="<?php echo get_template_directory_uri();?>/content/popup/helmets.svg" alt="Helmets" />
 		</div>
 	</div>
 </div>

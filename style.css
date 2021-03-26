@@ -5404,14 +5404,14 @@ body {
 .popup__left > a:visited,
 .popup__left > a:link {
 	background-color: #c42517;
-	padding: 20px 30px;
+	padding: 10px 20px;
 	border-radius: 40px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 600;
 }
 
@@ -5431,18 +5431,35 @@ body {
 	background-color: #961c12;
 }
 
+.popup__right {
+	width: 40%;
+}
+
+.popup__right img {
+	margin-bottom: 2rem;
+	width: 90%;
+}
+
 .popup__close {
 	position: absolute;
 	right: 5px;
 	top: 5px;
 	line-height: 0;
-	background-color: red;
-	padding: 1rem;
+	background-color: #fff;
+	padding: 10px;
+}
+
+.popup__close img {
+	width: 10px;
 }
 
 .popup__close:hover {
 	cursor: pointer;
-	background-color: blue;
+	background-color: #43816b;
+}
+
+.popup__close:hover img {
+	filter: invert(100%);
 }
 
 .popup--show {

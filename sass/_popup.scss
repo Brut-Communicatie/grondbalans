@@ -53,18 +53,27 @@
 
         @include Link {
             background-color: $gb__rood;
-            padding: 20px 30px;
+            padding: 10px 20px;
             border-radius: 40px;
             @include BodyFont;
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
- 
+
             &:hover {
                 background-color: darken($gb__rood, 10%);
             }
+        }
+    }
+
+    &__right {
+        width: 40%;
+
+        img {
+            margin-bottom: 2rem;
+            width: 90%;
         }
     }
 
@@ -73,19 +82,28 @@
         right: 5px;
         top: 5px;
         line-height: 0;
-        background-color: red;
-        padding: 1rem;
+        background-color: #fff;
+        padding: 10px;
+
+        img {
+            width: 10px;
+        }
 
         &:hover {
             cursor: pointer;
-            background-color: blue;
+            background-color: $gb__groen-2;
+
+            img {
+                filter: invert(100%);
+            }
         }
     }
 
     &--show {
         animation: showPopUp .5s ease forwards;
     }
-    &__form{
+
+    &__form {
         position: fixed;
         width: 100%;
         height: 100%;
@@ -94,15 +112,17 @@
         display: none;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         z-index: 999;
-        &--block{
+
+        &--block {
             width: 500px;
             height: 500px;
             display: block;
             background-color: #fff;
         }
-        &--show{
+
+        &--show {
             display: flex;
         }
     }
