@@ -465,6 +465,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			display: flex;
 			background-color: black;
 			object-fit: cover;
+			position: relative;
 
 			@include Responsive(650px) {
 				width: 100%;
@@ -475,6 +476,46 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 				object-fit: cover;
 				display: flex;
 				flex-grow: 1;
+			}
+
+			&-hover {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				@include Flex(center, center, column);
+				background-color: rgba(0, 0, 0, 0.5);
+				opacity: 0;
+				transition: opacity .35s ease;
+
+				h4 {
+					@include BodyFont;
+					color: #fff;
+					margin: 0;
+					transform: translateY(1rem);
+					transition: all .25s ease;
+				}
+
+				p {
+					@include BodyFont;
+					color: #fff;
+					margin: 0;
+					transform: translateY(1.5rem);
+					transition: all .25s ease;
+				}
+			}
+
+			&:hover{
+				.content__projecten--item-hover{
+					opacity: 1;
+
+					h4{
+						transform: translateY(0);
+					}
+
+					p{
+						transform: translateY(0);
+					}
+				}
 			}
 		}
 	}
@@ -1908,7 +1949,8 @@ $secondBreakpoint: 705px;
 
 .nieuws {
 	width: 100%;
-	&__pagination{
+
+	&__pagination {
 		display: flex;
 		justify-content: center;
 		margin-bottom: 2rem;
@@ -1916,17 +1958,19 @@ $secondBreakpoint: 705px;
 
 		@include BodyFont;
 
-		@include Link{
+		@include Link {
 			margin: 0 5px;
 			color: $gb__groen-2;
 			padding: 5px 10px;
 			text-decoration: none;
 			border: 1px solid $gb__groen-2;
-			&:hover{
+
+			&:hover {
 				background-color: $gb__groen-2;
 				color: #fff;
 			}
 		}
+
 		span {
 			margin: 0 5px;
 			background-color: $gb__grijs;
@@ -1936,6 +1980,7 @@ $secondBreakpoint: 705px;
 			border: 1px solid $gb__grijs;
 		}
 	}
+
 	&__container {
 		@include Container;
 		margin: 0 auto;
@@ -2098,7 +2143,7 @@ $secondBreakpoint: 705px;
 			margin: 0 auto;
 			margin-top: 5rem;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				margin-top: 2rem;
 			}
 
@@ -2373,44 +2418,47 @@ $secondBreakpoint: 705px;
 				}
 			}
 		}
-		&--sidebar{
-		@include Link{
-			@include Button;
-		}
 
-		&--line{
-			margin: 20px auto;
-			border-top: 3px solid $gb__rood;
-			width: 30%;
-		}
-
-		ul{
-			@include BodyFont;
-			font-size: 15px;
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			padding-left: 1rem;
-			margin-bottom: 1rem;
-			li{
-				padding-left: 1.5em; 
-				text-indent: -1.5em;
-				@include Flex(flex-start, center);
+		&--sidebar {
+			@include Link {
+				@include Button;
 			}
-			li::before {
-				content: "\2022"; 
-				color: $gb__rood; 
-				// margin-right: 15px;
-				font-size: 30px !important;
-				line-height: 0;
 
+			&--line {
+				margin: 20px auto;
+				border-top: 3px solid $gb__rood;
+				width: 30%;
+			}
+
+			ul {
+				@include BodyFont;
+				font-size: 15px;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				padding-left: 1rem;
+				margin-bottom: 1rem;
+
+				li {
+					padding-left: 1.5em;
+					text-indent: -1.5em;
+					@include Flex(flex-start, center);
+				}
+
+				li::before {
+					content: "\2022";
+					color: $gb__rood;
+					// margin-right: 15px;
+					font-size: 30px !important;
+					line-height: 0;
+
+				}
 			}
 		}
-	}
 	}
 }
 
-.grecaptcha-badge{
+.grecaptcha-badge {
 	display: none !important;
 }
 

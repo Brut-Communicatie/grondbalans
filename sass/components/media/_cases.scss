@@ -24,7 +24,7 @@
 
 #case-gallery {
     @include center-block;
-    @include Flex;
+    @include Flex(space-between, flex-start);
     @include Container;
     flex-wrap: wrap;
     // @include Responsive;
