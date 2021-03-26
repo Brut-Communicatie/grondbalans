@@ -5350,6 +5350,15 @@ body {
 	z-index: 1;
 }
 
+@media screen and (max-width: calc(500px + 5px)) {
+	.popup {
+		left: 0;
+		right: unset;
+		bottom: 25px;
+		width: 100%;
+	}
+}
+
 .popup:before {
 	content: " ";
 	position: absolute;
@@ -5399,6 +5408,12 @@ body {
 	flex-direction: column;
 }
 
+@media screen and (max-width: calc(250px + 5px)) {
+	.popup__left {
+		width: 100%;
+	}
+}
+
 .popup__left > a,
 .popup__left > a:active,
 .popup__left > a:visited,
@@ -5433,6 +5448,12 @@ body {
 
 .popup__right {
 	width: 40%;
+}
+
+@media screen and (max-width: calc(250px + 5px)) {
+	.popup__right {
+		display: none;
+	}
 }
 
 .popup__right img {
@@ -5480,10 +5501,85 @@ body {
 }
 
 .popup__form--block {
-	width: 500px;
-	height: 500px;
-	display: block;
+	width: 40rem;
+	height: 80%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
 	background-color: #fff;
+	z-index: 999;
+	padding: 1rem 2rem;
+	position: relative;
+	overflow: auto;
+}
+
+@media screen and (max-width: calc(700px + 5px)) {
+	.popup__form--block {
+		width: auto;
+	}
+}
+
+.popup__form--block-heading p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #c42517;
+	font-weight: 700;
+	margin: 0;
+	font-size: 20px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.popup__form--block-heading p {
+		font-size: clamp(1vw, 16px, 18px);
+	}
+}
+
+.popup__form--block .wpcf7 {
+	width: 100%;
+}
+
+.popup__form--block form {
+	width: 100%;
+}
+
+.popup__form--block form p {
+	margin: 0;
+}
+
+.popup__form--block form input[type="text"] {
+	width: 100%;
+}
+
+.popup__form--block form .content__form--right {
+	width: 100%;
+	padding-left: 0;
+}
+
+.popup__form--block form span.wpcf7-list-item {
+	margin: 0 !important;
+}
+
+.popup__form--block-close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	line-height: 0;
+	background-color: #fff;
+	padding: 10px;
+}
+
+.popup__form--block-close img {
+	width: 10px;
+}
+
+.popup__form--block-close:hover {
+	cursor: pointer;
+	background-color: #43816b;
+}
+
+.popup__form--block-close:hover img {
+	filter: invert(100%);
 }
 
 .popup__form--show {

@@ -15,6 +15,13 @@
         0 16px 16px rgba(0, 0, 0, 0.12);
     z-index: 1;
 
+
+    @include Responsive(500px){
+        left: 0;
+        right: unset;
+        bottom: 25px;
+        width: 100%;
+    }
     &:before {
         content: " ";
         position: absolute;
@@ -50,7 +57,9 @@
     &__left {
         width: 60%;
         @include Flex(flex-start, flex-start, column);
-
+        @include Responsive(250px){
+            width: 100%;
+        }
         @include Link {
             background-color: $gb__rood;
             padding: 10px 20px;
@@ -70,6 +79,10 @@
 
     &__right {
         width: 40%;
+
+        @include Responsive(250px){
+           display: none;
+        }
 
         img {
             margin-bottom: 2rem;
@@ -116,10 +129,68 @@
         z-index: 999;
 
         &--block {
-            width: 500px;
-            height: 500px;
-            display: block;
+            width: 40rem;
+            height: 80%;
+            @include Flex(flex-start, flex-start, column);
             background-color: #fff;
+            z-index: 999;
+            padding: 1rem 2rem;
+            position: relative;
+            overflow: auto;
+
+            @include Responsive(700px){
+                width: auto;
+            }
+            &-heading{
+                p{
+                    @include BodyFont;
+                    color: $gb__rood;
+                    font-weight: 700;
+                    margin: 0;
+                    font-size: 20px;
+                }
+            }
+            .wpcf7{
+                width: 100%;
+            }
+            form{
+                width: 100%;
+                p{
+                    margin: 0;
+                }
+                input[type="text"]{
+                    width: 100%;
+                }
+                .content__form--right{
+                    width: 100%;
+                    padding-left: 0;
+                }
+                span.wpcf7-list-item{
+                    margin: 0 !important;
+                }
+            }
+
+            &-close {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                line-height: 0;
+                background-color: #fff;
+                padding: 10px;
+        
+                img {
+                    width: 10px;
+                }
+        
+                &:hover {
+                    cursor: pointer;
+                    background-color: $gb__groen-2;
+        
+                    img {
+                        filter: invert(100%);
+                    }
+                }
+            }
         }
 
         &--show {
