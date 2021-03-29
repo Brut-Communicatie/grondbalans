@@ -241,6 +241,9 @@
     .wpcf7-response-output{
         margin: 0 !important;
     }
+    .wpcf7-list-item-label{
+        @include BodyFont;
+    }
 }
 
 @keyframes showPopUp {
