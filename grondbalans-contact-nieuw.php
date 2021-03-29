@@ -140,7 +140,7 @@ get_header();?>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
-                        'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0--Sbk6W3m/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/10/Ronald_pasfoto-scaled-e1602165227252.jpg", 
+                        'foto' => "https://i.imgur.com/AIq84Tb.jpg", 
                         'naam' =>  $zuidwest['2']['naam'], 
                         'titel' => $zuidwest['2']['functie'], 
                         'tel' => $zuidwest['2']['telefoon'], 
