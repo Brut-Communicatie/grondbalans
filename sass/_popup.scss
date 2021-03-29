@@ -229,11 +229,14 @@
         display: none !important;
     }
     &__grow{
-        height: 55% !important;
+        height: 55%;
         width: 420px;
         @include Responsive(505px){
-            height: 60% !important;
+            height: 60%;
             width: 100%;
+        }
+        @include Responsive(380px){
+            height: 80%;
         }
         &:before{
             display: none !important;

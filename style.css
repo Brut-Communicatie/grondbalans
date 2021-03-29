@@ -5676,14 +5676,20 @@ body {
 }
 
 .popup__grow {
-	height: 55% !important;
+	height: 55%;
 	width: 420px;
 }
 
 @media screen and (max-width: calc(505px + 5px)) {
 	.popup__grow {
-		height: 60% !important;
+		height: 60%;
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: calc(380px + 5px)) {
+	.popup__grow {
+		height: 80%;
 	}
 }
 
