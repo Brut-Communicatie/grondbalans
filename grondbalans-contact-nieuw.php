@@ -140,7 +140,7 @@ get_header();?>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
-                        'foto' => "https://i.imgur.com/AIq84Tb.jpg", 
+                        'foto' => "https://i.imgur.com/2sx6nlY.jpg", 
                         'naam' =>  $zuidwest['2']['naam'], 
                         'titel' => $zuidwest['2']['functie'], 
                         'tel' => $zuidwest['2']['telefoon'], 
