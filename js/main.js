@@ -32,6 +32,8 @@ const popupBtn = document.getElementsByClassName('popup__button')[0];
 const popupForm = document.getElementsByClassName('popup__form')[0];
 const closeForm = document.getElementsByClassName('popup__form--block-close')[0];
 
+const popupLeft = document.getElementsByClassName('popup__left')[0];
+const popupRight = document.getElementsByClassName('popup__right')[0];
 
 setTimeout(() => {
     popup.classList.add('popup--show');
@@ -43,8 +45,10 @@ closePopup.addEventListener("click", function(){
 })
 
 popupBtn.addEventListener("click", function(){
-    popup.classList.remove('popup--show');
     popupForm.classList.add('popup__form--show');
+    popup.classList.add('popup__grow');
+    popupLeft.classList.add('popup__hide');
+    popupRight.classList.add('popup__hide');
 })
 
 closeForm.addEventListener("click", function(){

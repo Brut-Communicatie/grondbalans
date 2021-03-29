@@ -78,22 +78,22 @@
 			<a class="popup__button" href="#">Melden</a>
 		</div>
 		<div class="popup__right">
-		<img src="<?php echo get_template_directory_uri();?>/content/popup/helmets.svg" alt="Helmets" />
+			<img src="<?php echo get_template_directory_uri();?>/content/popup/helmets.svg" alt="Helmets" />
+		</div>
+
+
+		<div class="popup__form">
+			<div class="popup__form--block">
+				<div class="popup__form--block-heading">
+					<p>Vraag en aanbod</p>
+				</div>
+				<?php echo do_shortcode('[contact-form-7 id="78" title="Popup"]');?>
+			</div>
 		</div>
 	</div>
 </div>
 
-<div class="popup__form">
-<div class="popup__form--block">
-	<div class="popup__form--block-heading">
-		<p>Vraag en aanbod</p>
-		<div class="popup__form--block-close">
-		<img src="<?php echo get_template_directory_uri();?>/content/popup/times.svg" alt="Times" />
-		</div>
-	</div>
-	<?php echo do_shortcode('[contact-form-7 id="78" title="Popup"]');?>
-</div>
-</div>
+
 
 <?php wp_footer(); ?>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

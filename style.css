@@ -1871,7 +1871,7 @@ textarea {
 	text-decoration: none;
 	transition: all .25s ease;
 	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 1px;
@@ -5348,6 +5348,7 @@ body {
 	background-color: #ececec;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 	z-index: 1;
+	transition: height .25s ease;
 }
 
 @media screen and (max-width: calc(500px + 5px)) {
@@ -5490,24 +5491,22 @@ body {
 .popup__form {
 	position: fixed;
 	width: 100%;
-	height: 100%;
-	top: 0;
+	height: 90%;
+	top: 40px;
 	left: 0;
 	display: none;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 999;
 }
 
 .popup__form--block {
 	width: 40rem;
-	height: 80%;
+	height: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: column;
-	background-color: #fff;
 	z-index: 999;
 	padding: 1rem 2rem;
 	position: relative;
@@ -5516,7 +5515,7 @@ body {
 
 @media screen and (max-width: calc(700px + 5px)) {
 	.popup__form--block {
-		width: auto;
+		width: 100%;
 	}
 }
 
@@ -5524,9 +5523,9 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	color: #c42517;
-	font-weight: 700;
+	font-weight: 900;
 	margin: 0;
-	font-size: 20px;
+	font-size: 21px;
 }
 
 @media screen and (max-width: calc(1180px + 5px)) {
@@ -5584,6 +5583,18 @@ body {
 
 .popup__form--show {
 	display: flex;
+}
+
+.popup__hide {
+	display: none !important;
+}
+
+.popup__grow {
+	height: 50% !important;
+}
+
+.popup__grow:before {
+	display: none !important;
 }
 
 @keyframes showPopUp {
