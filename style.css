@@ -5697,6 +5697,7 @@ body {
 .popup .wpcf7-list-item-label {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
+	font-size: 16px;
 }
 
 @media screen and (max-width: calc(1180px + 5px)) {
