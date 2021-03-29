@@ -5500,6 +5500,92 @@ body {
 	z-index: 999;
 }
 
+.popup__form--item {
+	margin: 1rem 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.popup__form--item .wpcf7-checkbox {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.popup__form--item .wpcf7-checkbox {
+		font-size: clamp(1vw, 16px, 18px);
+	}
+}
+
+.popup__form--item p {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	text-transform: unset;
+}
+
+.popup__form--item input[type="email"] {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	width: 100%;
+	padding: 5px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.popup__form--item input[type="email"] {
+		font-size: clamp(1vw, 16px, 18px);
+	}
+}
+
+.popup__form--item input[type="tel"] {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	width: 100%;
+	padding: 5px;
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.popup__form--item input[type="tel"] {
+		font-size: clamp(1vw, 16px, 18px);
+	}
+}
+
+.popup__form--item input[type="submit"] {
+	display: flex;
+	padding: 15px 35px 15px 30px;
+	width: fit-content;
+	box-sizing: border-box;
+	font-size: 18px;
+	background-color: #43816b;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	clip-path: polygon(0px 0px, 100% 0%, 95% 100%, 0% 100%);
+	text-transform: uppercase;
+	transition: filter .25s ease;
+	filter: brightness(100%);
+}
+
+.popup__form--item input[type="submit"]:hover {
+	filter: brightness(110%);
+}
+
+@media screen and (max-width: calc(600px + 5px)) {
+	.popup__form--item input[type="submit"] {
+		width: 100%;
+		font-size: 15px;
+	}
+}
+
 .popup__form--block {
 	width: 40rem;
 	height: 100%;
@@ -5590,11 +5676,21 @@ body {
 }
 
 .popup__grow {
-	height: 50% !important;
+	height: 35% !important;
+}
+
+@media screen and (max-width: calc(505px + 5px)) {
+	.popup__grow {
+		height: 55% !important;
+	}
 }
 
 .popup__grow:before {
 	display: none !important;
+}
+
+.popup .wpcf7-response-output {
+	margin: 0 !important;
 }
 
 @keyframes showPopUp {

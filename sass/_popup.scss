@@ -126,6 +126,37 @@
         justify-content: center;
         align-items: center;
         z-index: 999;
+
+        &--item{
+            margin: 1rem 0;
+            @include Flex(flex-start, flex-start, column);
+            .wpcf7-checkbox{
+                @include Flex(flex-start, flex-start, column);
+                @include BodyFont;
+            }
+            p{ 
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px ;
+                text-transform: unset;
+            }
+            input[type="email"]{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                @include BodyFont;
+                width: 100%;
+                padding: 5px;
+            }
+            input[type="tel"]{
+                @include BodyFont;
+                width: 100%;
+                padding: 5px;
+            }
+
+            input[type="submit"]{
+                @include Button;
+            }
+        }
         &--block {
             width: 40rem;
             height: 100%;
@@ -166,7 +197,7 @@
                     margin: 0 !important;
                 }
             }
-
+    
             &-close {
                 position: absolute;
                 right: 5px;
@@ -198,10 +229,17 @@
         display: none !important;
     }
     &__grow{
-        height: 50% !important;
+        height: 35% !important;
+        @include Responsive(505px){
+            height: 55% !important;
+        }
         &:before{
             display: none !important;
         }
+    }
+
+    .wpcf7-response-output{
+        margin: 0 !important;
     }
 }
 

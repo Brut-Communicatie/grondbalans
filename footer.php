@@ -85,9 +85,9 @@
 		<div class="popup__form">
 			<div class="popup__form--block">
 				<div class="popup__form--block-heading">
-					<p>Vraag en aanbod</p>
+					<p>Vraag of aanbod</p>
 				</div>
-				<?php echo do_shortcode('[contact-form-7 id="78" title="Popup"]');?>
+				<?php echo do_shortcode('[contact-form-7 id="72" title="Melden"]');?>
 			</div>
 		</div>
 	</div>
