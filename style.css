@@ -5682,7 +5682,7 @@ body {
 
 @media screen and (max-width: calc(505px + 5px)) {
 	.popup__grow {
-		height: 55% !important;
+		height: 60% !important;
 		width: 100%;
 	}
 }
