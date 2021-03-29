@@ -5594,7 +5594,7 @@ body {
 	align-items: flex-start;
 	flex-direction: column;
 	z-index: 999;
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
 	position: relative;
 	overflow: auto;
 }
@@ -5676,7 +5676,7 @@ body {
 }
 
 .popup__grow {
-	height: 35% !important;
+	height: 55% !important;
 }
 
 @media screen and (max-width: calc(505px + 5px)) {

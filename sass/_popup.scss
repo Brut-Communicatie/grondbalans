@@ -162,7 +162,7 @@
             height: 100%;
             @include Flex(flex-start, flex-start, column);
             z-index: 999;
-            padding: 1rem 2rem;
+            padding: 1rem 1rem;
             position: relative;
             overflow: auto;
 
@@ -229,7 +229,7 @@
         display: none !important;
     }
     &__grow{
-        height: 35% !important;
+        height: 55% !important;
         @include Responsive(505px){
             height: 55% !important;
         }
