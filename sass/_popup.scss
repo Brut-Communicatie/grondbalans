@@ -14,7 +14,7 @@
         0 8px 8px rgba(0, 0, 0, 0.12),
         0 16px 16px rgba(0, 0, 0, 0.12);
     z-index: 1;
-    transition: height .25s ease;
+    transition: height .25s ease, width .25s ease;
 
     @include Responsive(500px){
         left: 0;
@@ -230,6 +230,7 @@
     }
     &__grow{
         height: 55% !important;
+        width: 420px;
         @include Responsive(505px){
             height: 55% !important;
         }
