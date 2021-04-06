@@ -95,7 +95,7 @@ get_header();?>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
-                        'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-BsWcSC5U/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/01-Wijnand.jpg", 
+                        'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-sMKro3aj/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/06/Foto-Roel-website-scaled-e1594208518178.jpg", 
                         'naam' =>  $zuid['1']['naam'], 
                         'titel' => $zuid['1']['functie'], 
                         'tel' => $zuid['1']['telefoon'], 
@@ -105,7 +105,7 @@ get_header();?>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
-                        'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-sMKro3aj/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/06/Foto-Roel-website-scaled-e1594208518178.jpg", 
+                        'foto' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-DDS9LkSD/w:68/h:68/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/Bart.jpg", 
                         'naam' =>  $zuid['2']['naam'], 
                         'titel' => $zuid['2']['functie'], 
                         'tel' => $zuid['2']['telefoon'], 
