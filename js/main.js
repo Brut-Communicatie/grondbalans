@@ -25,3 +25,9 @@ menuBurger.addEventListener('click', function()  {
     menu.classList.toggle('header__nav--show');
     console.log(menu);
 });
+
+const onScrollLazy = () => {
+    console.log('ie');
+}
+
+window.addEventListener('scroll', onScrollLazy());
