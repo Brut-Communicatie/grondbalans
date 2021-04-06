@@ -26,8 +26,11 @@ menuBurger.addEventListener('click', function()  {
     console.log(menu);
 });
 
-const onScrollLazy = () => {
-    console.log('ie');
-}
+const slidingBanner = document.getElementsByClassName('content__banner--img')[0];
 
-window.addEventListener('scroll', onScrollLazy());
+if (slidingBanner){
+    const onScrollLazy = () => {
+        slidingBanner.classList.add('content__banner--img-show');
+    }
+    window.onscroll = function() {onScrollLazy()};
+}

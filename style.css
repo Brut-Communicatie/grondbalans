@@ -1871,7 +1871,7 @@ textarea {
 	text-decoration: none;
 	transition: all .25s ease;
 	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 1px;
@@ -2149,8 +2149,11 @@ textarea {
 	width: 100%;
 	height: 261px;
 	animation: scrollBackground 25s infinite linear;
-	background: url("./content/images/grondbanner.jpg");
 	background-size: 2700px auto;
+}
+
+.content__banner--img-show {
+	background: url("./content/images/grondbanner.jpg");
 }
 
 .content-blue h1 {
