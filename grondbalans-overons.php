@@ -1,18 +1,9 @@
 <?php
 //Template name: Dit zijn wij
 get_header();?>
+<?php while ( have_posts() ) : the_post(); ?>
 
-<?php
-    $siteUrl = get_site_url();
-    $args = array(
-        'background' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-nww0_pY5/w:auto/h:auto/q:75/https://grondbalans.nl/wp-content/uploads/2020/01/header-grondbalans-vacatures-scaled.jpg",
-        'heading' => "Dit zijn wij",
-        'content' => "Wij staan met beide benen op de grond",
-        'button' => "Neem contact met ons op",
-        'link' => $siteUrl . "/contact#contact",
-    );
-    get_template_part( 'template-parts/banner', 'general', $args );
-?>
+<?php the_content;?>
 <div class="content">
     <div class="content__container">
         <div class="content__intro">
@@ -98,8 +89,7 @@ get_header();?>
             'video' => '<iframe id="video" width="560" height="315"  src="https://www.youtube.com/embed/1_AJ9QLsm10" frameborder="0" allowfullscreen></iframe>',
         ));?>
 
-
     </div>
 </div>
-
+<?php endwhile; // end of the loop. ?>
 <?php get_footer();?>
