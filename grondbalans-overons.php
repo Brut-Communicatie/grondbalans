@@ -7,18 +7,7 @@ get_header();?>
 
 <div class="expertise">
     <div class="expertise__container">
-        
-        <?php get_template_part('template-parts/block', 'links', $args = array(
-            'id' => "grondstromen",
-            'heading' => "ONS TEAM",
-            'subheading' => "Met beide benen op de grond",
-
-            'content' => '<p>Onze medewerkers zijn ons grootste goed. Grondbalans bestaat uit een hecht team met ruim 25 loyale collega’s, verspreid over 3 regiokantoren. Onze kracht? Aandacht voor elkaar, nuchterheid en de drive om binnen ons vakgebied de beste te zijn en te blijven. Onze gezamenlijke energie maakt dat wij altijd het maximale leveren. Natuurlijk samen met onze partners en opdrachtgevers. Samen mooie projecten maken!</p>',
-
-            'button' => "Neem contact op",
-            'right' => array('url' => "https://mlmotgafwbhj.i.optimole.com/u0PFPh0-KuXIrej1/w:575/h:350/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/03/grondbalans-teamfoto.jpg"),
-        ));?>
-
+    
         <?php get_template_part('template-parts/block', 'video', $args = array(
             'id' => "grondstromen",
             'heading' => "BEDRIJFSFILM",
