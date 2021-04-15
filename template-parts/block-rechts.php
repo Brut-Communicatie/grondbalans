@@ -21,6 +21,6 @@
         <div class="portfolio__block--right <?php echo $args['right']['class'];?>">
             <img src="<?php echo $args['right']['url'];?>" alt="Project afbeelding" width="720px" />
         </div>
-
+        
     </div>
 </div>
