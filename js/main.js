@@ -31,17 +31,32 @@ const closePopup = document.getElementsByClassName('popup__close')[0];
 const popupBtn = document.getElementsByClassName('popup__button')[0];
 const popupForm = document.getElementsByClassName('popup__form')[0];
 const closeForm = document.getElementsByClassName('popup__form--block-close')[0];
-
 const popupLeft = document.getElementsByClassName('popup__left')[0];
 const popupRight = document.getElementsByClassName('popup__right')[0];
+    
+const hidePopup = localStorage.getItem('hidePopup');
+let popupCounter = localStorage.getItem('countPopup') || 0;
 
-setTimeout(() => {
-    popup.classList.add('popup--show');
+const counterFunction = () => {
+    if (!hidePopup){
+        if (popupCounter >= 10) {
+            popup.classList.add('popup--show');
+            clearInterval(countForPopup)
+        } else {
+            popupCounter++;
+            localStorage.setItem('countPopup', popupCounter);
+        }
+    } else {
+        clearInterval(countForPopup);
+    }
+}
 
-}, 1000);
+const countForPopup = setInterval(counterFunction, 1000);
+
 
 closePopup.addEventListener("click", function(){
     popup.classList.remove('popup--show');
+    localStorage.setItem('hidePopup', true);
 })
 
 popupBtn.addEventListener("click", function(){
@@ -51,6 +66,15 @@ popupBtn.addEventListener("click", function(){
     popupRight.classList.add('popup__hide');
 })
 
-closeForm.addEventListener("click", function(){
-    popupForm.classList.remove('popup__form--show');
-})
+// closeForm.addEventListener("click", function(){
+//     popupForm.classList.remove('popup__form--show');
+// })
+
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+   console.log(event);
+   const responseSend = document.getElementsByClassName('wpcf7-response-output')[0];
+   responseSend.scrollIntoView({
+       behavior: 'smooth',
+       block: 'start'
+   });
+}, false );
