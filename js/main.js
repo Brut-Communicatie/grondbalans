@@ -52,11 +52,15 @@ const counterFunction = () => {
 }
 
 const countForPopup = setInterval(counterFunction, 1000);
-
+const hidePopupDate = new Date();
+console.log(hidePopupDate);
 
 closePopup.addEventListener("click", function(){
+  
     popup.classList.remove('popup--show');
     localStorage.setItem('hidePopup', true);
+    localStorage.setItem('hideDate', true);
+})
 })
 
 popupBtn.addEventListener("click", function(){
