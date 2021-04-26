@@ -15,7 +15,6 @@
         0 16px 16px rgba(0, 0, 0, 0.12);
     z-index: 999;
     transition: height .25s ease, width .25s ease;
-    overflow: auto;
 
     @include Responsive(500px){
         left: 0;
