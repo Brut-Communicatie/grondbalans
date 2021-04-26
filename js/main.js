@@ -34,7 +34,7 @@ const closeForm = document.getElementsByClassName('popup__form--block-close')[0]
 const popupLeft = document.getElementsByClassName('popup__left')[0];
 const popupRight = document.getElementsByClassName('popup__right')[0];
     
-const hidePopup = localStorage.getItem('hidePopup');
+const hidePopup = sessionStorage.getItem('hidePopup') || false;
 let popupCounter = localStorage.getItem('countPopup') || 0;
 
 const counterFunction = () => {
@@ -53,13 +53,9 @@ const counterFunction = () => {
 
 const countForPopup = setInterval(counterFunction, 1000);
 
-const datePopupHide = new Date();
-    console.log(datePopupHide);
 closePopup.addEventListener("click", function(){
-    
     popup.classList.remove('popup--show');
-    localStorage.setItem('hidePopup', true);
-    localStorage.setItem('hideDate', true);
+    sessionStorage.setItem('hidePopup', true);
 });
 
 popupBtn.addEventListener("click", function(){
@@ -74,7 +70,6 @@ popupBtn.addEventListener("click", function(){
 // })
 
 document.addEventListener( 'wpcf7mailsent', function( event ) {
-   console.log(event);
    const responseSend = document.getElementsByClassName('wpcf7-response-output')[0];
    responseSend.scrollIntoView({
        behavior: 'smooth',
