@@ -33,13 +33,45 @@ get_header();?>
             <?php get_template_part('template-parts/home' , 'expertises');?>
         </section>
 
+        <section id="case-gallery">
+       
+        </section>
+
         <section class="content__section">
             <h3 data-aos="fade-right" data-aos-delay="250">TROTS OP ONZE MOOIE PROJECTEN</h3>
             <h4 data-aos="fade-left" data-aos-delay="250">Wij laten grond stromen!</h4>
 
             <div class="content__projecten" data-aos="fade-up" data-aos-delay="250">
+
                 <div class="content__projecten--container">
-                    <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
+
+                <?php
+        $args = array (
+            'post_type' => 'projecten',
+            'posts_per_page' => 4
+        );
+
+        $getProjects = new WP_QUERY($args);
+        
+        while ( $getProjects->have_posts() ) : $getProjects->the_post();
+            $postFields = get_fields();
+            $titleCase = get_field('subtitle');
+            $image = get_field('imageLink');
+            $imageLink = $image{'url'};
+            $permalink = get_permalink();
+            $title = get_the_title();
+            ?>
+                <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
+                    <img src="<?php echo $imageLink ?>" >
+                        <div class="content__projecten--item-hover">
+                            <h4><?php echo $title;?></h4>
+                            <p><?php echo $titleCase;?></p>
+                        </div>
+                </a>
+            <?php
+        endwhile;
+        ;?>
+                    <!-- <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
                         <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-Iv16d7Yd/w:1280/h:720/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/Amstelveenlijn-6.jpg" alt="Project afbeelding" loading="lazy"/>
                     </a>
 
@@ -53,7 +85,7 @@ get_header();?>
 
                     <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
                     <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-CzLrXqQO/w:1768/h:1126/q:75/https://grondbalans.nl/wp-content/uploads/2020/04/Landverbetering-Haarlemmermeer.jpg" alt="Project afbeelding" loading="lazy" />
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <a href="<?php echo get_site_url();?>/projecten">Bekijk onze projecten</a>
@@ -122,5 +154,7 @@ get_header();?>
             </section>
     </div>
 </div>
+
+<script src="/js/previewCase.js"></script>
 
 <?php get_footer();?>

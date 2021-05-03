@@ -1,0 +1,271 @@
+.popup {
+    position: fixed;
+    bottom: 55px;
+    right: 25px;
+    opacity: 0;
+    transform: translateY(5rem);
+    display: flex;
+    width: 400px;
+    height: 160px;
+    background-color: #ececec;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+        0 2px 2px rgba(0, 0, 0, 0.12),
+        0 4px 4px rgba(0, 0, 0, 0.12),
+        0 8px 8px rgba(0, 0, 0, 0.12),
+        0 16px 16px rgba(0, 0, 0, 0.12);
+    z-index: 999;
+    transition: height .25s ease, width .25s ease;
+
+    @include Responsive(500px){
+        left: 0;
+        right: unset;
+        bottom: 25px;
+        width: 100%;
+    }
+    &:before {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 50px;
+        z-index: -2;
+        background: #ececec;
+        transform-origin: bottom left;
+        transform: skew(-13deg, 0deg);
+    }
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+        @include Flex(space-between, center, row);
+        margin-top: 3rem;
+
+        p {
+            color: $gb__rood;
+
+            @include BodyFont;
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 0 0 1rem;
+        }
+    }
+
+    &__left {
+        width: 60%;
+        @include Flex(flex-start, flex-start, column);
+        @include Responsive(250px){
+            width: 100%;
+        }
+        @include Link {
+            background-color: $gb__rood;
+            padding: 10px 20px;
+            border-radius: 40px;
+            @include BodyFont;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+
+            &:hover {
+                background-color: darken($gb__rood, 10%);
+            }
+        }
+    }
+
+    &__right {
+        width: 40%;
+
+        @include Responsive(250px){
+           display: none;
+        }
+
+        img {
+            margin-bottom: 2rem;
+            width: 90%;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        line-height: 0;
+        background-color: #fff;
+        padding: 10px;
+
+        img {
+            width: 10px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: $gb__groen-2;
+
+            img {
+                filter: invert(100%);
+            }
+        }
+    }
+
+    &--show {
+        animation: showPopUp .5s ease forwards;
+    }
+
+    &__form {
+        // position: fixed;
+        // width: 100%;
+        // height: 90%;
+        top: 40px;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        .wpcf7-response-output{
+            margin-bottom: 1rem;
+        }
+        &--item{
+            margin: 1rem 0;
+            @include Flex(flex-start, flex-start, column);
+            .wpcf7-checkbox{
+                @include Flex(flex-start, flex-start, column);
+                @include BodyFont;
+            }
+            p{ 
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px ;
+                text-transform: unset;
+            }
+            input[type="email"]{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                @include BodyFont;
+                width: 100%;
+                padding: 5px;
+            }
+            input[type="tel"]{
+                @include BodyFont;
+                width: 100%;
+                padding: 5px;
+            }
+
+            input[type="submit"]{
+                @include Button;
+            }
+        }
+        &--block {
+            width: 100%;
+            height: 100%;
+            @include Flex(flex-start, flex-start, column);
+            z-index: 999;
+            // padding: 1rem 1rem;
+            position: relative;
+            overflow: auto;
+            transform: translateY(-15px);
+            @include Responsive(700px){
+                width: 100%;
+            }
+            &-heading{
+                p{
+                    @include BodyFont;
+                    color: $gb__rood;
+                    font-weight: 900;
+                    margin: 0;
+                    font-size: 21px;
+                }
+            }
+            .wpcf7{
+                width: 100%;
+            }
+            form{
+                width: 100%;
+                p{
+                    margin: 0;
+                }
+                input[type="text"]{
+                    width: 100%;
+                }
+                .content__form--right{
+                    width: 100%;
+                    padding-left: 0;
+                }
+                span.wpcf7-list-item{
+                    margin: 0 !important;
+                }
+            }
+    
+            &-close {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                line-height: 0;
+                background-color: #fff;
+                padding: 10px;
+        
+                img {
+                    width: 10px;
+                }
+        
+                &:hover {
+                    cursor: pointer;
+                    background-color: $gb__groen-2;
+        
+                    img {
+                        filter: invert(100%);
+                    }
+                }
+            }
+        }
+
+        &--show {
+            display: flex;
+        }
+    }
+    &__hide{
+        display: none !important;
+    }
+    &__grow{
+        height: auto;
+        // top: 50%;
+
+        z-index: 1000;
+        width: 420px;
+        @include Responsive(505px){
+            width: 100%;
+            max-height: 100%;
+            bottom: 0;
+        }
+ 
+        &:before{
+            display: none !important;
+        }
+    }
+
+    .wpcf7-response-output{
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .wpcf7-list-item-label{
+        @include BodyFont;
+        font-size: 16px;
+    }
+}
+
+@keyframes showPopUp {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

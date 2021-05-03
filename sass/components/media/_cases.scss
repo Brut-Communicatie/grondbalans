@@ -1,0 +1,49 @@
+@mixin case-title {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    width: 50%;
+    top: -150px;
+    padding: 5%;
+    text-shadow: 2px 2px 3px rgb(80, 80, 80);
+
+}
+
+@mixin case-button {
+        position: relative;
+        top: 20%;
+        left: 5%;
+        background-color: $gb__rood;
+        border: none; 
+        color: white;
+        padding: 10px;
+        z-index: 3;
+}
+
+#case-gallery {
+    @include center-block;
+    @include Flex(space-between, flex-start);
+    @include Container;
+    flex-wrap: wrap;
+    // @include Responsive;
+
+    @include Responsive(750px) {
+   
+    }
+
+    article {
+        max-height: 250px;
+        button {
+            @include case-button;
+        }
+        a {
+            text-decoration: none;
+            h2 {
+                @include case-title;
+            }
+        }
+    }
+}
+
