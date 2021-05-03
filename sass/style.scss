@@ -655,8 +655,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			width: 100%;
 			height: 261px;
 			animation: scrollBackground 25s infinite linear;
-			background: url('./content/images/grondbanner.jpg');
+			
 			background-size: 2700px auto;
+			&-show{
+				background: url('./content/images/grondbanner.jpg');
+			}
 		}
 	}
 
@@ -665,7 +668,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		h1 {
 			text-transform: unset;
 		}
-
+ 
 		h2 {
 			color: $gb__blauw-2
 		}
@@ -1117,6 +1120,24 @@ body {
 }
 
 .grondbank {
+	&__container{
+		@include Container;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1rem;
+
+		@include Responsive($containerWidth){
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include Responsive(1140px){
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include Responsive(600px){
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
 	&__image {
 		margin-bottom: 1rem;
 		width: 100%;
@@ -1131,18 +1152,10 @@ body {
 		box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 		border-bottom: 3px solid #e4170e;
 		padding: 25px 12px;
-		width: calc(100% / 3 - 15px);
+		width: 100%;
 		scroll-margin-top: 7rem;
 		@include Flex(flex-start, flex-start, column);
 
-		@include Responsive($containerWidth) {
-			width: calc(100% / 2 - 15px);
-			margin-bottom: 20px;
-		}
-
-		@include Responsive(720px) {
-			width: 100%;
-		}
 
 	}
 
@@ -2465,3 +2478,7 @@ $secondBreakpoint: 705px;
 @import 'popup';
 
 @import 'components/media/cases';
+
+.st0{
+	fill: rgb(58, 155, 118);
+}

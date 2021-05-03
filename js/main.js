@@ -76,3 +76,12 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
        block: 'start'
    });
 }, false );
+
+const slidingBanner = document.getElementsByClassName('content__banner--img')[0];
+
+if (slidingBanner){
+    const onScrollLazy = () => {
+        slidingBanner.classList.add('content__banner--img-show');
+    }
+    window.onscroll = function() {onScrollLazy()};
+}

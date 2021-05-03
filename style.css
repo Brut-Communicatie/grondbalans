@@ -2205,8 +2205,11 @@ textarea {
 	width: 100%;
 	height: 261px;
 	animation: scrollBackground 25s infinite linear;
-	background: url("./content/images/grondbanner.jpg");
 	background-size: 2700px auto;
+}
+
+.content__banner--img-show {
+	background: url("./content/images/grondbanner.jpg");
 }
 
 .content-blue h1 {
@@ -3529,6 +3532,37 @@ body {
 	}
 }
 
+.grondbank__container {
+	width: 1180px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
+@media screen and (max-width: 1180px) {
+	.grondbank__container {
+		width: calc(100% - 2rem);
+	}
+}
+
+@media screen and (max-width: calc(1180px + 5px)) {
+	.grondbank__container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: calc(1140px + 5px)) {
+	.grondbank__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: calc(600px + 5px)) {
+	.grondbank__container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
 .grondbank__image {
 	margin-bottom: 1rem;
 	width: 100%;
@@ -3543,25 +3577,12 @@ body {
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 	border-bottom: 3px solid #e4170e;
 	padding: 25px 12px;
-	width: calc(100% / 3 - 15px);
+	width: 100%;
 	scroll-margin-top: 7rem;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: column;
-}
-
-@media screen and (max-width: calc(1180px + 5px)) {
-	.grondbank__item {
-		width: calc(100% / 2 - 15px);
-		margin-bottom: 20px;
-	}
-}
-
-@media screen and (max-width: calc(720px + 5px)) {
-	.grondbank__item {
-		width: 100%;
-	}
 }
 
 .grondbank__details {
@@ -5769,6 +5790,10 @@ body {
 	top: -150px;
 	padding: 5%;
 	text-shadow: 2px 2px 3px #505050;
+}
+
+.st0 {
+	fill: #3a9b76;
 }
 
 /*# sourceMappingURL=style.css.map */
