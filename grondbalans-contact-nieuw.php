@@ -91,7 +91,7 @@ get_header();?>
             </div>
 
             <div class="contact__cards--item" id="zuid">
-                <h3>Regio zuid</h3>
+                <h3>Regio Zuid</h3>
                 <div class="contact__cards--info">
                     <?php get_template_part('template-parts/contact', 'persoon', 
                     $args = array(
