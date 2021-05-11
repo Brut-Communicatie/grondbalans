@@ -42,77 +42,77 @@
 	</g>
 </a>
 <g id="GRONDBANKEN">
-	<a>
+	<a href="#gb-alkmaar">
 		<g id="ALKMAAR">
 			<circle class="st3" cx="228.2" cy="240" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-middenmeer">
 		<g id="MIDDENMEER">
 			<circle class="st3" cx="272.6" cy="198.2" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-amsterdam">
 		<g id="AMSTERDAM">
 			<circle class="st3" cx="265.9" cy="308.6" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-aalsmer">
 		<g id="AALSMEER">
 			<circle class="st3" cx="233.4" cy="354" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-lisse">
 		<g id="LISSE">
 			<circle class="st3" cx="192" cy="356.7" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-almere">
 		<g id="ALMERE">
 			<circle class="st3" cx="315.8" cy="314.7" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-kampen">
 		<g id="KAMPEN">
 			<circle class="st3" cx="418.8" cy="266.5" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-ermelo">
 		<g id="ERMELO">
 			<circle class="st3" cx="370.4" cy="333.4" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-steenwijk">
 		<g id="STEENWIJK">
 			<circle class="st3" cx="437.2" cy="222" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-franeker">
 		<g id="FRANEKER">
 			<circle class="st3" cx="361.1" cy="112.5" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-leeuwarden"> 
 		<g id="LEEUWARDEN">
 			<circle class="st3" cx="408" cy="105.5" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-groningen"> 
 		<g id="GRONINGEN">
 			<circle class="st3" cx="536.6" cy="90.3" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-nieuwegein">
 		<g id="NIEUWEGEIN">
 			<circle class="st3" cx="276.6" cy="395.7" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-bunnik">
 		<g id="BUNNIK">
 			<circle class="st3" cx="302" cy="385" r="8.3"></circle>
 		</g>
 	</a>
-	<a>
+	<a href="#gb-eindhoven">
 		<g id="EINDHOVEN">
 			<circle class="st3" cx="347.9" cy="574.3" r="8.3"></circle>
 		</g>
