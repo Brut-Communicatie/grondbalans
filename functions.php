@@ -259,7 +259,7 @@ function grondbalans_projecten_customfields() {
 				'label' => 'Afbeelding',
 				'name' => 'imageLink',
 				'type' => 'image',
-				'required' => '1',
+				'required' => '0',
 			),
 		),
 		'location' => array (
