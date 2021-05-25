@@ -62,7 +62,7 @@ get_header();?>
             $title = get_the_title();
             ?>
                 <a href="<?php echo get_site_url();?>/projecten" class="content__projecten--item">
-                    <img src="<?php echo $imageLink ?>" >
+                    <img loading="lazy" src="<?php echo $imageLink ?>" >
                         <div class="content__projecten--item-hover">
                             <h4><?php echo $title;?></h4>
                             <p><?php echo $titleCase;?></p>
