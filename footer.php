@@ -63,10 +63,9 @@
 		</div>
 	</footer><!-- #colophon -->
 	<div class="footer__disclaimer">
-		<p>Copyright © <?php echo date("Y");?> Grondbalans B.V. | Alle rechten voorbehouden | <a href="/privacyverklaring" target="_blank" rel="noopener norefferer">Algemene voorwaarden & Privacyverklaring</a></p>
+		<p>Copyright © <?php echo date("Y");?> Grondbalans B.V. | Alle rechten voorbehouden | <a href="https://grondbalans.nl/algemene-voorwaarden-grondbalans-2/" target="_blank" rel="noopener norefferer">Algemene voorwaarden</a> | <a href="/privacyverklaring" target="_blank" rel="noopener norefferer">Privacyverklaring</a> | <a href="https://grondbalans.nl/certificaat-iso-9001/" target="_blank" rel="noopener norefferer">ISO 9001 Certificaat</a> </p>
 	</div>
 </div><!-- #page -->
-
 
 <div class="popup">
 	<div class="popup__container">
