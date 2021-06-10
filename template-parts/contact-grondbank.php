@@ -1,5 +1,5 @@
 <div class="contact__cards--image">
-    <img src="<?php echo $args['foto'];?>" alt="Foto van <?php echo $args['naam'];?>" width="67px"/>
+    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-3jDNiD8Z/w:250/h:250/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/04/Afbeelding4-1.png" alt="Grondbank afbeelding" width="67px"/>
 </div>
 <div class="contact__cards--details">
     <h4><?php echo $args['naam'];?></php></h4>

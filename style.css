@@ -2487,11 +2487,9 @@ html {
 
 .contact__cards--container {
 	width: 1180px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	flex-direction: column;
-	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
 }
 
 @media screen and (max-width: 1180px) {
@@ -2500,24 +2498,21 @@ html {
 	}
 }
 
-.contact__cards--row {
-	display: flex;
-	justify-content: space-between;
-	align-items: stretch;
-	width: 100%;
-	margin-bottom: 2rem;
-}
-
 @media screen and (max-width: calc(1180px + 5px)) {
-	.contact__cards--row {
-		flex-wrap: wrap;
-		margin-bottom: 0;
+	.contact__cards--container {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
-@media screen and (max-width: calc(720px + 5px)) {
-	.contact__cards--row {
-		margin-bottom: 0;
+@media screen and (max-width: calc(1140px + 5px)) {
+	.contact__cards--container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: calc(600px + 5px)) {
+	.contact__cards--container {
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
@@ -2526,7 +2521,7 @@ html {
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 	border-bottom: 3px solid #e4170e;
 	padding: 25px 12px;
-	width: calc(100% / 3 - 15px);
+	width: 100%;
 	scroll-margin-top: 7rem;
 	display: flex;
 	justify-content: flex-start;
