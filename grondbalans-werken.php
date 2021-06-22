@@ -65,12 +65,11 @@ get_header();?>
 
                 <div class="content__werken--quote">
                     <p>“</p>
-                    <p>Grondbalans is een club mensen die er echt voor wil gaan! Het harde werken gaat hand in hand met plezier maken. Onze mensen krijgen alle ruimte en mogelijkheden om zich te ontwikkelen.
-                    Eigen initiatief is hierbij wel belangrijk, waarbij je altijd kunt terugvallen op het team.</p>
-                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-8wKPrU38/w:120/h:132/q:75/rt:fill/g:ce/https://grondbalans.nl/wp-content/uploads/2020/01/09-Dirkjan.jpg" width="150px" alt="Foto"/>
+                    <p><?php the_field('quote');?></p>
+                    <img src="<?php the_field('foto');?>" width="150px" alt="Foto"/>
                     <div class="content__werken--quote-bio">
-                        <p><strong>Dirkjan Reijersen van Buuren</strong></p>
-                        <p>Directeur Grondbalans</p>
+                        <p><strong><?php the_field('naam');?></strong></p>
+                        <p><?php the_field('functie');?></p>
                     </div>
                 </div>
                 <div class="content__werken--block">
