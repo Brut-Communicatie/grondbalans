@@ -35,8 +35,8 @@ get_header();?>
             </div>
         </div>
     </div>
-
 </div>
+
 <?php echo the_content();?>
 <?php endwhile; // end of the loop. ?>
 <?php get_template_part('template-parts/form', 'contact');?>

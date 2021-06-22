@@ -78,11 +78,11 @@ get_header();
 
                 <div class="content__werken--quote">
                     <p>“</p>
-                    <p>Het prettige van werken bij Grondbalans is de vrijheid die je hebt en het vertrouwen dat je krijgt. Als Regioteam Zuid zijn we zelforganiserend. We werken op een manier die past bij ons team en onze regio. We overleggen regelmatig met onze collega’s van de andere regioteams. Voor ons allemaal geldt dat de lange termijn relatie met klanten centraal staat. Flexibel zijn, afspraken nakomen, snel schakelen en de boel gewoon goed regelen. Daar gaat het om!</p>
-                    <img src="https://mlmotgafwbhj.i.optimole.com/u0PFPh0-sMKro3aj/w:1222/h:1427/q:75/https://grondbalans.nl/wp-content/uploads/2020/06/Foto-Roel-website-scaled-e1594208518178.jpg" width="150px" alt="Foto"/>
+                    <p><?php the_field('quote');?></p>
+                    <img src="<?php the_field('foto');?>" width="150px" alt="Foto"/>
                     <div class="content__werken--quote-bio">
-                        <p><strong>Roel van Aarle</strong></p>
-                        <p>Projectcoördinator Regio Zuid</p>
+                        <p><strong><?php the_field('naam');?></strong></p>
+                        <p><?php the_field('functie');?>/p>
                     </div>
                 </div>
                 <div class="content__werken--block">
