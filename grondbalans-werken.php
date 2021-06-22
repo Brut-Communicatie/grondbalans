@@ -77,7 +77,7 @@ get_header();?>
                     <p>Mail naar: <br/>
                     <a href="#">vacature@grondbalans.nl</a>
                     <br/>
-                    of bel Wendy Stoldijk op <br/>
+                    of bel Wendy Stolwijk op <br/>
                     030-2372300 of 06-45222774</p>
                     <div class="content__werken--socials">
                         <a href="https://nl-nl.facebook.com/Grondbalans/" target="_blank" rel="noopener noreferrer" class="footer__left--socials-item">

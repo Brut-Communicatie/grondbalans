@@ -82,7 +82,7 @@ get_header();
                     <img src="<?php the_field('foto');?>" width="150px" alt="Foto"/>
                     <div class="content__werken--quote-bio">
                         <p><strong><?php the_field('naam');?></strong></p>
-                        <p><?php the_field('functie');?>/p>
+                        <p><?php the_field('functie');?></p>
                     </div>
                 </div>
                 <div class="content__werken--block">
@@ -90,7 +90,7 @@ get_header();
                     <p>Mail naar: <br/>
                     <a href="#">vacature@grondbalans.nl</a>
                     <br/>
-                    of bel Wendy Stoldijk op <br/>
+                    of bel Wendy Stolwijk op <br/>
                     030-2372300 of 06-45222774</p>
                     <div class="content__werken--socials">
                         <a href="https://nl-nl.facebook.com/Grondbalans/" target="_blank" rel="noopener noreferrer" class="footer__left--socials-item">
