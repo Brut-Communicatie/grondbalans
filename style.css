@@ -3342,6 +3342,10 @@ html {
 	width: 40%;
 }
 
+.content__werken--vacatures a {
+	display: block;
+}
+
 .content__werken--quote {
 	margin-top: 2rem;
 	background-color: #fff;
