@@ -3342,6 +3342,10 @@ html {
 	width: 40%;
 }
 
+.content__werken--vacatures a {
+	display: block;
+}
+
 .content__werken--quote {
 	margin-top: 2rem;
 	background-color: #fff;
@@ -4016,7 +4020,7 @@ body {
 
 .content__opener--show {
 	display: block;
-	max-height: 800px;
+	max-height: 1400px;
 	transition: max-height 0.7s ease, padding 1s cubic-bezier(1, 0, 0, 1);
 }
 

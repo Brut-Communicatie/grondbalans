@@ -1500,7 +1500,7 @@ body {
 
 		&--show {
 			display: block;
-			max-height: 800px;
+			max-height: 1400px; 
 			transition: max-height 0.7s ease, padding 1s cubic-bezier(1, 0, 0, 1);
 		}
 	}
