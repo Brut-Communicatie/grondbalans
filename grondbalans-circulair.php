@@ -45,7 +45,7 @@ get_header();?>
                 Regionale, waardevolle herbestemming
                 </h2>
                 <p>
-                Vrijgekomen partijen grond direct een nieuwe bestemming geven is één, een zinvolle herbestemming is twee. Wij zijn van mening dat de grond die vrijkomt ook echt van toegevoegde waarde moet zijn. Dit kan alleen als de juiste grondsoort, met de juiste kwaliteit op de juiste plek wordt hergebruikt. Doordat we goed zicht hebben op het vraag en aanbod in alle regio’s zorgen we altijd voor de beste match. Hierdoor hoeven er minder primaire grondstoffen, zoals klein en zand, te worden gewonnen en sparen we kostbare grondstoffen uit!
+                Vrijgekomen partijen grond direct een nieuwe bestemming geven is één, een zinvolle herbestemming is twee. Wij zijn van mening dat de grond die vrijkomt ook echt van toegevoegde waarde moet zijn. Dit kan alleen als de juiste grondsoort, met de juiste kwaliteit op de juiste plek wordt hergebruikt. Doordat we goed zicht hebben op het vraag en aanbod in alle regio’s zorgen we altijd voor de beste match. Hierdoor hoeven er minder primaire grondstoffen, zoals klei en zand, te worden gewonnen en sparen we kostbare grondstoffen uit!
                 <br/><br/>
                 Door grondstromen op de juiste plekken te hergebruiken, dragen onze projecten bij aan duurzaam wonen, werken en recreëren. We gaan dus nog een stap verder op het gebied van duurzaamheid en circulariteit en streven naar een regionale én waardevolle herbestemming.
                 </p>
