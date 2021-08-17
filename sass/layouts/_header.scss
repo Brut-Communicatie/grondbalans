@@ -359,7 +359,6 @@ $mobile: 1330px;
                 }
             }
         }
-
         &--socials {
             @include Flex(flex-start, flex-start);
             width: 100%;
@@ -383,6 +382,26 @@ $mobile: 1330px;
 
                 &:not(:last-child) {
                     margin-right: 8px;
+                }
+            }
+        }
+        &--brochure {
+            > a {
+                background-color: #e4170e;
+                padding: 5px 10px 5px 10px;
+                transition: background-color .25s ease;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 14.5px;
+                letter-spacing: 0.5px;
+                font-weight: 600;
+                font-family: 'Montserrat', sans-serif;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #e4170e;
+                    opacity: 0.8;
                 }
             }
         }
