@@ -56,7 +56,7 @@
 					</div>
 					<h5>Lees ons verhaal</h5>
 					<div class="footer__left--brochure">
-						<a href="https://digitaalpubliceren.com/grondbalans/18074/" class="fbp-embed"  data-fbp-lightbox="yes" data-fbp-width="640px" data-fbp-height="480px"  data-fbp-method="site"   data-fbp-version="2020.1.2"   style="max-width: 100%">Bekijk brochure</a>
+						<a href="https://digitaalpubliceren.com/grondbalans/18074/" class="fbp-embed" target="_blank" data-fbp-lightbox="yes" data-fbp-width="640px" data-fbp-height="480px"  data-fbp-method="site"   data-fbp-version="2020.1.2"   style="max-width: 100%">Bekijk brochure</a>
 					</div>
 				</div>
 			</div>
