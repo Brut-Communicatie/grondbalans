@@ -203,7 +203,7 @@ html {
                         while ( $query->have_posts() ) : $query->the_post();
                             $title = get_the_title();
                             $link = get_the_permalink();
-                            echo "<li><a href='$link'>$title</a></li>";
+                            echo "<li class='werken__menu--item'><a href='$link'>$title</a></li>";
                         endwhile;
                         echo '</ul>';
                     else :
