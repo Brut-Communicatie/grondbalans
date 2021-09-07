@@ -670,6 +670,9 @@ textarea {
 
 .header__nav--show {
 	display: flex !important;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 85vh;
 }
 
 .header__nav ul {
