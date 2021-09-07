@@ -54,7 +54,7 @@ get_header();?>
                         while ( $query->have_posts() ) : $query->the_post();
                             $title = get_the_title();
                             $link = get_the_permalink();
-                            echo "<a href='$link'>$title</a>";
+                            echo "<li class='werken__opsomming--item'><a href='$link'>$title</a></li>";
                         endwhile;
                     else :
                         _e( '<p>Sorry, we hebben op dit moment geen vacatures.</p>', 'textdomain' );

@@ -1,4 +1,3 @@
-
 .content {
 	&__werken {
 		&--container {
@@ -71,20 +70,22 @@
 				}
 			}
 
-			ul{
+			ul {
 				margin: 0;
 				padding: 0;
 				list-style: none;
 				padding-left: 1rem;
 				margin-bottom: 1rem;
-				li{
-					padding-left: 1.5em; 
+
+				li {
+					padding-left: 1.5em;
 					text-indent: -1.5em;
 					@include Flex(flex-start, center);
 				}
+
 				li::before {
-					content: "\2022"; 
-					color: $gb__rood; 
+					content: "\2022";
+					color: $gb__rood;
 					// margin-right: 15px;
 					font-size: 30px !important;
 					line-height: 0;
@@ -136,7 +137,7 @@
 
 		&--vacatures {
 			background-color: #ececec;
-			padding: 45px 30px 55px;
+			padding: 30px 30px 55px;
 			width: 100%;
 
 			h3 {
@@ -160,16 +161,17 @@
 				font-size: 15px;
 			}
 
-			@include Link{
+			@include Link {
 				@include BodyFont;
 				color: $gb__groen-2;
 				text-decoration: none;
 				font-size: 14.4px;
 				margin-top: 10px;
 			}
-			&--line{
+
+			&--line {
 				margin-top: 20px;
-				border-top: 3px solid rgba(0,0,0,.12);
+				border-top: 3px solid rgba(0, 0, 0, .12);
 				width: 40%;
 			}
 			a {
@@ -183,6 +185,7 @@
 			padding: 45px 30px 55px;
 			border: 2px solid #ececec;
 			@include Flex(flex-start, center, column);
+
 			p {
 				@include BodyFont;
 				text-align: center;
@@ -197,14 +200,16 @@
 					margin: 0;
 				}
 			}
-			&-bio{
-				p{
+
+			&-bio {
+				p {
 					@include BodyFont;
 					line-height: 1;
 					margin: 0;
 					font-size: 15px;
 				}
-				strong{
+
+				strong {
 					font-weight: 600;
 					@include BodyFont;
 					color: black;
@@ -214,42 +219,45 @@
 				}
 			}
 		}
-		&--block{
+
+		&--block {
 			margin-top: 2rem;
 			background-color: #fff;
 			padding: 45px 30px 55px;
 			border: 2px solid #5a8b7a;
 			width: 100%;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				margin-bottom: 2rem;
 			}
 
-			h4{
+			h4 {
 				font-family: 'Montserrat', sans-serif;
 				font-size: 15px;
 				font-weight: 200;
 				text-transform: uppercase;
 			}
 
-			p{
+			p {
 				@include BodyFont;
 				font-size: 15px;
 
-				@include Link{
+				@include Link {
 					text-decoration: none;
 					color: $gb__groen-2;
 
-					&:hover{
+					&:hover {
 						text-decoration: underline;
 					}
 				}
 			}
 		}
-		&--socials{
+
+		&--socials {
 			@include Flex(flex-start, flex-start);
-			@include Link{
-				box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+
+			@include Link {
+				box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
 				padding: .5em 0;
 				border-radius: .25em;
 				@include Flex(center, center);
@@ -257,19 +265,57 @@
 				height: 35px;
 				background-color: #969696;
 
-				&:not(:last-child){
+				&:not(:last-child) {
 					margin-right: 10px;
 				}
 
-				&:hover{
+				&:hover {
 					background-color: lighten(#969696, 10%);
 				}
 
-				svg{
+				svg {
 					fill: #fff;
-					path{
+
+					path {
 						fill: #fff;
 					}
+				}
+			}
+		}
+	}
+}
+
+.werken {
+	&__menu {
+		&--item {
+			&:not(:last-child) {
+				border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+				padding-bottom: 10px;
+			}
+
+			@include Responsive(1320px) {
+				padding: 10px 0 5px !important;
+			}
+		}
+	}
+}
+
+.werken{
+	&__opsomming{
+		
+		&--item{
+			list-style: none;
+			margin-top: 10px;
+			&:not(:last-of-type) {
+				border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+				padding-bottom: 10px;
+			}
+			a, a:active, a:visited, a:link {
+				color: $gb__color-1;
+				text-decoration: none;
+				font-size: 15px;
+				&:hover{
+					text-decoration: underline;
 				}
 			}
 		}

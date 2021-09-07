@@ -68,12 +68,43 @@ get_header();
 
             <div class="content__werken--right">
                 <div class="content__werken--vacatures content__vacature--sidebar">
-                    <h3>ONZE VACATURES</h3>
                     <a href="#contact">Direct solliciteren</a>
                     <p><?php the_title();?></p>
                     <?php echo the_field('opsomming');?>
                     <div class="content__vacature--sidebar--line"></div>
                     <?php echo the_field('opsomming2');?>
+
+
+                    <?php 
+                        $args = array(
+                            'post_type' => 'vacature',
+                            'post_per_page' => -1,
+                            'post__not_in' => array(get_the_ID())
+                        );
+
+                        $query = new WP_Query($args);
+                        if ( $query->have_posts() ) :
+                            $count = 0;
+                            while ( $query->have_posts() ) : $query->the_post();
+                                $count++;
+                            endwhile;
+                            if ($count > 1) :
+                                echo '<h4>ANDERE VACATURES</h4>';
+                                while ( $query->have_posts() ) : $query->the_post();
+                                    $title = get_the_title();
+                                    $link = get_the_permalink();
+                                    echo "<li class='werken__opsomming--item'><a href='$link'>$title</a></li>";
+                                endwhile;
+                            endif;
+                            
+                        else :
+                            return;
+                        endif;
+                        ;?>
+            
+
+                    
+
                 </div>
 
                 <div class="content__werken--quote">

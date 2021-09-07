@@ -3300,7 +3300,7 @@ html {
 
 .content__werken--vacatures {
 	background-color: #ececec;
-	padding: 45px 30px 55px;
+	padding: 30px 30px 55px;
 	width: 100%;
 }
 
@@ -3523,6 +3523,37 @@ html {
 .content__werken--socials > a:visited svg path,
 .content__werken--socials > a:link svg path {
 	fill: #fff;
+}
+
+.werken__menu--item:not(:last-child) {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: calc(1320px + 5px)) {
+	.werken__menu--item {
+		padding: 10px 0 5px !important;
+	}
+}
+
+.werken__opsomming--item {
+	list-style: none;
+	margin-top: 10px;
+}
+
+.werken__opsomming--item:not(:last-of-type) {
+	border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+	padding-bottom: 10px;
+}
+
+.werken__opsomming--item a, .werken__opsomming--item a:active, .werken__opsomming--item a:visited, .werken__opsomming--item a:link {
+	color: #3f4141;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.werken__opsomming--item a:hover, .werken__opsomming--item a:active:hover, .werken__opsomming--item a:visited:hover, .werken__opsomming--item a:link:hover {
+	text-decoration: underline;
 }
 
 .expertise__container {
