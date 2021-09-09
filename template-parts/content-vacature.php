@@ -12,6 +12,7 @@ get_header();
     );
     get_template_part( 'template-parts/banner', 'general', $args );
 ?>
+<?php while ( have_posts() ) : the_post(); ?>
 <div class="content">
     <div class="content__container">
         <div class="content__werken--container">
@@ -109,9 +110,6 @@ get_header();
 
                 <div class="content__werken--quote">
                     <p>“</p>
-                    <?php $fields = get_fields();
-                        var_dump($fields);
-                    ?>
                     <p><?php the_field('quote');?></p>
                     <img src="<?php the_field('foto');?>" width="150px" alt="Foto"/>
                     <div class="content__werken--quote-bio">
@@ -143,6 +141,6 @@ get_header();
         </div>
     </div>
 </div>
-
+<?php endwhile; // end of the loop. ?>
 <?php
 get_footer();?>
