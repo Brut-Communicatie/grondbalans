@@ -97,15 +97,9 @@ get_header();
                                     echo "<li class='werken__opsomming--item'><a href='$link'>$title</a></li>";
                                 endwhile;
                             endif;
-                            
-                        else :
-                            return;
                         endif;
+                        wp_reset_query();
                         ;?>
-            
-
-                    
-
                 </div>
 
                 <div class="content__werken--quote">

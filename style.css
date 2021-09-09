@@ -1896,7 +1896,7 @@ textarea {
 	text-decoration: none;
 	transition: all .25s ease;
 	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 1px;
@@ -3373,6 +3373,7 @@ html {
 	background-color: #fff;
 	padding: 45px 30px 55px;
 	border: 2px solid #ececec;
+	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
