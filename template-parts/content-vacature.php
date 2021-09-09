@@ -109,6 +109,9 @@ get_header();
 
                 <div class="content__werken--quote">
                     <p>“</p>
+                    <?php $fields = get_fields();
+                        var_dump($fields);
+                    ?>
                     <p><?php the_field('quote');?></p>
                     <img src="<?php the_field('foto');?>" width="150px" alt="Foto"/>
                     <div class="content__werken--quote-bio">
