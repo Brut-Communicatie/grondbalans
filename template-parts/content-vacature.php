@@ -12,7 +12,7 @@ get_header();
     );
     get_template_part( 'template-parts/banner', 'general', $args );
 ?>
-<?php while ( have_posts() ) : the_post(); ?>
+
 <div class="content">
     <div class="content__container">
         <div class="content__werken--container">
@@ -141,6 +141,6 @@ get_header();
         </div>
     </div>
 </div>
-<?php endwhile; // end of the loop. ?>
+
 <?php
 get_footer();?>
