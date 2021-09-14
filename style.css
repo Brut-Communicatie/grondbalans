@@ -752,6 +752,21 @@ textarea {
 	}
 }
 
+.header__nav ul li ul li {
+	width: 100%;
+}
+
+@media screen and (max-width: calc(1330px + 5px)) {
+	.header__nav ul li ul li {
+		padding: 10px 0 5px !important;
+	}
+}
+
+.header__nav ul li ul li:not(:last-child) {
+	padding-bottom: 10px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
 .header__nav ul li:hover ul {
 	display: flex;
 	justify-content: flex-start;
