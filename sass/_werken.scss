@@ -184,6 +184,7 @@
 			background-color: #fff;
 			padding: 45px 30px 55px;
 			border: 2px solid #ececec;
+			width: 100%;
 			@include Flex(flex-start, center, column);
 
 			p {
